@@ -6,3 +6,4 @@
 - src/app/app.spec.ts: removed outdated title test
 - src/index.html: changed page title to "Patrick Wagner"
 - public/: replaced favicon.ico, added Monogramm.png, Monogramm_white.png and favicon_black.ico
+- public/: renamed Monogramm.png to Monogram.png and Monogramm_white.png to Monogram_white.png
