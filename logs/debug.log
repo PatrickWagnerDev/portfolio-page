@@ -12,3 +12,4 @@
 - public/: updated favicon.ico, added Monogram_blue.png, Monogram_yellow.png and favicon_white.ico
 - public/: removed Monogram.png, updated favicon.ico, added Monogram_black.png, Monogram_green.png, Monogram_teal.png, favicon_blue.ico and favicon_green.ico
 - src/app/app.spec.ts: restored test 'should render title'
+- src/app/layout/: removed outdated header and footer components
