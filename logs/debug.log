@@ -1,0 +1,3 @@
+2026-11-12
+- README.md: added project README (description, badges, features, technologies, credits, status, local development, about, license, author)
+- .gitignore: added /docs to ignore project documents
