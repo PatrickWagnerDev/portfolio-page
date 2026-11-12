@@ -1,3 +1,8 @@
 2026-11-12
 - README.md: added project README (description, badges, features, technologies, credits, status, local development, about, license, author)
 - .gitignore: added /docs to ignore project documents
+- src/app/app.html: removed Angular example page
+- src/app/app.ts: removed unused title signal
+- src/app/app.spec.ts: removed outdated title test
+- src/index.html: changed page title to "Patrick Wagner"
+- public/: replaced favicon.ico, added Monogramm.png, Monogramm_white.png and favicon_black.ico
