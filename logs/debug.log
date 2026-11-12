@@ -8,3 +8,4 @@
 - public/: replaced favicon.ico, added Monogramm.png, Monogramm_white.png and favicon_black.ico
 - public/: renamed Monogramm.png to Monogram.png and Monogramm_white.png to Monogram_white.png
 - public/Design material/: flattened folder structure (removed duplicate nested Design material folder)
+- src/app/layout/: generated header and footer components (ts, html, css, spec)
