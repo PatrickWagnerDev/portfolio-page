@@ -1,59 +1,80 @@
-# PortfolioPage
+# Portfolio Patrick Wagner
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.6.
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat&logo=sass&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
 
-## Development server
+This is my personal portfolio website. It introduces me, showcases my skills and presents my projects to visitors and potential employers. Built with Angular, it is fully responsive and available in German and English.
 
-To start a local development server, run:
+**Website:** Coming soon
+
+<!-- Replace "Coming soon" with: [your-domain.tld](https://your-domain.tld) -->
+
+## Features
+
+- **Hero Section** – Short introduction with a professional photo and a call to action.
+- **About Me** – Personal introduction and key facts about me.
+- **Skill Set** – Overview of the technologies I work with.
+- **Projects** – Preview of my projects with a dedicated detail page for each: The Last Spellbound, Join and Pokedex.
+- **Colleagues' Thoughts** – Feedback and references from people I worked with.
+- **Contact Form** – Form with validation on blur, a send button that is only active when the form is valid, including the privacy policy checkbox, and clear success or error feedback. Messages are sent via a PHP mailer.
+- **Language Switch** – All texts can be switched between German and English.
+- **Responsive Design** – Optimized layouts for mobile and desktop.
+- **Legal Pages** – Legal Notice and Privacy Policy, reachable from the footer.
+
+## Technologies
+
+- Angular 22
+- TypeScript
+- SCSS
+- ngx-translate
+- PHP (mailer for the contact form)
+
+## Credits
+
+The design template and individual design elements are free to use and were provided by [Developer Akademie](https://developerakademie.com). Many thanks for providing them.
+
+## Project Status
+
+> **Current Status:** In Development
+
+The project is currently being developed.
+
+## Local Development
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org) v24.21.0
+- npm (included with Node.js)
+
+### Setup
+
+Clone the repository:
 
 ```bash
-ng serve
+git clone https://github.com/PatrickWagnerDev/portfolio-page.git
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Install the dependencies and start the development server:
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Open `http://localhost:4200` in your browser.
 
-```bash
-ng generate --help
-```
+## About
 
-## Building
+This is a personal portfolio project and is not intended for production use by third parties. External contributions are not accepted.
 
-To build the project run:
+## License
 
-```bash
-ng build
-```
+No license has been assigned to this project.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This project was created for educational and portfolio purposes and is not distributed under an open-source license.
 
-## Running unit tests
+## Author
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**PatrickWagnerDev**
