@@ -66,6 +66,36 @@
   gap: 1.5rem;
 }
 
+.about-heading {
+  margin-bottom: 1.25rem;
+}
+
+.about-label {
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about-title {
+  width: fit-content;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+
+  &::after {
+    content: '';
+    display: block;
+    aspect-ratio: 909 / 60;
+    background: url('/design-material/lines/about-me.webp') center / 100% 100% no-repeat;
+  }
+}
+
+.about-text {
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
 .about-button {
   align-self: flex-end;
   margin-top: 1.5rem;
