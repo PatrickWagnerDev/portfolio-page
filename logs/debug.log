@@ -24,3 +24,5 @@
 - src/styles/_fonts.scss: removed comments and stray semicolons
 - src/styles/_reset.scss: added global reset (margin, box-sizing, smooth scrolling, link decoration)
 - src/styles.scss: added @use import of reset
+- src/app/layout/header/header.html: added header structure (logo, navigation links, language switch)
+- src/app/app.ts, src/app/app.html: imported and added the header component
