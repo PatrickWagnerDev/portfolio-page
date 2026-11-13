@@ -10,7 +10,7 @@
   height: 100vh;
   padding-inline: var(--content-padding-inline);
   color: var(--color-base-light);
-  background: var(--color-base-dark) url('/design-material/backgrounds/hero-3x.webp') center bottom / cover no-repeat;
+  background: url('/design-material/backgrounds/hero-3x.webp') center bottom / cover no-repeat;
 }
 
 .hero-title {
@@ -30,11 +30,17 @@
   text-transform: uppercase;
 }
 
+.hero-greeting {
+  grid-row: 1;
+  grid-column: 1;
+}
+
 .hero-photo {
   grid-row: 1 / 3;
   grid-column: 1;
   align-self: start;
   justify-self: end;
+  margin-top: -5rem;
   transform: rotate(8deg);
 }
 
@@ -45,6 +51,7 @@
 }
 
 .hero-button {
+  grid-row: 3;
   justify-self: end;
 }
 
