@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './hero.scss',
   templateUrl: './hero.html',
 })
-export class Hero {}
+export class Hero {
+  readonly titleLines = ['Frontend', 'Developer'].map(word => word.split(''));
+}

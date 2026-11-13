@@ -5,9 +5,21 @@
     <img class="greeting-hand" src="design-material/icons/waving-hand.png" alt="">
   </p>
 
-  <h1 class="hero-title">
-    <span class="title-line">Frontend</span>
-    <span class="title-line">Developer</span>
+  <h1 class="hero-title" aria-label="Frontend Developer">
+    @for (line of titleLines; track $index) {
+    <span class="title-line" aria-hidden="true">
+      <span class="line-visible">
+        @for (letter of line; track $index) {
+        <span class="title-letter">{{ letter }}</span>
+        }
+      </span>
+      <span class="line-hit">
+        @for (letter of line; track $index) {
+        <span class="hit-letter">{{ letter }}</span>
+        }
+      </span>
+    </span>
+    }
   </h1>
 
   <figure class="hero-photo">

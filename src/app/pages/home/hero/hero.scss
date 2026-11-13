@@ -20,15 +20,61 @@
   line-height: 1.25;
   grid-row: 2;
   grid-column: 1;
+  min-width: 53.75rem;
+}
+
+.hero-title {
+  font-size: 7.5rem;
+  font-weight: 800;
+  line-height: 1.25;
+  cursor: default;
+  user-select: none;
+  grid-row: 2;
+  grid-column: 1;
 }
 
 .title-line {
   display: block;
+  position: relative;
+  --hover-case: uppercase;
 
   &:last-child {
     padding-left: 9.5rem;
     text-transform: uppercase;
+    --hover-case: lowercase;
   }
+
+  &:first-child .title-letter:first-child {
+    --hover-case: lowercase;
+  }
+}
+
+.line-visible {
+  pointer-events: none;
+}
+
+.line-hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: inherit;
+  opacity: 0;
+}
+
+.title-letter {
+  transition: color 0.2s ease;
+}
+
+@for $index from 1 through 9 {
+  .title-line:has(.hit-letter:nth-child(#{$index}):hover) .title-letter:nth-child(#{$index}) {
+    color: var(--color-highlight-1);
+    text-transform: var(--hover-case);
+  }
+}
+
+.title-line:first-child .title-letter:first-child:hover,
+.title-line:last-child .title-letter:hover {
+  text-transform: lowercase;
 }
 
 .hero-greeting {
@@ -41,7 +87,7 @@
   border-radius: 2rem;
   font-weight: 500;
   interpolate-size: allow-keywords;
-  transition: background-color 0.255s ease;
+  transition: background-color 0.6s ease;
 
   &:hover {
     background-color: var(--color-highlight-2);
@@ -74,7 +120,7 @@
 .greeting-hover {
   overflow: hidden;
   white-space: nowrap;
-  transition: width 0.255s ease;
+  transition: width 0.6s ease;
 }
 
 .greeting-text {
