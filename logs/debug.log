@@ -18,3 +18,4 @@
 - src/styles.scss: added @font-face rules for Bricolage Grotesque and Kalam
 - public/Design_material/: renamed to public/design-material/ with kebab-case file names and subfolders lines, backgrounds, ripped-paper, stickers (Option 3 only)
 - public/design-material/: converted all 45 PNGs to WebP (alpha kept) and deleted the PNGs; backgrounds scaled to max 2880 px, peel/round/testimonial stickers to max 1200/800/1200 px; every file now 500 KB or smaller
+- public/: moved alternative favicons and monogram images into public/design-material/favicon_alt and public/design-material/monogram
