@@ -1,3 +1,32 @@
 :host {
   display: block;
 }
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 35rem;
+  column-gap: 4rem;
+  row-gap: 1.5rem;
+  align-content: center;
+  padding: 9rem var(--content-padding-inline);
+  color: var(--color-base-dark);
+}
+
+.snippet-list {
+  grid-row: 1 / span 4;
+  grid-column: 1;
+  align-self: center;
+  padding: 0;
+  list-style: none;
+}
+
+.about-heading,
+.about-text,
+.about-button {
+  grid-column: 2;
+}
+
+.about-button {
+  justify-self: end;
+  margin-top: 1.5rem;
+}
