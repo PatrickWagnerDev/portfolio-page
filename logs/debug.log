@@ -53,3 +53,4 @@
 - src/styles/_base.scss: added body background color (base light)
 - src/app/layout/header/header.html, header.scss: logo now a mask element that changes color on hover and focus
 - src/app/pages/home/hero/hero.html, hero.scss: social links as round icon buttons, positioned left above the torn edge (bottom 11rem)
+- src/app/pages/home/hero/hero.html, hero.scss: greeting pill hover (text swap with growing pill, overshoot, waving hand) and highlight hover for social buttons
