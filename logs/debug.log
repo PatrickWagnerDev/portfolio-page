@@ -49,3 +49,5 @@
 - src/app/pages/home/hero/hero.scss: added hero title styles, grid layout and polaroid frame placement (rotated, 12rem wide)
 - public/design-material/: resized stickers/polaroid-frame.webp to 600 px width and monogram/Monogram_teal.png to 160 px (fixes NG0913 image size warnings)
 - src/app/pages/home/hero/hero.scss: placed greeting in row 1, moved polaroid up (margin-top), placed button in row 3
+- src/app/pages/home/hero/hero.scss: styled greeting pill and button (hover, active, focus-visible nested with &), nested title line modifier
+- src/styles/_base.scss: added body background color (base light)
