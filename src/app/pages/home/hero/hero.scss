@@ -18,19 +18,11 @@
   font-size: 7.5rem;
   font-weight: 800;
   line-height: 1.25;
-  grid-row: 2;
-  grid-column: 1;
-  min-width: 53.75rem;
-}
-
-.hero-title {
-  font-size: 7.5rem;
-  font-weight: 800;
-  line-height: 1.25;
   cursor: default;
   user-select: none;
   grid-row: 2;
   grid-column: 1;
+  min-width: 53.75rem;
 }
 
 .title-line {
@@ -70,11 +62,6 @@
     color: var(--color-highlight-1);
     text-transform: var(--hover-case);
   }
-}
-
-.title-line:first-child .title-letter:first-child:hover,
-.title-line:last-child .title-letter:hover {
-  text-transform: lowercase;
 }
 
 .hero-greeting {
