@@ -44,3 +44,6 @@
 - src/app/pages/home/hero/hero.html: added hero structure (greeting, title, polaroid frame, button, social links)
 - src/app/pages/home/hero/hero.scss: added hero section box (100vh, background with torn paper edge) and widescreen background above 1440px
 - public/design-material/icons/: added github, linkedin, mail and waving_hand icons
+- public/design-material/icons/: renamed waving_hand.png to waving-hand.png
+- src/styles/_variables.scss: changed minimum content padding from 1.5rem to 4.5rem (72px as in the design)
+- src/app/pages/home/hero/hero.scss: added hero title styles, grid layout and polaroid frame placement (rotated, 12rem wide)
