@@ -1,3 +1,18 @@
 :host {
   display: block;
 }
+
+.hero-section {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  padding-inline: var(--content-padding-inline);
+  color: var(--color-base-light);
+  background: var(--color-base-dark) url('/design-material/backgrounds/hero-3x.webp') center bottom / cover no-repeat;
+}
+
+@media (width > 1440px) {
+  .hero-section {
+    background-image: url('/design-material/backgrounds/paper-rips.webp');
+  }
+}

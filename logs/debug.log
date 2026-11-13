@@ -42,3 +42,5 @@
 - src/app: added :host display block to footer, home, hero, about-me, projects, references, contact, legal-notice, privacy-policy and project-detail styles
 - src/app/pages/home/skills/skills.scss: added :host display block
 - src/app/pages/home/hero/hero.html: added hero structure (greeting, title, polaroid frame, button, social links)
+- src/app/pages/home/hero/hero.scss: added hero section box (100vh, background with torn paper edge) and widescreen background above 1440px
+- public/design-material/icons/: added github, linkedin, mail and waving_hand icons
