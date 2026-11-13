@@ -22,3 +22,5 @@
 - src/styles/: added _variables.scss (Option 3 color and font custom properties) and _fonts.scss (moved @font-face rules)
 - src/styles.scss: replaced inline @font-face rules with @use imports of variables and fonts
 - src/styles/_fonts.scss: removed comments and stray semicolons
+- src/styles/_reset.scss: added global reset (margin, box-sizing, smooth scrolling, link decoration)
+- src/styles.scss: added @use import of reset
