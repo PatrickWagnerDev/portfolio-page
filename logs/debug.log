@@ -56,3 +56,4 @@
 - src/app/pages/home/hero/hero.html, hero.scss: greeting pill hover (text swap with growing pill, overshoot, waving hand) and highlight hover for social buttons
 - src/app/pages/home/hero/hero.ts, hero.html, hero.scss: title split into letters with separate hover layer (case swap and highlight color without flicker), default cursor on title; greeting pill transitions set to 0.6s
 - src/app/pages/home/hero/hero.scss: merged duplicate hero-title rule (kept min-width) and removed unused letter hover rule
+- angular.json: raised anyComponentStyle warning budget from 4kB to 6kB
