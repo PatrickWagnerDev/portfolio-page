@@ -33,3 +33,5 @@
 - src/app/layout/header/header.scss: added hover and focus-visible lines for navigation links
 - src/app/layout/header/header.html: renamed switch-knob class to switch-track
 - src/app/layout/header/header.scss: added language switch styles (track, knob, active language color, focus outline)
+- src/app/pages/: generated page components home (with hero, about-me, skills, projects, references, contact), legal-notice, privacy-policy and project-detail
+- src/app/layout/header/header.scss: removed trailing whitespace
