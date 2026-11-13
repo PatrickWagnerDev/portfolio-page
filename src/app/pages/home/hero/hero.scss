@@ -146,28 +146,6 @@
 .hero-button {
   grid-row: 3;
   justify-self: end;
-  padding: 0.5rem 1.5rem;
-  border: 2px solid var(--color-base-light);
-  border-radius: 2rem;
-  font-weight: 500;
-  color: var(--color-base-light);
-  box-shadow: 0.25rem 0.25rem 0 var(--color-base-light);
-  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-
-  &:hover {
-    background-color: var(--color-highlight-3);
-    box-shadow: none;
-    transform: translate(0.25rem, 0.25rem);
-  }
-
-  &:active {
-    border-color: var(--color-base-dark);
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--color-highlight-1);
-    outline-offset: 4px;
-  }
 }
 
 .social-list {

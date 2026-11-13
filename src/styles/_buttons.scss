@@ -1,0 +1,30 @@
+.outline-button {
+  --button-color: var(--color-base-light);
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--button-color);
+  border-radius: 2rem;
+  font-weight: 500;
+  color: var(--button-color);
+  box-shadow: 0.25rem 0.25rem 0 var(--button-color);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: var(--color-highlight-3);
+    box-shadow: none;
+    color: var(--color-base-light);
+    transform: translate(0.25rem, 0.25rem);
+  }
+
+  &:active {
+    border-color: var(--color-base-dark);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-highlight-1);
+    outline-offset: 4px;
+  }
+}
+
+.outline-button-dark {
+  --button-color: var(--color-base-dark);
+}
