@@ -30,3 +30,4 @@
 - src/styles/_variables.scss: added content max width and content padding variables
 - src/styles/_base.scss: added global body font; imported in src/styles.scss
 - src/app/app.html: changed app-header to self-closing tag
+- src/app/layout/header/header.scss: added hover and focus-visible lines for navigation links

@@ -28,8 +28,44 @@
 }
 
 .nav-link {
+  position: relative;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 500;
   color: var(--color-base-light);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 2rem);
+  aspect-ratio: 316 / 126;
+  background: var(--hover-line) center / contain no-repeat;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  opacity: 1;
+}
+
+.nav-list li:nth-child(1) .nav-link {
+  --hover-line: url('/design-material/lines/header-line-1.webp');
+}
+
+.nav-list li:nth-child(2) .nav-link {
+  --hover-line: url('/design-material/lines/header-line-2.webp');
+}
+
+.nav-list li:nth-child(3) .nav-link {
+  --hover-line: url('/design-material/lines/header-line-4.webp');
+}
+
+.nav-list li:nth-child(4) .nav-link {
+  --hover-line: url('/design-material/lines/header-line-3.webp');
 }
