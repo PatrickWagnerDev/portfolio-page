@@ -4,6 +4,7 @@
 
 .hero-section {
   display: grid;
+  position: relative;
   grid-template-columns: max-content;
   justify-items: start;
   place-content: center;
@@ -79,6 +80,29 @@
     outline: 2px solid var(--color-highlight-1);
     outline-offset: 4px;
   }
+}
+
+.social-list {
+  position: absolute;
+  bottom: 11rem;
+  left: var(--content-padding-inline);
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.social-link {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--color-base-light);
+  border-radius: 50%;
+}
+
+.social-link img {
+  display: block;
 }
 
 @media (width > 1440px) {
