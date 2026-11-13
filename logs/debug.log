@@ -35,3 +35,7 @@
 - src/app/layout/header/header.scss: added language switch styles (track, knob, active language color, focus outline)
 - src/app/pages/: generated page components home (with hero, about-me, skills, projects, references, contact), legal-notice, privacy-policy and project-detail
 - src/app/layout/header/header.scss: removed trailing whitespace
+- src/app/app.routes.ts: added routes for home, project detail, legal notice and privacy policy
+- src/app/pages/home/home.ts, home.html: imported and added the six section components
+- src/app/pages/home/*/*.html: removed generated placeholder content from the section templates
+- src/app/layout/header/header.html: renamed anchor targets to *-section ids
