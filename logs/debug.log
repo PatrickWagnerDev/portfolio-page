@@ -21,3 +21,4 @@
 - public/: moved alternative favicons and monogram images into public/design-material/favicon_alt and public/design-material/monogram
 - src/styles/: added _variables.scss (Option 3 color and font custom properties) and _fonts.scss (moved @font-face rules)
 - src/styles.scss: replaced inline @font-face rules with @use imports of variables and fonts
+- src/styles/_fonts.scss: removed comments and stray semicolons
