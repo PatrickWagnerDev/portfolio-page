@@ -14,3 +14,5 @@
 - src/app/app.spec.ts: restored test 'should render title'
 - src/app/layout/: removed outdated header and footer components
 - src/app/layout/: generated header and footer components in current Angular style (ts, html, scss, spec)
+- public/fonts/: added self-hosted Bricolage Grotesque (400, 500, 700, 800) and Kalam (400) as woff2
+- src/styles.scss: added @font-face rules for Bricolage Grotesque and Kalam
