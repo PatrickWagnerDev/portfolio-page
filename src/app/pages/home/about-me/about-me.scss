@@ -6,27 +6,67 @@
   display: grid;
   grid-template-columns: 1fr 35rem;
   column-gap: 4rem;
-  row-gap: 1.5rem;
-  align-content: center;
+  align-items: center;
   padding: 9rem var(--content-padding-inline);
   color: var(--color-base-dark);
 }
 
 .snippet-list {
-  grid-row: 1 / span 4;
-  grid-column: 1;
-  align-self: center;
+  justify-self: center;
   padding: 0;
   list-style: none;
+
+  li:nth-child(1) {
+    --snippet-paper: url('/design-material/ripped-paper/about-paper-1.webp');
+    --snippet-angle: -4deg;
+    z-index: 3;
+  }
+
+  li:nth-child(2) {
+  --snippet-paper: url('/design-material/ripped-paper/about-paper-3.webp');
+  --snippet-angle: 0deg;
+  --snippet-overlap: -2.8rem;
+  z-index: 2;
 }
 
-.about-heading,
-.about-text,
-.about-button {
-  grid-column: 2;
+  li:nth-child(3) {
+    --snippet-paper: url('/design-material/ripped-paper/about-paper-2.webp');
+    --snippet-angle: 4deg;
+    --snippet-overlap: -2.9rem;
+    z-index: 1;
+  }
+}
+
+.snippet-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 35rem;
+  padding-bottom: 1.5rem;
+  aspect-ratio: 1680 / 456;
+  background: var(--snippet-paper) center / 100% 100% no-repeat;
+  font-size: 1.5rem;
+  color: var(--color-base-light);
+  transform: rotate(var(--snippet-angle));
+
+  & + & {
+    margin-top: var(--snippet-overlap, -1.9rem);
+  }
+}
+
+.snippet-icon {
+  display: block;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .about-button {
-  justify-self: end;
+  align-self: flex-end;
   margin-top: 1.5rem;
 }

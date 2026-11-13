@@ -66,3 +66,4 @@
 - public/design-material/icons/: added located.png and remote.png
 - src/app/pages/home/about-me/about-me.scss: added About me grid layout (two columns, spacing, text color)
 - public/design-material/icons/learning.png: set icon color to base light (#f8f9fa) for all visible pixels
+- src/app/pages/home/about-me/about-me.html, about-me.scss: wrapped text column in an article, styled the paper snippets (rotation, overlap, text position) and changed the location text
