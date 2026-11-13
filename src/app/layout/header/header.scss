@@ -1,0 +1,35 @@
+.header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem var(--content-padding-inline);
+}
+
+.header-logo img {
+  display: block;
+  height: 2.5rem;
+}
+
+.header-nav {
+  flex: 1;
+  margin-inline: 3rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-base-light);
+}

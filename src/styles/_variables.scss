@@ -6,4 +6,6 @@
   --color-highlight-3: #1073ea;
   --font-main: 'Bricolage Grotesque', sans-serif;
   --font-handwritten: 'Kalam', cursive;
+  --content-max-width: 1440px;
+  --content-padding-inline: max(1.5rem, calc((100% - var(--content-max-width)) / 2));
 }

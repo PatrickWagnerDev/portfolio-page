@@ -26,3 +26,7 @@
 - src/styles.scss: added @use import of reset
 - src/app/layout/header/header.html: added header structure (logo, navigation links, language switch)
 - src/app/app.ts, src/app/app.html: imported and added the header component
+- src/app/layout/header/header.scss: added header layout styles (fixed bar, logo, navigation, links)
+- src/styles/_variables.scss: added content max width and content padding variables
+- src/styles/_base.scss: added global body font; imported in src/styles.scss
+- src/app/app.html: changed app-header to self-closing tag
