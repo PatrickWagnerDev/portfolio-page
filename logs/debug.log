@@ -58,3 +58,9 @@
 - src/app/pages/home/hero/hero.scss: merged duplicate hero-title rule (kept min-width) and removed unused letter hover rule
 - angular.json: raised anyComponentStyle warning budget from 4kB to 6kB
 - src/app/layout/header/header.scss: added hover frame for the inactive language (header-toggle, rotated for DE) and restructured with nesting
+- public/design-material/icons/learning.png: created lightbulb icon (40x40, white line style) for the About me snippet
+- public/design-material/icons/learning.png: redrawn with a more hand-drawn look (uneven lines, varying stroke width)
+- src/styles/_buttons.scss, src/styles.scss: added global outline button with dark variant
+- src/app/pages/home/hero/hero.html, hero.scss: hero button now uses the global outline button
+- src/app/pages/home/about-me/about-me.html: added About me structure (snippets, heading, texts, button)
+- public/design-material/icons/: added located.png and remote.png
