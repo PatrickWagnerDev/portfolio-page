@@ -31,3 +31,5 @@
 - src/styles/_base.scss: added global body font; imported in src/styles.scss
 - src/app/app.html: changed app-header to self-closing tag
 - src/app/layout/header/header.scss: added hover and focus-visible lines for navigation links
+- src/app/layout/header/header.html: renamed switch-knob class to switch-track
+- src/app/layout/header/header.scss: added language switch styles (track, knob, active language color, focus outline)

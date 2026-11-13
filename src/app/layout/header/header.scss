@@ -69,3 +69,54 @@
 .nav-list li:nth-child(4) .nav-link {
   --hover-line: url('/design-material/lines/header-line-3.webp');
 }
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-base-light);
+  cursor: pointer;
+}   
+
+.switch-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch-track {
+  position: relative;
+  width: 2rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-highlight-3);
+}
+
+.switch-track::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--color-base-light);
+  border-radius: 50%;
+  background-color: var(--color-highlight-2);
+  transform: translateY(-50%);
+  transition: left 0.2s ease;
+}
+
+.switch-input:checked + .switch-track::after {
+  left: calc(100% - 1rem);
+}
+
+.switch-input:focus-visible + .switch-track {
+  outline: 2px solid var(--color-base-light);
+  outline-offset: 4px;
+}
+
+.language-switch:has(.switch-input:not(:checked)) .language-label:first-child,
+.language-switch:has(.switch-input:checked) .language-label:last-child {
+  color: var(--color-highlight-3);
+}
