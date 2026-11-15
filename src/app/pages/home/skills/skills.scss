@@ -1,3 +1,35 @@
 :host {
   display: block;
 }
+
+.skills-section {
+  display: grid;
+  grid-template-columns: 16rem 1fr 13.5rem;
+  column-gap: 2rem;
+  row-gap: 3.5rem;
+  align-items: center;
+  padding: 11rem calc(var(--content-padding-inline) + 3rem) 12.5rem;
+  color: var(--color-base-light);
+  background: url('/design-material/backgrounds/skills-3x.webp') center bottom / cover no-repeat;
+}
+
+.skills-heading {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.skills-description {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.skills-list {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.skills-sticker {
+  grid-row: 2;
+  grid-column: 3;
+  align-self: start;
+}
