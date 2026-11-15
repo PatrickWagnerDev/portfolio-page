@@ -76,3 +76,5 @@
 - src/app/pages/home/skills/skills.scss: added Skills section grid layout and background
 - src/styles/_headings.scss, src/styles.scss: added global section label and section title classes
 - src/app/pages/home/skills/skills.html, skills.scss: Skills heading uses the global classes, right aligned title with ellipse, first column sized to its content
+- src/app/pages/home/about-me/about-me.html, about-me.scss: About me heading uses the global section label and title classes, duplicate rules removed
+- src/app/pages/home/skills/skills.scss: skill set ellipse now lies behind the title text

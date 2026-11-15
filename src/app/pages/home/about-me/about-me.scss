@@ -23,11 +23,11 @@
   }
 
   li:nth-child(2) {
-  --snippet-paper: url('/design-material/ripped-paper/about-paper-3.webp');
-  --snippet-angle: 0deg;
-  --snippet-overlap: -2.8rem;
-  z-index: 2;
-}
+    --snippet-paper: url('/design-material/ripped-paper/about-paper-3.webp');
+    --snippet-angle: 0deg;
+    --snippet-overlap: -2.8rem;
+    z-index: 2;
+  }
 
   li:nth-child(3) {
     --snippet-paper: url('/design-material/ripped-paper/about-paper-2.webp');
@@ -51,7 +51,7 @@
   color: var(--color-base-light);
   transform: rotate(var(--snippet-angle));
 
-  & + & {
+  &+& {
     margin-top: var(--snippet-overlap, -1.9rem);
   }
 }
@@ -70,19 +70,7 @@
   margin-bottom: 1.25rem;
 }
 
-.about-label {
-  margin-bottom: 0.75rem;
-  font-size: 1.125rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
 .about-title {
-  width: fit-content;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.1;
-
   &::after {
     content: '';
     display: block;

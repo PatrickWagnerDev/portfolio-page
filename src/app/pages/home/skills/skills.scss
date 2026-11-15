@@ -21,12 +21,14 @@
 
 .skills-title {
   position: relative;
+  isolation: isolate;
   margin-left: auto;
 
   &::after {
     content: '';
     position: absolute;
     inset: -0.1rem -0.8rem;
+    z-index: -1;
     background: url('/design-material/lines/skills.webp') center / 100% 100% no-repeat;
     pointer-events: none;
   }
