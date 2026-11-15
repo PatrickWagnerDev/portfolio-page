@@ -4,7 +4,7 @@
 
 .skills-section {
   display: grid;
-  grid-template-columns: 16rem 1fr 13.5rem;
+  grid-template-columns: max-content 1fr 13.5rem;
   column-gap: 2rem;
   row-gap: 3.5rem;
   align-items: center;
@@ -16,6 +16,20 @@
 .skills-heading {
   grid-row: 1;
   grid-column: 1;
+  text-align: right;
+}
+
+.skills-title {
+  position: relative;
+  margin-left: auto;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -0.1rem -0.8rem;
+    background: url('/design-material/lines/skills.webp') center / 100% 100% no-repeat;
+    pointer-events: none;
+  }
 }
 
 .skills-description {
