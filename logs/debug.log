@@ -71,3 +71,5 @@
 - src/app/layout/header/header.scss: nav link hover lines now draw in (right to left for skills, projects, contact; clockwise circle from 55deg for about me)
 - src/styles/_base.scss: registered the --line-angle custom property
 - src/app/layout/header/header.scss: language hover frame is now drawn clockwise with a conic mask (starts bottom right for EN, top left for DE)
+- public/design-material/icons/skills/: added skill icons (renamed folder and files to lowercase kebab-case, interested-in subfolder with python and django)
+- src/app/pages/home/skills/skills.html: added Skills structure (heading, description, icon list, peel sticker content)
