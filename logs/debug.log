@@ -68,3 +68,5 @@
 - public/design-material/icons/learning.png: set icon color to base light (#f8f9fa) for all visible pixels
 - src/app/pages/home/about-me/about-me.html, about-me.scss: wrapped text column in an article, styled the paper snippets (rotation, overlap, text position) and changed the location text
 - src/app/pages/home/about-me/about-me.scss: added heading styles (label, title with underline, text)
+- src/app/layout/header/header.scss: nav link hover lines now draw in (right to left for skills, projects, contact; clockwise circle from 55deg for about me)
+- src/styles/_base.scss: registered the --line-angle custom property

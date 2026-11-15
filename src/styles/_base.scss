@@ -3,3 +3,9 @@ body {
   font-weight: 400;
   background-color: var(--color-base-light);
 }
+
+@property --line-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
