@@ -1,7 +1,7 @@
 <section id="projects-section" class="projects-section">
     <header class="projects-heading">
         <p class="section-label">My craft</p>
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title projects-title">Projects</h2>
         <p class="projects-description">
             Encourage people to take a look and interact with your projects. Highlight your approach to creating
             responsive, user-friendly projects with efficient code.
@@ -13,7 +13,25 @@
             <figure class="project-figure">
                 <img class="project-image" src="/design-material/project-screenshots/join.webp" alt="Join preview">
                 <a class="outline-button project-button" routerLink="/project/join">Project details</a>
-                <figcaption class="project-sticker">Featured project</figcaption>
+                <figcaption class="project-sticker">
+                    <svg class="sticker-text" viewBox="0 0 200 200" role="img"
+                        aria-label="Featured project, check all details">
+                        <defs>
+                            <path id="sticker-arc-top" d="M 38 123 A 66 66 0 1 1 162 123" />
+                            <path id="sticker-arc-bottom" d="M 19 86 A 82 82 0 1 0 181 86" />
+                        </defs>
+                        <text>
+                            <textPath href="#sticker-arc-top" startOffset="50%" text-anchor="middle">Featured Project
+                            </textPath>
+                        </text>
+                        <text>
+                            <textPath href="#sticker-arc-bottom" startOffset="50%" text-anchor="middle">Check all
+                                details</textPath>
+                        </text>
+                        <path class="sticker-wave"
+                            d="M 64 122 C 62 102 68 88 78 88 C 90 88 84 120 98 120 C 110 120 118 98 136 100 M 126 90 L 138 100 L 126 112" />
+                    </svg>
+                </figcaption>
             </figure>
             <h3 class="project-title">Join</h3>
             <p class="project-text">Task manager inspired by the Kanban System. Create and organize tasks using drag and

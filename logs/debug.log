@@ -90,3 +90,4 @@
 - public/design-material/: replaced project_screenshot (PNG) with project-screenshots (WebP, kebab-case: join, the-last-spellbound, pokedex)
 - src/app/pages/home/projects/projects.scss: added Projects layout (two column grid, heading underline, image cards, hover overlay with details button, featured sticker, texts)
 - src/app/pages/home/projects/projects.html: extended the heading description text
+- src/app/pages/home/projects/projects.html, projects.scss: featured sticker as SVG with curved text and wave, details button moved to bottom right, projects title class

@@ -76,28 +76,37 @@
 
 .project-button {
   position: absolute;
-  inset-inline: 0;
+  right: 1.5rem;
   bottom: 1.5rem;
   z-index: 1;
-  width: fit-content;
-  margin-inline: auto;
   opacity: 0;
   transition: opacity 0.3s ease, background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .project-sticker {
   position: absolute;
-  bottom: 2rem;
+  bottom: 0;
   left: 0;
   z-index: 1;
-  display: grid;
-  place-items: center;
-  width: 10.25rem;
+  width: 29%;
   aspect-ratio: 1;
   background: url('/design-material/stickers/round-sticker-blue.webp') center / contain no-repeat;
+}
+
+.sticker-text {
+  display: block;
+  width: 100%;
+  font-size: 26px;
   font-weight: 700;
-  text-align: center;
-  color: var(--color-base-light);
+  fill: var(--color-base-light);
+}
+
+.sticker-wave {
+  fill: none;
+  stroke: var(--color-base-light);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .project-title {
