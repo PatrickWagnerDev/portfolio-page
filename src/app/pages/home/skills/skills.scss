@@ -64,6 +64,11 @@
   justify-items: center;
   gap: 0.5rem;
   text-align: center;
+
+  &:hover .skill-icon {
+    filter: none;
+    transform: scale(0.9);
+  }
 }
 
 .skill-icon {
@@ -72,6 +77,7 @@
 
 .skills-list .skill-icon {
   filter: grayscale(1);
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .skills-sticker {
@@ -107,7 +113,7 @@
   position: absolute;
   opacity: 0;
 
-  &:checked ~ .sticker-front {
+  &:checked~.sticker-front {
     --peel-progress: 105%;
   }
 }
@@ -146,6 +152,7 @@
 
   .skill-icon {
     width: 3rem;
+    filter: grayscale(1);
   }
 }
 
