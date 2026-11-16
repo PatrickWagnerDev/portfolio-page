@@ -104,3 +104,4 @@
 - src/app/pages/home/references/references.scss: all cards use the rough edge paper, card 2 mirrored, card 3 rotated by 180 degrees
 - src/app/pages/home/projects/projects.scss, references/references.scss: reduced the spacing between the Projects and References sections
 - src/app/pages/home/about-me/about-me.scss, skills/skills.scss, projects/projects.scss: reduced vertical section padding (About me 6.5rem, Skills top 8rem, Projects top 5rem)
+- public/contact-form-mail.php: added PHP mail script for the contact form (JSON input, validation, honeypot field, placeholder for the recipient address)
