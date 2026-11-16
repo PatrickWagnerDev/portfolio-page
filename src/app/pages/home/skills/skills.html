@@ -51,17 +51,27 @@
     </ul>
 
     <aside class="skills-sticker">
-        <p class="sticker-text">Pull to peel</p>
-        <p class="sticker-back-text">Also, I'm interested in diving into:</p>
-        <ul class="interested-list">
-            <li class="interested-item">
-                <img class="skill-icon" src="design-material/icons/skills/interested-in/python.png" alt="">
-                <span class="skill-name">Python</span>
-            </li>
-            <li class="interested-item">
-                <img class="skill-icon" src="design-material/icons/skills/interested-in/django.png" alt="">
-                <span class="skill-name">Django</span>
-            </li>
-        </ul>
+        <input class="peel-input" id="peel-toggle" type="checkbox">
+
+        <section class="sticker-back">
+            <p class="sticker-back-text">Also, I'm interested in diving into:</p>
+            <ul class="interested-list">
+                <li class="interested-item">
+                    <img class="skill-icon" src="design-material/icons/skills/interested-in/python.png" alt="">
+                    <span class="skill-name">Python</span>
+                </li>
+                <li class="interested-item">
+                    <img class="skill-icon" src="design-material/icons/skills/interested-in/django.png" alt="">
+                    <span class="skill-name">Django</span>
+                </li>
+            </ul>
+        </section>
+
+        <figure class="sticker-front">
+            <img class="sticker-arrow" src="design-material/stickers/arrow.webp" alt="">
+            <figcaption class="sticker-text">Pull <span class="sticker-word">to</span> peel</figcaption>
+        </figure>
+
+        <label class="sticker-hit" for="peel-toggle" aria-label="Peel the sticker"></label>
     </aside>
 </section>

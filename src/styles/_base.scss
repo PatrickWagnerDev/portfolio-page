@@ -9,3 +9,9 @@ body {
   initial-value: 0deg;
   inherits: false;
 }
+
+@property --peel-progress {
+  syntax: '<percentage>';
+  initial-value: -5%;
+  inherits: false;
+}

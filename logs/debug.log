@@ -81,3 +81,4 @@
 - src/app/pages/home/skills/skills.scss: styled the description with the torn paper background
 - src/app/pages/home/skills/skills.scss: added skill grid (5 columns, grayscale icons, names below)
 - src/app/pages/home/skills/skills.scss: limited the description paper width, added left margin, fixed skill grid column width to 8.5rem
+- src/app/pages/home/skills/skills.html, skills.scss, src/styles/_base.scss: added the peel sticker (front and back layer, hover image swap, diagonal peel on click via checkbox, registered --peel-progress)

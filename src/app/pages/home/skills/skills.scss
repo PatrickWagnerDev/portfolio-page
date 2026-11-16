@@ -75,7 +75,121 @@
 }
 
 .skills-sticker {
+  position: relative;
+  display: grid;
   grid-row: 2;
   grid-column: 3;
   align-self: start;
+  width: 14rem;
+  aspect-ratio: 1;
+  transform: rotate(5deg);
+  color: var(--color-base-light);
+
+  &:has(.peel-input:focus-visible) {
+    outline: 2px solid var(--color-highlight-1);
+    outline-offset: 0.5rem;
+  }
+
+  &:hover .sticker-front::before {
+    opacity: 0;
+  }
+
+  &:hover .sticker-front::after {
+    opacity: 1;
+  }
+
+  &:hover .sticker-word {
+    opacity: 0;
+  }
+}
+
+.peel-input {
+  position: absolute;
+  opacity: 0;
+
+  &:checked ~ .sticker-front {
+    --peel-progress: 105%;
+  }
+}
+
+.sticker-back,
+.sticker-front {
+  grid-area: 1 / 1;
+}
+
+.sticker-back {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  background: url('/design-material/stickers/peel-sticker-c.webp') center / 100% 100% no-repeat;
+  text-align: center;
+}
+
+.sticker-back-text {
+  font-weight: 700;
+}
+
+.interested-list {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.interested-item {
+  display: grid;
+  justify-items: center;
+  gap: 0.25rem;
+  font-size: 1rem;
+
+  .skill-icon {
+    width: 3rem;
+  }
+}
+
+.sticker-front {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  padding: 2.5rem;
+  font-family: var(--font-handwritten);
+  font-size: 2rem;
+  line-height: 1.1;
+  mask-image: linear-gradient(to bottom left, transparent var(--peel-progress), #000 calc(var(--peel-progress) + 4%));
+  transition: --peel-progress 0.7s ease;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    background-image: url('/design-material/stickers/peel-sticker-a.webp');
+  }
+
+  &::after {
+    background-image: url('/design-material/stickers/peel-sticker-b.webp');
+    opacity: 0;
+  }
+}
+
+.sticker-arrow {
+  display: block;
+  width: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sticker-hit {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
 }
