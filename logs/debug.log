@@ -78,3 +78,4 @@
 - src/app/pages/home/skills/skills.html, skills.scss: Skills heading uses the global classes, right aligned title with ellipse, first column sized to its content
 - src/app/pages/home/about-me/about-me.html, about-me.scss: About me heading uses the global section label and title classes, duplicate rules removed
 - src/app/pages/home/skills/skills.scss: skill set ellipse now lies behind the title text
+- src/app/pages/home/skills/skills.scss: styled the description with the torn paper background
