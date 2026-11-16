@@ -103,3 +103,4 @@
 - src/app/pages/home/references/references.ts, references.html, references.scss: last hovered or focused reference card stays in front
 - src/app/pages/home/references/references.scss: all cards use the rough edge paper, card 2 mirrored, card 3 rotated by 180 degrees
 - src/app/pages/home/projects/projects.scss, references/references.scss: reduced the spacing between the Projects and References sections
+- src/app/pages/home/about-me/about-me.scss, skills/skills.scss, projects/projects.scss: reduced vertical section padding (About me 6.5rem, Skills top 8rem, Projects top 5rem)
