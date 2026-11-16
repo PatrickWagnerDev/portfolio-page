@@ -80,3 +80,4 @@
 - src/app/pages/home/skills/skills.scss: skill set ellipse now lies behind the title text
 - src/app/pages/home/skills/skills.scss: styled the description with the torn paper background
 - src/app/pages/home/skills/skills.scss: added skill grid (5 columns, grayscale icons, names below)
+- src/app/pages/home/skills/skills.scss: limited the description paper width, added left margin, fixed skill grid column width to 8.5rem
