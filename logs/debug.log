@@ -88,3 +88,5 @@
 - src/app/pages/home/projects/projects.html, projects.ts: added Projects structure (heading, featured Join, The Last Spellbound, Pokedex with details button, RouterLink)
 - public/design-material/project_screenshot/: added project images (join, the last spellbound, pokedex)
 - public/design-material/: replaced project_screenshot (PNG) with project-screenshots (WebP, kebab-case: join, the-last-spellbound, pokedex)
+- src/app/pages/home/projects/projects.scss: added Projects layout (two column grid, heading underline, image cards, hover overlay with details button, featured sticker, texts)
+- src/app/pages/home/projects/projects.html: extended the heading description text

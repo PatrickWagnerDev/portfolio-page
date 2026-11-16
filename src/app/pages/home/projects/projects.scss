@@ -1,3 +1,114 @@
 :host {
   display: block;
 }
+
+.projects-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 5.5rem;
+  padding: 9rem var(--content-padding-inline);
+  color: var(--color-base-dark);
+}
+
+.projects-heading {
+  align-self: start;
+  padding-top: 3rem;
+}
+
+.projects-title::after {
+  content: '';
+  display: block;
+  aspect-ratio: 1089 / 128;
+  background: url('/design-material/lines/portfolio.webp') center / 100% 100% no-repeat;
+}
+
+.projects-description {
+  margin-top: 3.5rem;
+  font-size: 1.125rem;
+  line-height: 1.35;
+  text-align: justify;
+}
+
+.project-list {
+  display: contents;
+  padding: 0;
+  list-style: none;
+}
+
+.project-figure {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 1.5rem;
+    background: linear-gradient(to top, color-mix(in srgb, var(--color-base-dark) 80%, transparent), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  &:hover::after,
+  &:focus-within::after {
+    opacity: 1;
+  }
+
+  &:hover .project-button,
+  &:focus-within .project-button {
+    opacity: 1;
+  }
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 778 / 553;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+.project-featured .project-image {
+  aspect-ratio: auto;
+  border-radius: 0;
+}
+
+.project-button {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 1.5rem;
+  z-index: 1;
+  width: fit-content;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease, background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.project-sticker {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 10.25rem;
+  aspect-ratio: 1;
+  background: url('/design-material/stickers/round-sticker-blue.webp') center / contain no-repeat;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-base-light);
+}
+
+.project-title {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.project-text {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.35;
+  text-align: justify;
+}
