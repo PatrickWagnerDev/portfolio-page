@@ -4,7 +4,7 @@
 
 .references-section {
   padding: 8rem var(--content-padding-inline) 10rem;
-  color: var(--color-base-light);
+  color: var(--color-base-dark);
 }
 
 .references-heading {
@@ -12,7 +12,6 @@
   flex-direction: column;
   align-items: flex-end;
   margin-bottom: 3rem;
-  color: var(--color-base-dark);
 
   .section-label {
     position: relative;
@@ -40,6 +39,8 @@
 .reference-item {
   --reference-paper: url('/design-material/stickers/testimonial-sticker-a.webp');
   --reference-angle: 0deg;
+  --paper-turn: 0deg;
+  --paper-size: 100%;
   position: relative;
   flex-shrink: 0;
   width: 32rem;
@@ -57,31 +58,56 @@
 
   &:nth-child(2) {
     --reference-paper: url('/design-material/stickers/testimonial-sticker-b.webp');
+    --paper-turn: 90deg;
+    --paper-size: 152.5%;
     z-index: 2;
     margin-top: 2.5rem;
   }
 
   &:nth-child(3) {
     --reference-angle: 4deg;
+    --paper-turn: 180deg;
     z-index: 1;
     margin-left: -10.3rem;
+  }
+
+  &:hover {
+    z-index: 4;
   }
 }
 
 .reference-card {
   position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   padding: 3rem 2.5rem 2.5rem;
-  background: var(--reference-paper) center / 100% 100% no-repeat;
+  border-radius: 1.5rem;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: var(--paper-size);
+    height: var(--paper-size);
+    background: var(--reference-paper) center / 100% 100% no-repeat;
+    transform: translate(-50%, -50%) rotate(var(--paper-turn));
+  }
 
   &::after {
     content: '';
     position: absolute;
-    inset: 0;
+    top: 50%;
+    left: 50%;
+    width: var(--paper-size);
+    height: var(--paper-size);
     background: url('/design-material/stickers/testimonial-line.webp') center / 100% 100% no-repeat;
+    transform: translate(-50%, -50%) rotate(var(--paper-turn));
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
@@ -89,6 +115,10 @@
 
   &:hover::after {
     opacity: 1;
+  }
+
+  &:hover .reference-name {
+    color: var(--color-base-light);
   }
 }
 
@@ -111,6 +141,7 @@
 .reference-name {
   font-size: 1.25rem;
   font-weight: 700;
+  transition: color 0.3s ease;
 }
 
 .reference-role {
