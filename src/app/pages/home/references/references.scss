@@ -104,6 +104,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: -1;
     width: var(--paper-size);
     height: var(--paper-size);
     background: url('/design-material/stickers/testimonial-line.webp') center / 100% 100% no-repeat;

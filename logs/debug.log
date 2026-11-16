@@ -99,3 +99,4 @@
 - src/app/pages/home/references/references.ts, references.html: references now rendered from an array with optional profile link
 - src/app/pages/home/references/references.scss: added References layout (right aligned heading with arrow, three overlapping rotated cards, hover scribble, profile link icon)
 - src/app/pages/home/references/references.scss: card paper and hover scribble rotated per card, text color dark, name turns white on hover, hovered card moves to front
+- src/app/pages/home/references/references.scss: hover scribble now lies behind the card text
