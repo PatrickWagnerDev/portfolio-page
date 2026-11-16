@@ -37,10 +37,10 @@
 }
 
 .reference-item {
-  --reference-paper: url('/design-material/stickers/testimonial-sticker-a.webp');
+  --reference-paper: url('/design-material/stickers/testimonial-sticker-b.webp');
   --reference-angle: 0deg;
   --paper-turn: 0deg;
-  --paper-size: 100%;
+  --paper-flip: 1;
   position: relative;
   flex-shrink: 0;
   width: 32rem;
@@ -57,9 +57,7 @@
   }
 
   &:nth-child(2) {
-    --reference-paper: url('/design-material/stickers/testimonial-sticker-b.webp');
-    --paper-turn: 90deg;
-    --paper-size: 152.5%;
+    --paper-flip: -1;
     z-index: 2;
     margin-top: 2.5rem;
   }
@@ -84,31 +82,23 @@
   justify-content: space-between;
   height: 100%;
   padding: 3rem 2.5rem 2.5rem;
-  border-radius: 1.5rem;
-  overflow: hidden;
 
   &::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
+    inset: 0;
     z-index: -1;
-    width: var(--paper-size);
-    height: var(--paper-size);
     background: var(--reference-paper) center / 100% 100% no-repeat;
-    transform: translate(-50%, -50%) rotate(var(--paper-turn));
+    transform: rotate(var(--paper-turn)) scaleX(var(--paper-flip));
   }
 
   &::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
+    inset: 0;
     z-index: -1;
-    width: var(--paper-size);
-    height: var(--paper-size);
     background: url('/design-material/stickers/testimonial-line.webp') center / 100% 100% no-repeat;
-    transform: translate(-50%, -50%) rotate(var(--paper-turn));
+    transform: rotate(var(--paper-turn)) scaleX(var(--paper-flip));
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;

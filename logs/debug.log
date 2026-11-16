@@ -101,3 +101,4 @@
 - src/app/pages/home/references/references.scss: card paper and hover scribble rotated per card, text color dark, name turns white on hover, hovered card moves to front
 - src/app/pages/home/references/references.scss: hover scribble now lies behind the card text
 - src/app/pages/home/references/references.ts, references.html, references.scss: last hovered or focused reference card stays in front
+- src/app/pages/home/references/references.scss: all cards use the rough edge paper, card 2 mirrored, card 3 rotated by 180 degrees
