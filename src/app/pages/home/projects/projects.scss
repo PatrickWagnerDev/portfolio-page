@@ -61,6 +61,11 @@
   &:focus-within .project-image {
     transform: scale(calc(var(--image-zoom, 1) * 1.08));
   }
+
+  &:hover .project-button,
+  &:focus-within .project-button {
+    opacity: 1;
+  }
 }
 
 .project-image {
