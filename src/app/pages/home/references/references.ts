@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 interface Reference {
   name: string;
@@ -14,6 +14,7 @@ interface Reference {
   templateUrl: './references.html',
 })
 export class References {
+  protected readonly topIndex = signal<number | null>(null);
   protected readonly references: Reference[] = [
     {
       name: 'Tobias Lange',

@@ -5,8 +5,8 @@
     </header>
 
     <ul class="reference-list">
-        @for (reference of references; track reference.name) {
-        <li class="reference-item">
+        @for (reference of references; track reference.name; let index = $index) {
+        <li class="reference-item" [class.reference-top]="topIndex() === index" (mouseenter)="topIndex.set(index)" (focusin)="topIndex.set(index)">
             <blockquote class="reference-card">
                 <p class="reference-text">{{ reference.text }}</p>
                 <footer class="reference-footer">
