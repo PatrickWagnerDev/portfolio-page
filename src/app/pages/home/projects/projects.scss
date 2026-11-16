@@ -59,7 +59,7 @@
 
   &:hover .project-image,
   &:focus-within .project-image {
-    transform: scale(1.08);
+    transform: scale(calc(var(--image-zoom, 1) * 1.08));
   }
 }
 
@@ -70,11 +70,14 @@
   border-radius: 1.5rem;
   object-fit: cover;
   transition: transform 0.4s ease;
+  transform: scale(var(--image-zoom, 1));
 }
 
 .project-featured .project-image {
-  aspect-ratio: auto;
+  --image-zoom: 1.25;
   border-radius: 0;
+  object-fit: contain;
+  transform-origin: 53% 50%;
 }
 
 .project-button {

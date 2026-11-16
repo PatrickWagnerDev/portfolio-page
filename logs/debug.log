@@ -93,3 +93,4 @@
 - src/app/pages/home/projects/projects.html, projects.scss: featured sticker as SVG with curved text and wave, details button moved to bottom right, projects title class
 - public/design-material/: converted new Join screenshot (1400 px) and featured sticker (600 px) to WebP, removed the PNG sources
 - src/app/pages/home/projects/projects.html, projects.scss: featured sticker now uses the image file, project images zoom on hover inside a fixed frame
+- src/app/pages/home/projects/projects.scss: same frame size for all project images, Join laptop enlarged via image zoom variable
