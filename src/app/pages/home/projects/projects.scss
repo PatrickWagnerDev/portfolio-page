@@ -38,6 +38,8 @@
 
 .project-figure {
   position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
 
   &::after {
     content: '';
@@ -55,9 +57,9 @@
     opacity: 1;
   }
 
-  &:hover .project-button,
-  &:focus-within .project-button {
-    opacity: 1;
+  &:hover .project-image,
+  &:focus-within .project-image {
+    transform: scale(1.08);
   }
 }
 
@@ -67,6 +69,7 @@
   aspect-ratio: 778 / 553;
   border-radius: 1.5rem;
   object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
 .project-featured .project-image {
@@ -90,23 +93,7 @@
   z-index: 1;
   width: 29%;
   aspect-ratio: 1;
-  background: url('/design-material/stickers/round-sticker-blue.webp') center / contain no-repeat;
-}
-
-.sticker-text {
-  display: block;
-  width: 100%;
-  font-size: 26px;
-  font-weight: 700;
-  fill: var(--color-base-light);
-}
-
-.sticker-wave {
-  fill: none;
-  stroke: var(--color-base-light);
-  stroke-width: 7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  pointer-events: none;
 }
 
 .project-title {
