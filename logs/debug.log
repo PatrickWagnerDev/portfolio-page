@@ -105,3 +105,5 @@
 - src/app/pages/home/projects/projects.scss, references/references.scss: reduced the spacing between the Projects and References sections
 - src/app/pages/home/about-me/about-me.scss, skills/skills.scss, projects/projects.scss: reduced vertical section padding (About me 6.5rem, Skills top 8rem, Projects top 5rem)
 - public/contact-form-mail.php: added PHP mail script for the contact form (JSON input, validation, honeypot field, placeholder for the recipient address)
+- src/app/pages/home/references/references.scss: cards keep their own height (align-items flex-start), middle card offset 3rem, right card rotation 5deg
+- src/app/pages/home/projects/projects.html: extended The Last Spellbound description

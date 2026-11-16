@@ -31,6 +31,7 @@
 
 .reference-list {
   display: flex;
+  align-items: flex-start;
   justify-content: center;
   padding: 0;
   list-style: none;
@@ -59,11 +60,11 @@
   &:nth-child(2) {
     --paper-flip: -1;
     z-index: 2;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
   }
 
   &:nth-child(3) {
-    --reference-angle: 4deg;
+    --reference-angle: 5deg;
     --paper-turn: 180deg;
     z-index: 1;
     margin-left: -10.3rem;
