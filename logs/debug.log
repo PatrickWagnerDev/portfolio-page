@@ -97,3 +97,4 @@
 - src/app/pages/home/projects/projects.scss: restored the hover rule that shows the project details button
 - src/app/pages/home/references/references.html: added References structure (heading, list of quote cards)
 - src/app/pages/home/references/references.ts, references.html: references now rendered from an array with optional profile link
+- src/app/pages/home/references/references.scss: added References layout (right aligned heading with arrow, three overlapping rotated cards, hover scribble, profile link icon)
