@@ -85,3 +85,5 @@
 - src/app/pages/home/skills/skills.scss: skill icons turn colored and shrink slightly on hover; icons on the sticker back are grayscale
 - src/app/layout/header/header.ts, header.scss: header hides when scrolling down and slides in with a translucent background when scrolling up; background disappears at the top of the page
 - src/app/pages/home/skills/skills.scss: scaled the skills background to 101.2 percent to hide the transparent image margins
+- src/app/pages/home/projects/projects.html, projects.ts: added Projects structure (heading, featured Join, The Last Spellbound, Pokedex with details button, RouterLink)
+- public/design-material/project_screenshot/: added project images (join, the last spellbound, pokedex)
