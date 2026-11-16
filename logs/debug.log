@@ -96,3 +96,4 @@
 - src/app/pages/home/projects/projects.scss: same frame size for all project images, Join laptop enlarged via image zoom variable
 - src/app/pages/home/projects/projects.scss: restored the hover rule that shows the project details button
 - src/app/pages/home/references/references.html: added References structure (heading, list of quote cards)
+- src/app/pages/home/references/references.ts, references.html: references now rendered from an array with optional profile link
