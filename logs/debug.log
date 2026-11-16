@@ -87,3 +87,4 @@
 - src/app/pages/home/skills/skills.scss: scaled the skills background to 101.2 percent to hide the transparent image margins
 - src/app/pages/home/projects/projects.html, projects.ts: added Projects structure (heading, featured Join, The Last Spellbound, Pokedex with details button, RouterLink)
 - public/design-material/project_screenshot/: added project images (join, the last spellbound, pokedex)
+- public/design-material/: replaced project_screenshot (PNG) with project-screenshots (WebP, kebab-case: join, the-last-spellbound, pokedex)
