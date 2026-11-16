@@ -83,3 +83,4 @@
 - src/app/pages/home/skills/skills.scss: limited the description paper width, added left margin, fixed skill grid column width to 8.5rem
 - src/app/pages/home/skills/skills.html, skills.scss, src/styles/_base.scss: added the peel sticker (front and back layer, hover image swap, diagonal peel on click via checkbox, registered --peel-progress)
 - src/app/pages/home/skills/skills.scss: skill icons turn colored and shrink slightly on hover; icons on the sticker back are grayscale
+- src/app/layout/header/header.ts, header.scss: header hides when scrolling down and slides in with a translucent background when scrolling up; background disappears at the top of the page
