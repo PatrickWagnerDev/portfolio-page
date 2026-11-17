@@ -47,7 +47,13 @@
   display: inline-block;
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--color-base-light);
+  color: inherit;
+}
+
+:host(.footer-light) .footer-section {
+  padding-block: 6.5rem 4.75rem;
+  background: none;
+  color: var(--color-base-dark);
 }
 
 .footer-legal {

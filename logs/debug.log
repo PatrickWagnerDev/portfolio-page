@@ -123,3 +123,6 @@
 - src/app/layout/footer/footer.ts: footer variant input (dark or light)
 - src/app/app.html, app.ts, pages/home/home.html, home.ts: footer moved from the app shell into the home page
 - src/app/pages/legal-notice/legal-notice.html, legal-notice.ts: added legal notice structure with light footer
+- src/styles/_legal.scss, src/styles.scss: added shared legal page styles (hero with torn edge, title, content typography)
+- src/app/layout/footer/footer.scss: added light footer variant, footer links inherit the footer text color
+- src/app/pages/legal-notice/legal-notice.html: updated legal notice content
