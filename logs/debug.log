@@ -108,3 +108,4 @@
 - src/app/pages/home/references/references.scss: cards keep their own height (align-items flex-start), middle card offset 3rem, right card rotation 5deg
 - src/app/pages/home/projects/projects.html: extended The Last Spellbound description
 - src/app/pages/home/skills/skills.scss: added bottom padding to the sticker back text
+- src/app/pages/home/contact/contact.html, contact.ts: added Contact structure (intro, form fields, honeypot, privacy checkbox, send button, RouterLink import)
