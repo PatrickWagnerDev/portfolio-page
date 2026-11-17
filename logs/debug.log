@@ -130,3 +130,6 @@
 - src/styles/_legal.scss, src/app/layout/footer/footer.scss: reduced the spacing between legal content and the light footer
 - src/app/layout/header/header.html, header.ts, footer/footer.html, app.config.ts: header and footer logo links use routerLink with fragment so they lead to the main page from sub pages, same url navigation reloads for repeated anchor clicks
 - src/app/pages/privacy-policy/privacy-policy.html, privacy-policy.ts: added privacy policy structure with light footer
+- src/app/pages/privacy-policy/privacy-policy.html: added the German privacy policy text (generated with eRecht24)
+- src/app/pages/legal-notice/legal-notice.html: updated legal notice content
+- src/styles/_legal.scss: added h4 style and spacing between legal sections

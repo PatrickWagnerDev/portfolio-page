@@ -17,7 +17,7 @@
   padding: 0rem calc(var(--content-padding-inline) + 3rem) 0rem;
   color: var(--color-base-dark);
 
-  > * {
+  >* {
     max-width: 64rem;
   }
 
@@ -33,6 +33,12 @@
 
   h3 {
     font-size: 1.25rem;
+  }
+
+  h4 {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   p {
@@ -54,8 +60,12 @@
     color: var(--color-highlight-3);
   }
 
-  :first-child {
+  .legal-section> :first-child {
     margin-top: 0;
+  }
+
+  .legal-section+.legal-section {
+    margin-top: 2.5rem;
   }
 }
 
