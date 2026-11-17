@@ -116,3 +116,5 @@
 - src/styles/_buttons.scss: outline button now has a transparent background and inherits font family and size so it also works on button elements
 - src/styles/_variables.scss: added error color variable
 - src/app/pages/home/contact/contact.html, contact.scss: error messages for name, email, message and privacy policy (privacy message positioned absolutely so the button does not move)
+- src/app/layout/footer/footer.ts, footer.html, footer.scss: added footer (logo, copyright, legal notice with line hover, social links with pill hover and rolling icon)
+- src/app/app.ts, app.html: added the footer component to the app
