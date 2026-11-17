@@ -133,3 +133,4 @@
 - src/app/pages/privacy-policy/privacy-policy.html: added the German privacy policy text (generated with eRecht24)
 - src/app/pages/legal-notice/legal-notice.html: updated legal notice content
 - src/styles/_legal.scss: added h4 style and spacing between legal sections
+- src/app/pages/project-detail/project-data.ts, project-detail.ts, app.config.ts: added project data, route id input binding and next project logic for the project detail page
