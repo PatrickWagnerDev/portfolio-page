@@ -127,3 +127,4 @@
 - src/app/layout/footer/footer.scss: added light footer variant, footer links inherit the footer text color
 - src/app/pages/legal-notice/legal-notice.html: updated legal notice content
 - src/app/app.config.ts: router scrolls to the top on navigation and supports anchor scrolling
+- src/styles/_legal.scss, src/app/layout/footer/footer.scss: reduced the spacing between legal content and the light footer
