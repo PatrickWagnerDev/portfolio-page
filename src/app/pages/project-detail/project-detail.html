@@ -1,1 +1,50 @@
-<p>project-detail works!</p>
+@if (project(); as project) {
+<main class="project-page">
+    <section class="project-info">
+        <a class="back-link" routerLink="/" fragment="projects-section">
+            <img class="back-arrow" src="/design-material/lines/breadcrumb-arrow.webp" alt="">
+            Go Back
+        </a>
+        <h1 class="project-name">{{ project.title }}</h1>
+
+        <article class="project-article">
+            <h2 class="project-heading">Description</h2>
+            <p class="project-copy">{{ project.description }}</p>
+        </article>
+
+        <article class="project-article">
+            <h2 class="project-heading">Implementation Details</h2>
+            <p class="project-copy">{{ project.details }}</p>
+        </article>
+
+        <p class="project-duration"><strong>Duration:</strong> {{ project.duration }}</p>
+
+        <ul class="technology-list">
+            @for (technology of project.technologies; track technology) {
+            <li class="technology-item">
+                <img class="technology-icon" [src]="getIconPath(technology)" alt="">
+                {{ technology }}
+            </li>
+            }
+        </ul>
+    </section>
+
+    <section class="project-preview">
+        <figure class="preview-figure">
+            <img class="preview-image" [src]="project.image" [alt]="project.title + ' preview'">
+            @if (project.featured) {
+            <img class="preview-sticker" src="/design-material/stickers/featured-sticker.webp" alt="Featured project">
+            }
+        </figure>
+        <nav class="preview-links">
+            <a class="outline-button" [attr.href]="project.githubUrl || null" target="_blank" rel="noopener">GitHub</a>
+            <a class="outline-button" [attr.href]="project.liveUrl || null" target="_blank" rel="noopener">Live
+                Test</a>
+        </nav>
+        <a class="next-link" [routerLink]="['/project', nextProject().id]">
+            Next Project
+            <img class="next-arrow" src="/design-material/lines/next-project-arrow.webp" alt="">
+        </a>
+    </section>
+</main>
+}

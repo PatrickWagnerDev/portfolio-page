@@ -15,4 +15,8 @@ export class ProjectDetail {
     const index = PROJECT_INFOS.findIndex((info) => info.id === this.id());
     return PROJECT_INFOS[(index + 1) % PROJECT_INFOS.length];
   });
+
+  protected getIconPath(technology: string): string {
+    return `/design-material/icons/skills/${technology.toLowerCase()}.png`;
+  }
 }
