@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Footer } from '../../layout/footer/footer';
 import { AboutMe } from './about-me/about-me';
 import { Contact } from './contact/contact';
 import { Hero } from './hero/hero';
@@ -7,7 +8,7 @@ import { References } from './references/references';
 import { Skills } from './skills/skills';
 
 @Component({
-  imports: [Hero, AboutMe, Skills, Projects, References, Contact],
+  imports: [Hero, AboutMe, Skills, Projects, References, Contact, Footer],
   selector: 'app-home',
   styleUrl: './home.scss',
   templateUrl: './home.html',
