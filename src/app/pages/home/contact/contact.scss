@@ -48,6 +48,7 @@
 
 .form-field {
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 0.25rem;
   padding: 1rem 1.5rem;
@@ -62,6 +63,10 @@
     .field-label {
       color: var(--color-highlight-3);
     }
+  }
+
+  &.field-invalid:not(:hover, :focus-within) {
+    border-bottom-color: var(--color-base-light);
   }
 }
 
@@ -99,6 +104,7 @@
 
 .privacy-check {
   display: flex;
+  position: relative;
   align-items: flex-start;
   gap: 1rem;
   margin-top: 2.5rem;
@@ -135,6 +141,32 @@
       outline-offset: 3px;
     }
   }
+}
+
+.field-error {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+  font-size: 1.125rem;
+  color: var(--color-error);
+  pointer-events: none;
+}
+
+.field-input:not(:placeholder-shown)~.field-error {
+  display: none;
+}
+
+.field-invalid .field-input::placeholder {
+  color: transparent;
+}
+
+.privacy-error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-error);
 }
 
 .form-button {

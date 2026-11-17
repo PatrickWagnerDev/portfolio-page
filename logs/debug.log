@@ -114,3 +114,5 @@
 - src/app/pages/home/contact/contact.html, contact.scss: added contact sticker with rotating ring text and tilted monogram, field hover and filled states, privacy link hover color
 - src/app/pages/home/contact/contact.ts, contact.html, contact.scss: send button is disabled and transparent until all fields are filled and the privacy box is checked (template driven form)
 - src/styles/_buttons.scss: outline button now has a transparent background and inherits font family and size so it also works on button elements
+- src/styles/_variables.scss: added error color variable
+- src/app/pages/home/contact/contact.html, contact.scss: error messages for name, email, message and privacy policy (privacy message positioned absolutely so the button does not move)
