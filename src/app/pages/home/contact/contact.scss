@@ -41,6 +41,7 @@
 
 .contact-form {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-top: 8.5rem;
 }
@@ -53,14 +54,22 @@
   border-bottom: 1px solid var(--color-highlight-1);
   transition: border-color 0.2s ease;
 
-  &:focus-within {
-    border-bottom-color: var(--color-highlight-3);
+  &:hover,
+  &:focus-within,
+  &:has(.field-input:not(:placeholder-shown)) {
+    border-bottom-color: var(--color-highlight-2);
+
+    .field-label {
+      color: var(--color-highlight-3);
+    }
   }
 }
 
 .field-label {
   font-size: 1.5rem;
   font-weight: 500;
+  line-height: 1.2;
+  transition: color 0.2s ease;
 }
 
 .field-input {
@@ -98,6 +107,12 @@
 
   a {
     color: var(--color-highlight-3);
+    transition: color 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-highlight-1);
+    }
   }
 
   input {
@@ -137,4 +152,42 @@
       transform: none;
     }
   }
+}
+
+.contact-sticker {
+  position: absolute;
+  top: calc(2.8rem - 10.25rem);
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 10.25rem;
+  aspect-ratio: 1;
+  background: url('/design-material/stickers/round-sticker-teal.webp') center / contain no-repeat;
+}
+
+.sticker-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  fill: var(--color-base-dark);
+  animation: ring-spin 20s linear infinite;
+}
+
+@keyframes ring-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticker-ring {
+    animation: none;
+  }
+}
+
+.sticker-monogram {
+  width: 45%;
+  transform: rotate(10deg);
 }
