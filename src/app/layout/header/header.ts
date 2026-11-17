@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 const SCROLL_TOP_LIMIT = 10;
 const SCROLL_STEP_MIN = 5;
 
 @Component({
-  imports: [],
+  imports: [RouterLink],
   selector: 'app-header',
   styleUrl: './header.scss',
   templateUrl: './header.html',
