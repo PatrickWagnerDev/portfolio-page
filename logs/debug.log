@@ -119,3 +119,4 @@
 - src/app/layout/footer/footer.ts, footer.html, footer.scss: added footer (logo, copyright, legal notice with line hover, social links with pill hover and rolling icon)
 - src/app/app.ts, app.html: added the footer component to the app
 - src/app/layout/footer/footer.html, footer.scss: footer logo as masked monogram with header colors, bold links in base light, social link hover in highlight 2, smaller top padding
+- src/app/pages/home/contact/contact.scss, src/app/layout/footer/footer.scss: reduced the spacing between the contact section and the footer (footer bottom padding 2rem)

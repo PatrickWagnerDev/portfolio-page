@@ -7,7 +7,7 @@
   grid-template-columns: 35rem 30rem;
   justify-content: space-between;
   align-items: start;
-  padding: 9rem calc(var(--content-padding-inline) + 3rem) 4rem;
+  padding: 9rem calc(var(--content-padding-inline) + 3rem) 0rem;
   background: url('/design-material/backgrounds/contact-3x.webp') center top / 100% auto no-repeat, linear-gradient(var(--color-base-dark), var(--color-base-dark)) 0 4vw / 100% 100% no-repeat;
   color: var(--color-base-light);
 }
