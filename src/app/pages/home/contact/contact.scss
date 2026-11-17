@@ -1,3 +1,140 @@
 :host {
   display: block;
 }
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 35rem 30rem;
+  justify-content: space-between;
+  align-items: start;
+  padding: 9rem calc(var(--content-padding-inline) + 3rem) 4rem;
+  background: url('/design-material/backgrounds/contact-3x.webp') center top / 100% auto no-repeat, linear-gradient(var(--color-base-dark), var(--color-base-dark)) 0 4vw / 100% 100% no-repeat;
+  color: var(--color-base-light);
+}
+
+.contact-intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-heading {
+  margin-bottom: 3.5rem;
+}
+
+.contact-text {
+  font-size: 1.125rem;
+  line-height: 1.25;
+  text-align: justify;
+
+  &+& {
+    max-width: 28rem;
+    margin-top: 1.75rem;
+    text-align: left;
+  }
+}
+
+.contact-arrow {
+  align-self: flex-end;
+  width: 17rem;
+  margin-top: 3.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8.5rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--color-highlight-1);
+  transition: border-color 0.2s ease;
+
+  &:focus-within {
+    border-bottom-color: var(--color-highlight-3);
+  }
+}
+
+.field-label {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.field-input {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 1.125rem;
+  color: inherit;
+  resize: none;
+  field-sizing: content;
+
+  &::placeholder {
+    color: var(--color-base-light);
+    opacity: 0.85;
+  }
+}
+
+.honeypot-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.privacy-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+
+  a {
+    color: var(--color-highlight-3);
+  }
+
+  input {
+    flex-shrink: 0;
+    width: 1.25rem;
+    aspect-ratio: 1;
+    margin-top: 0.15rem;
+    border: 2px solid var(--color-highlight-3);
+    border-radius: 0.2rem;
+    background: transparent;
+    appearance: none;
+    cursor: pointer;
+
+    &:checked {
+      background: url('/design-material/lines/header-check.webp') center / 130% no-repeat;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-highlight-1);
+      outline-offset: 3px;
+    }
+  }
+}
+
+.form-button {
+  align-self: flex-end;
+  margin-top: 3rem;
+
+  &:disabled {
+    --button-color: color-mix(in srgb, var(--color-base-light) 40%, transparent);
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: transparent;
+      box-shadow: 0.25rem 0.25rem 0 var(--button-color);
+      color: var(--button-color);
+      transform: none;
+    }
+  }
+}

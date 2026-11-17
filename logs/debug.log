@@ -109,3 +109,5 @@
 - src/app/pages/home/projects/projects.html: extended The Last Spellbound description
 - src/app/pages/home/skills/skills.scss: added bottom padding to the sticker back text
 - src/app/pages/home/contact/contact.html, contact.ts: added Contact structure (intro, form fields, honeypot, privacy checkbox, send button, RouterLink import)
+- src/app/pages/home/contact/contact.scss: added Contact layout (dark torn paper background, two columns, form fields, checkbox, disabled send button)
+- src/app/pages/home/skills/skills.scss: adjusted a font size (1.1rem)
