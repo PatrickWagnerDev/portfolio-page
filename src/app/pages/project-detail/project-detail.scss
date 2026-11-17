@@ -1,3 +1,150 @@
 :host {
   display: block;
 }
+
+.project-page {
+  display: grid;
+  grid-template-columns: 30rem 35rem;
+  justify-content: space-between;
+  align-items: start;
+  min-height: 62.5vw;
+  padding: 8rem calc(var(--content-padding-inline) + 3rem) 6rem;
+  background: url('/design-material/backgrounds/notebook-paper-3x.webp') left top / 100% auto no-repeat, var(--color-base-dark);
+}
+
+.project-info {
+  color: var(--color-base-dark);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.back-arrow {
+  width: 1.5rem;
+}
+
+.project-name {
+  position: relative;
+  width: fit-content;
+  margin-top: 3.75rem;
+  padding-bottom: 1.5rem;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background: var(--color-highlight-3);
+  }
+}
+
+.project-article {
+  margin-top: 2.5rem;
+
+  &:first-of-type {
+    margin-top: 3.25rem;
+  }
+}
+
+.project-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.project-copy {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  text-align: justify;
+}
+
+.project-duration {
+  margin-top: 2.5rem;
+  font-size: 1.25rem;
+}
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-top: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.technology-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.technology-icon {
+  width: 2.25rem;
+}
+
+.project-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 5.75rem;
+  color: var(--color-base-light);
+}
+
+.preview-figure {
+  position: relative;
+  width: 100%;
+}
+
+.preview-image {
+  display: block;
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.preview-sticker {
+  position: absolute;
+  top: 35%;
+  right: -8%;
+  width: 21%;
+}
+
+.preview-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.preview-links .outline-button {
+  padding: 0.75rem 2.5rem;
+}
+
+.next-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  &:hover .next-arrow {
+    transform: translateX(0.5rem);
+  }
+}
+
+.next-arrow {
+  width: 2.25rem;
+  transition: transform 0.2s ease;
+}
