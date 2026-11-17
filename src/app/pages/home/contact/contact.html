@@ -12,7 +12,7 @@
         <img class="contact-arrow" src="/design-material/lines/contact.webp" alt="">
     </article>
 
-    <form class="contact-form" novalidate>
+    <form #contactForm="ngForm" class="contact-form" novalidate>
         <aside class="contact-sticker" aria-hidden="true">
             <svg class="sticker-ring" viewBox="0 0 200 200">
                 <defs>
@@ -27,28 +27,28 @@
         </aside>
         <label class="form-field">
             <span class="field-label">What's your name?</span>
-            <input class="field-input" type="text" name="name" placeholder="Your name goes here" autocomplete="name"
-                required>
+            <input class="field-input" type="text" name="name" [(ngModel)]="formData.name"
+                placeholder="Your name goes here" autocomplete="name" required>
         </label>
         <label class="form-field">
             <span class="field-label">What's your email?</span>
-            <input class="field-input" type="email" name="email" placeholder="youremail@email.com" autocomplete="email"
-                required>
+            <input class="field-input" type="email" name="email" [(ngModel)]="formData.email"
+                placeholder="youremail@email.com" autocomplete="email" required email>
         </label>
         <label class="form-field">
             <span class="field-label">How can I help you?</span>
-            <textarea class="field-input" name="message" rows="1" placeholder="Hello Patrick, I am interested in..."
-                required></textarea>
+            <textarea class="field-input" name="message" [(ngModel)]="formData.message" rows="1"
+                placeholder="Hello Patrick, I am interested in..." required></textarea>
         </label>
         <label class="honeypot-field" aria-hidden="true">
             Website
-            <input type="text" name="website" tabindex="-1" autocomplete="off">
+            <input type="text" name="website" [(ngModel)]="formData.website" tabindex="-1" autocomplete="off">
         </label>
         <p class="privacy-check">
-            <input id="privacy-input" type="checkbox" name="privacy" required>
+            <input id="privacy-input" type="checkbox" name="privacy" [(ngModel)]="formData.privacy" required>
             <label for="privacy-input">I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to the
                 processing of my data as outlined.</label>
         </p>
-        <button class="outline-button form-button" type="submit">Send</button>
+        <button class="outline-button form-button" type="submit" [disabled]="contactForm.invalid">Send</button>
     </form>
 </section>

@@ -3,6 +3,9 @@
   padding: 0.5rem 1.5rem;
   border: 2px solid var(--button-color);
   border-radius: 2rem;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: 500;
   color: var(--button-color);
   box-shadow: 0.25rem 0.25rem 0 var(--button-color);
@@ -23,6 +26,10 @@
     outline: 2px solid var(--color-highlight-1);
     outline-offset: 4px;
   }
+}
+
+.outline-button-dark {
+  --button-color: var(--color-base-dark);
 }
 
 .outline-button-dark {

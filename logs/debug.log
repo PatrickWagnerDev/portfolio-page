@@ -112,3 +112,5 @@
 - src/app/pages/home/contact/contact.scss: added Contact layout (dark torn paper background, two columns, form fields, checkbox, disabled send button)
 - src/app/pages/home/skills/skills.scss: adjusted a font size (1.1rem)
 - src/app/pages/home/contact/contact.html, contact.scss: added contact sticker with rotating ring text and tilted monogram, field hover and filled states, privacy link hover color
+- src/app/pages/home/contact/contact.ts, contact.html, contact.scss: send button is disabled and transparent until all fields are filled and the privacy box is checked (template driven form)
+- src/styles/_buttons.scss: outline button now has a transparent background and inherits font family and size so it also works on button elements

@@ -140,17 +140,11 @@
 .form-button {
   align-self: flex-end;
   margin-top: 3rem;
+  cursor: pointer;
 
   &:disabled {
-    --button-color: color-mix(in srgb, var(--color-base-light) 40%, transparent);
-    cursor: not-allowed;
-
-    &:hover {
-      background-color: transparent;
-      box-shadow: 0.25rem 0.25rem 0 var(--button-color);
-      color: var(--button-color);
-      transform: none;
-    }
+    opacity: 0.4;
+    pointer-events: none;
   }
 }
 
