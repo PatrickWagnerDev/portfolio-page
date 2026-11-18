@@ -2,9 +2,9 @@ import { Injectable, signal } from '@angular/core';
 
 export type IntroPhase = 'letters' | 'photo' | 'links' | 'done' | 'skipped';
 
-export const LETTER_STEP_MS = 60;
-const PHOTO_MS = 400;
-const LINKS_MS = 255;
+export const LETTER_STEP_MS = 120;
+const PHOTO_MS = 600;
+const LINKS_MS = 400;
 
 @Injectable({ providedIn: 'root' })
 export class Intro {
