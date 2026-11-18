@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { Reveal } from '../../../shared/reveal/reveal';
 
 @Component({
-  imports: [],
+  imports: [Reveal],
   selector: 'app-skills',
   styleUrl: './skills.scss',
   templateUrl: './skills.html',
