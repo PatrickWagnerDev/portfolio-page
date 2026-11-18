@@ -39,6 +39,24 @@
   margin-top: 3.5rem;
 }
 
+.arrow-image {
+  display: block;
+  width: 100%;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.8s ease var(--reveal-delay, 0ms);
+}
+
+.contact-arrow.reveal-visible .arrow-image {
+  clip-path: inset(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arrow-image {
+    clip-path: none;
+    transition: none;
+  }
+}
+
 .contact-form {
   display: flex;
   position: relative;

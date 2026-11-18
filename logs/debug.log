@@ -168,3 +168,5 @@
 - src/app/pages/home/projects/projects.ts, projects.html, projects.scss: projects title underline is revealed from right to left when scrolled into view
 - src/styles/_base.scss: registered the wipe progress property
 - src/app/pages/home/references/references.ts, references.html, references.scss: references arrow is revealed diagonally from the upper right to the lower left when scrolled into view
+- correction to the previous entry: references arrow is revealed horizontally from right to left with clip-path, the diagonal mask and the wipe progress property were not added
+- src/app/pages/home/contact/contact.ts, contact.html, contact.scss: contact arrow is revealed from left to right when scrolled into view, observer sits on a figure around the image
