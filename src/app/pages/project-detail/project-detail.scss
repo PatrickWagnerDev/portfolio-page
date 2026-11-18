@@ -176,7 +176,7 @@
   padding: 0.75rem 2.5rem;
 }
 
-.project-coming-soon :is(.project-name, .project-article, .project-duration, .technology-list, .preview-figure) {
+.project-coming-soon :is(.project-name, .project-article, .project-duration, .technology-list, .preview-figure, .preview-links) {
   filter: blur(0.25rem);
   user-select: none;
 }

@@ -181,3 +181,4 @@
 - src/app/pages/project-detail/project-data.ts: added the coming soon flag, set for Join
 - src/app/pages/project-detail/project-detail.html: coming soon class on the project page and the coming soon banner
 - src/app/pages/project-detail/project-detail.scss: coming soon banner with torn paper, blurred content except the buttons
+- src/app/pages/project-detail/project-detail.scss: github and live test buttons are blurred on the coming soon project page
