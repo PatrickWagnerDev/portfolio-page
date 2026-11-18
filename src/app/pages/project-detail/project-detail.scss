@@ -6,9 +6,7 @@
   display: grid;
   grid-template-columns: 30rem 35rem;
   justify-content: space-between;
-  align-items: start;
-  min-height: 62.5vw;
-  padding: 8rem calc(var(--content-padding-inline) + 3rem) 6rem;
+  padding: 8rem calc(var(--content-padding-inline) + 3rem) 3rem;
   background: url('/design-material/backgrounds/notebook-paper-3x.webp') left top / 100% auto no-repeat, var(--color-base-dark);
 }
 
@@ -18,19 +16,34 @@
 
 .back-link,
 .next-link {
-  color: inherit;
-}
-
-.back-link {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
+  color: inherit;
 }
 
-.back-arrow {
-  width: 1.5rem;
+.back-link {
+  width: fit-content;
+
+  &:hover .back-arrow {
+    transform: translateX(-0.5rem);
+  }
+}
+
+.next-link {
+  margin-top: 2rem;
+
+  &:hover .next-arrow {
+    transform: translateX(0.5rem);
+  }
+}
+
+.back-arrow,
+.next-arrow {
+  width: 2.25rem;
+  transition: transform 0.2s ease;
 }
 
 .project-name {
@@ -38,11 +51,8 @@
   width: fit-content;
   margin-top: 3.75rem;
   padding-bottom: 1.5rem;
-  font-size: 5rem;
-  font-weight: 700;
-  line-height: 1.1;
 
-  &::after {
+  font-size: &::after {
     content: '';
     position: absolute;
     right: 0;
@@ -103,13 +113,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 5.75rem;
+  padding-top: 5.75rem;
   color: var(--color-base-light);
 }
 
 .preview-figure {
   position: relative;
   width: 100%;
+  margin-bottom: 3rem;
   aspect-ratio: 777 / 553;
 }
 
@@ -137,28 +148,10 @@
 .preview-links {
   display: flex;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: auto;
   font-size: 1.5rem;
 }
 
 .preview-links .outline-button {
   padding: 0.75rem 2.5rem;
-}
-
-.next-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-top: 3rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-
-  &:hover .next-arrow {
-    transform: translateX(0.5rem);
-  }
-}
-
-.next-arrow {
-  width: 2.25rem;
-  transition: transform 0.2s ease;
 }
