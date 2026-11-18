@@ -1,5 +1,5 @@
 @for (project of visibleProjects(); track project.id) {
-<main class="project-page">
+<main class="project-page" [class.project-coming-soon]="project.comingSoon">
     <section class="project-info">
         <a class="back-link" [routerLink]="['/project', previousProject().id]">
             <img class="back-arrow" src="/design-material/lines/breadcrumb-arrow.webp" alt="">
@@ -48,5 +48,9 @@
             <img class="next-arrow" src="/design-material/lines/next-project-arrow.webp" alt="">
         </a>
     </section>
+
+    @if (project.comingSoon) {
+    <p class="coming-soon-banner" role="status">Coming soon...</p>
+    }
 </main>
 }
