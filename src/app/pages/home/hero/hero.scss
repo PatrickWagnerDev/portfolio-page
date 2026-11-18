@@ -64,6 +64,19 @@
   }
 }
 
+:host(.intro-letters) .title-letter {
+  animation: letter-flash 0.12s steps(1) var(--letter-delay, 0ms);
+}
+
+@keyframes letter-flash {
+
+  from,
+  to {
+    color: var(--color-highlight-1);
+    text-transform: var(--hover-case);
+  }
+}
+
 .hero-greeting {
   display: flex;
   position: relative;
@@ -135,6 +148,12 @@
   justify-self: end;
   margin-top: -5rem;
   transform: rotate(8deg);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+:host(.intro-letters) .hero-photo {
+  opacity: 0;
+  transform: rotate(0);
 }
 
 .polaroid-frame {
@@ -156,6 +175,17 @@
   gap: 0.75rem;
   padding: 0;
   list-style: none;
+  transition: opacity 0.255s ease;
+}
+
+:host(.intro-letters) .social-list,
+:host(.intro-photo) .social-list {
+  opacity: 0;
+}
+
+:host(.intro-skipped) .hero-photo,
+:host(.intro-skipped) .social-list {
+  transition: none;
 }
 
 .social-link {
