@@ -45,7 +45,7 @@ export const PROJECT_INFOS: ProjectInfo[] = [
     {
         id: 'pokedex',
         title: 'Pokédex',
-         description: 'Browse the first 1025 Pokémon with their name, type, size, weight and stats. Use the search bar to find your favourite quickly. Data comes from a REST API.',
+        description: 'Browse the first 1025 Pokémon with their name, type, size, weight and stats. Use the search bar to find your favourite quickly. Data comes from a REST API.',
         details: PLACEHOLDER_DETAILS,
         duration: '5 weeks',
         technologies: ['HTML', 'CSS', 'JavaScript', 'REST-API'],

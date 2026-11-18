@@ -38,9 +38,14 @@
 
 .projects-description {
   margin-top: 3.5rem;
+  margin-right: 3.5rem;
   font-size: 1.125rem;
   line-height: 1.35;
   text-align: justify;
+
+  &+& {
+    margin-top: 1.25rem;
+  }
 }
 
 .project-list {

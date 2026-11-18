@@ -189,3 +189,5 @@
 - src/app/pages/home/skills/skills.scss: description strip aspect-ratio adjusted to 2800 / 630
 - src/app/pages/home/projects/projects.html: replaced the placeholder intro with the real projects intro in three paragraphs
 - src/app/pages/project-detail/project-data.ts: replaced the template descriptions with the real project descriptions
+- src/app/pages/home/projects/projects.scss: smaller gap between the intro paragraphs and a right margin on the intro
+- src/app/pages/project-detail/project-data.ts: fixed the indentation of the pokedex description
