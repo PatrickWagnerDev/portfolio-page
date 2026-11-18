@@ -191,3 +191,5 @@
 - src/app/pages/project-detail/project-data.ts: replaced the template descriptions with the real project descriptions
 - src/app/pages/home/projects/projects.scss: smaller gap between the intro paragraphs and a right margin on the intro
 - src/app/pages/project-detail/project-data.ts: fixed the indentation of the pokedex description
+- src/app/pages/home/contact/contact.html: replaced the placeholder text with the real contact text
+- src/app/pages/home/contact/contact.scss: moved the arrow closer to the text (margin-top 0.5rem)
