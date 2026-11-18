@@ -138,3 +138,4 @@
 - src/app/pages/project-detail/project-detail.scss: added project detail styles (notebook paper background with torn edge, text column, preview with sticker, buttons, next project link)
 - src/app/pages/project-detail/project-detail.ts: added previous and next project logic, imports RoundSticker (component follows in the next step)
 - src/app/pages/project-detail/project-detail.html: go back links to the previous project, featured class on the preview figure, round sticker for non featured projects
+- src/app/pages/project-detail/project-detail.scss: fixed aspect ratio for the preview frame, link colors inherit, zoomed contain fit for the featured project

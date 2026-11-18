@@ -16,6 +16,11 @@
   color: var(--color-base-dark);
 }
 
+.back-link,
+.next-link {
+  color: inherit;
+}
+
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -105,12 +110,21 @@
 .preview-figure {
   position: relative;
   width: 100%;
+  aspect-ratio: 777 / 553;
 }
 
 .preview-image {
   display: block;
   width: 100%;
+  height: 100%;
   border-radius: 1.5rem;
+  object-fit: cover;
+}
+
+.preview-featured .preview-image {
+  border-radius: 0;
+  object-fit: contain;
+  transform: scale(1.25);
 }
 
 .preview-sticker {
