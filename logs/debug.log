@@ -210,3 +210,8 @@
 - src/app/pages/legal-notice/legal-notice.html: e-recht24 source added again (label translated)
 - src/app/pages/privacy-policy/privacy-policy.html: e-recht24 source added again at the end
 - public/i18n/en.json, public/i18n/de.json: added the common.source key
+- src/app/pages/privacy-policy/privacy-policy.ts: imports the translate pipe and injects the language service
+- src/app/pages/privacy-policy/privacy-policy.html: title and section 1 use translation keys, english translation notice added, responsible name set to Patrick Wagner
+- src/app/pages/legal-notice/legal-notice.html: phone number with +49, responsible name set to Patrick Wagner
+- public/i18n/en.json, public/i18n/de.json: privacy policy section 1 and the translation notice added
+- public/i18n/en.json: translation notice extended with "in case of discrepancies"
