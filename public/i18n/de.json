@@ -1,4 +1,7 @@
 {
+  "common": {
+    "source": "Quelle"
+  },
   "legalNotice": {
     "title": "Impressum",
     "country": "Deutschland",

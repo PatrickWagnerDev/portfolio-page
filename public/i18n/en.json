@@ -1,4 +1,7 @@
 {
+  "common": {
+    "source": "Source"
+  },
   "legalNotice": {
     "title": "Legal notice",
     "country": "Germany",
