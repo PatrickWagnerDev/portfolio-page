@@ -19,7 +19,7 @@
         <label class="form-field" [class.field-invalid]="nameField.invalid && nameField.touched">
             <span class="field-label">What's your name?</span>
             <input class="field-input" type="text" name="name" #nameField="ngModel" [(ngModel)]="formData.name"
-                placeholder="Your name goes here" autocomplete="name" required>
+                placeholder="Your name goes here" autocomplete="name" maxlength="100" required>
             @if (nameField.invalid && nameField.touched) {
             <span class="field-error" role="alert">Oops! it seems your name is missing</span>
             }
@@ -27,7 +27,7 @@
         <label class="form-field" [class.field-invalid]="emailField.invalid && emailField.touched">
             <span class="field-label">What's your email?</span>
             <input class="field-input" type="email" name="email" #emailField="ngModel" [(ngModel)]="formData.email"
-                placeholder="youremail@email.com" autocomplete="email" required email>
+                placeholder="youremail@email.com" autocomplete="email" maxlength="100" required email>
             @if (emailField.invalid && emailField.touched) {
             <span class="field-error" role="alert">Hoppla! your email is required</span>
             }
@@ -35,7 +35,7 @@
         <label class="form-field" [class.field-invalid]="messageField.invalid && messageField.touched">
             <span class="field-label">How can I help you?</span>
             <textarea class="field-input" name="message" #messageField="ngModel" [(ngModel)]="formData.message" rows="1"
-                placeholder="Hello Patrick, I am interested in..." required></textarea>
+                placeholder="Hello Patrick, I am interested in..." maxlength="5000" required></textarea>
             @if (messageField.invalid && messageField.touched) {
             <span class="field-error" role="alert">What do you need to develop?</span>
             }
@@ -54,7 +54,7 @@
             }
         </p>
         <button class="outline-button form-button" type="submit"
-            [disabled]="contactForm.invalid || status() === 'sending'"> {{ status() === 'sending' ? 'Sending…' : 'Send'
+            [disabled]="contactForm.invalid || status() === 'sending'">{{ status() === 'sending' ? 'Sending…' : 'Send'
             }}</button>
         @switch (status()) {
         @case ('sent') {
