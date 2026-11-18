@@ -150,3 +150,4 @@
 - src/app/pages/home/projects/projects.ts, projects.html: projects section renders from the shared project data
 - src/app/shared/reveal/reveal.ts, src/styles/_reveal.scss, src/styles.scss: added scroll reveal directive with IntersectionObserver and reveal styles
 - src/app/pages/project-detail/project-detail.scss: project title underline uses about-me.webp stretched to the title width
+- src/app/shared/reveal: removed unused generated html, scss and spec files of the reveal directive
