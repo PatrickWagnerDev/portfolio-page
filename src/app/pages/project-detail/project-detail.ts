@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { Reveal } from '../../shared/reveal/reveal';
 import { RoundSticker } from '../../shared/round-sticker/round-sticker';
 import { PROJECT_INFOS, ProjectInfo } from './project-data';
+
 @Component({
   imports: [RouterLink, RoundSticker, Reveal],
   selector: 'app-project-detail',
@@ -11,7 +12,7 @@ import { PROJECT_INFOS, ProjectInfo } from './project-data';
 })
 export class ProjectDetail {
   id = input.required<string>();
-  protected project = computed(() => PROJECT_INFOS.find((info) => info.id === this.id()));
+  protected visibleProjects = computed(() => PROJECT_INFOS.filter((info) => info.id === this.id()));
   protected previousProject = computed(() => this.getNeighbor(-1));
   protected nextProject = computed(() => this.getNeighbor(1));
 

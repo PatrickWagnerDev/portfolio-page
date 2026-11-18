@@ -171,3 +171,4 @@
 - correction to the previous entry: references arrow is revealed horizontally from right to left with clip-path, the diagonal mask and the wipe progress property were not added
 - src/app/pages/home/contact/contact.ts, contact.html, contact.scss: contact arrow is revealed from left to right when scrolled into view, observer sits on a figure around the image
 - src/app/pages/project-detail/project-detail.ts, project-detail.html, project-detail.scss: project title underline is revealed from left to right
+- src/app/pages/project-detail/project-detail.ts, project-detail.html: project content is rebuilt when the project changes so the title underline plays again

@@ -1,4 +1,4 @@
-@if (project(); as project) {
+@for (project of visibleProjects(); track project.id) {
 <main class="project-page">
     <section class="project-info">
         <a class="back-link" [routerLink]="['/project', previousProject().id]">
