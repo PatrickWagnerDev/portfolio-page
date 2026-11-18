@@ -28,6 +28,15 @@
       "rightsTitle": "What rights do you have regarding your data?",
       "rightsText1": "You have the right at any time to receive information free of charge about the origin, recipients and purpose of your stored personal data. You also have the right to request that this data be corrected or deleted. If you have given consent to data processing, you can revoke this consent at any time with effect for the future. You also have the right, under certain circumstances, to request the restriction of the processing of your personal data. Furthermore, you have the right to lodge a complaint with the competent supervisory authority.",
       "rightsText2": "You can contact us at any time about this and any other questions on data protection."
+    },
+    "hosting": {
+      "title": "2. Hosting",
+      "intro": "We host the content of our website with the following provider:",
+      "providerText": "The provider is Strato AG, Otto-Ostrowski-Straße 7, 10249 Berlin, Germany (hereinafter “Strato”). When you visit our website, Strato collects various log files, including your IP addresses.",
+      "policyText": "For more information, please refer to Strato’s privacy policy:",
+      "basisText": "Strato is used on the basis of Art. 6(1)(f) GDPR. We have a legitimate interest in presenting our website as reliably as possible. If the relevant consent has been requested, processing takes place exclusively on the basis of Art. 6(1)(a) GDPR and Section 25(1) TDDDG, insofar as the consent includes the storage of cookies or access to information in the user’s end device (e.g. device fingerprinting) within the meaning of the TDDDG. Consent can be revoked at any time.",
+      "processorTitle": "Data processing agreement",
+      "processorText": "We have concluded a data processing agreement (DPA) for the use of the above-mentioned service. This is a contract required by data protection law, which ensures that the service processes the personal data of our website visitors only in accordance with our instructions and in compliance with the GDPR."
     }
   }
 }

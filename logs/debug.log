@@ -215,3 +215,5 @@
 - src/app/pages/legal-notice/legal-notice.html: phone number with +49, responsible name set to Patrick Wagner
 - public/i18n/en.json, public/i18n/de.json: privacy policy section 1 and the translation notice added
 - public/i18n/en.json: translation notice extended with "in case of discrepancies"
+- src/app/pages/privacy-policy/privacy-policy.html: section 2 (hosting) uses translation keys
+- public/i18n/en.json, public/i18n/de.json: privacy policy section 2 added, country added to the Strato address
