@@ -147,3 +147,4 @@
 - src/app/pages/project-detail/project-detail.scss: fixed broken syntax in the project name rule and removed leftover duplicate lines
 - src/app/pages/project-detail/project-detail.scss: smaller gap below go back, next project below the content, preview image vertically centered to the left content
 - src/app/layout/header/header.ts: header always has the dark translucent background on project pages
+- src/app/pages/home/projects/projects.ts, projects.html: projects section renders from the shared project data

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { PROJECT_INFOS } from '../../project-detail/project-data';
 
 @Component({
   imports: [RouterLink],
@@ -7,4 +8,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './projects.scss',
   templateUrl: './projects.html',
 })
-export class Projects {}
+export class Projects {
+  protected readonly projects = PROJECT_INFOS;
+}
