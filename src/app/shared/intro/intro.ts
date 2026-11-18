@@ -2,7 +2,8 @@ import { Injectable, signal } from '@angular/core';
 
 export type IntroPhase = 'letters' | 'photo' | 'links' | 'done' | 'skipped';
 
-export const LETTER_STEP_MS = 120;
+export const LETTER_STEP_MS = 100;
+const LETTER_FLASH_MS = 200;
 const PHOTO_MS = 600;
 const LINKS_MS = 400;
 
@@ -13,7 +14,7 @@ export class Intro {
 
     start(letterCount: number): void {
         if (this.phase() !== 'letters') return;
-        const LETTERS_END = letterCount * LETTER_STEP_MS;
+        const LETTERS_END = (letterCount - 1) * LETTER_STEP_MS + LETTER_FLASH_MS;
         window.addEventListener('scroll', () => this.skip(), { once: true });
         this.schedule('photo', LETTERS_END);
         this.schedule('links', LETTERS_END + PHOTO_MS);

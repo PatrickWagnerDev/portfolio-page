@@ -7,6 +7,7 @@ interface TitleLetter {
 }
 
 const TITLE_WORDS = ['Frontend', 'Developer'];
+const LETTER_COUNT = Math.max(...TITLE_WORDS.map((word) => word.length));
 
 @Component({
   imports: [],
@@ -25,19 +26,16 @@ export class Hero implements OnInit {
   readonly titleLines = this.buildTitleLines();
 
   ngOnInit(): void {
-    this.intro.start(TITLE_WORDS.join('').length);
+    this.intro.start(LETTER_COUNT);
   }
 
   private buildTitleLines(): TitleLetter[][] {
-    let letterOffset = 0;
     return TITLE_WORDS.map((word, wordIndex) => {
       const LETTERS = word.split('');
-      const LINE = LETTERS.map((char, index) => {
+      return LETTERS.map((char, index) => {
         const STEP = wordIndex === 0 ? index : LETTERS.length - 1 - index;
-        return { char, delay: (letterOffset + STEP) * LETTER_STEP_MS };
+        return { char, delay: STEP * LETTER_STEP_MS };
       });
-      letterOffset += LETTERS.length;
-      return LINE;
     });
   }
 }

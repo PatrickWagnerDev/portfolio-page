@@ -65,7 +65,7 @@
 }
 
 :host(.intro-letters) .title-letter {
-  animation: letter-flash 0.16s steps(1) var(--letter-delay, 0ms);
+  animation: letter-flash 0.2s steps(1) var(--letter-delay, 0ms);
 }
 
 @keyframes letter-flash {
