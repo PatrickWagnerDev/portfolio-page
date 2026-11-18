@@ -76,6 +76,16 @@
       "tlsText2": "If SSL or TLS encryption is activated, the data you transmit to us cannot be read by third parties.",
       "advertisingTitle": "Objection to promotional emails",
       "advertisingText": "We hereby object to the use of contact data published within the scope of the obligation to provide a legal notice for sending promotional and information materials that have not been expressly requested. The operators of this website expressly reserve the right to take legal action in the event of the unsolicited sending of advertising information, such as spam emails."
+    },
+    "collection": {
+      "title": "4. Data collection on this website",
+      "contactTitle": "Contact form",
+      "contactText1": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent.",
+      "legalBasisText": "This data is processed on the basis of Art. 6(1)(b) GDPR, if your inquiry is related to the performance of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective handling of inquiries addressed to us (Art. 6(1)(f) GDPR) or on your consent (Art. 6(1)(a) GDPR) if this has been requested; consent can be revoked at any time.",
+      "contactText2": "The data you enter in the contact form will remain with us until you ask us to delete it, revoke your consent to its storage, or the purpose for storing the data no longer applies (e.g. after your inquiry has been processed). Mandatory statutory provisions – in particular retention periods – remain unaffected.",
+      "requestTitle": "Inquiry by email, telephone or fax",
+      "requestText1": "If you contact us by email, telephone or fax, your inquiry, including all resulting personal data (name, inquiry), will be stored and processed by us for the purpose of handling your request. We do not pass on this data without your consent.",
+      "requestText2": "The data sent to us via contact inquiries will remain with us until you ask us to delete it, revoke your consent to its storage, or the purpose for storing the data no longer applies (e.g. after your request has been processed). Mandatory statutory provisions – in particular statutory retention periods – remain unaffected."
     }
   }
 }
