@@ -148,3 +148,5 @@
 - src/app/pages/project-detail/project-detail.scss: smaller gap below go back, next project below the content, preview image vertically centered to the left content
 - src/app/layout/header/header.ts: header always has the dark translucent background on project pages
 - src/app/pages/home/projects/projects.ts, projects.html: projects section renders from the shared project data
+- src/app/shared/reveal/reveal.ts, src/styles/_reveal.scss, src/styles.scss: added scroll reveal directive with IntersectionObserver and reveal styles
+- src/app/pages/project-detail/project-detail.scss: project title underline uses about-me.webp stretched to the title width
