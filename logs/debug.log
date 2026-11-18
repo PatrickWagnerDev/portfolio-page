@@ -170,3 +170,4 @@
 - src/app/pages/home/references/references.ts, references.html, references.scss: references arrow is revealed diagonally from the upper right to the lower left when scrolled into view
 - correction to the previous entry: references arrow is revealed horizontally from right to left with clip-path, the diagonal mask and the wipe progress property were not added
 - src/app/pages/home/contact/contact.ts, contact.html, contact.scss: contact arrow is revealed from left to right when scrolled into view, observer sits on a figure around the image
+- src/app/pages/project-detail/project-detail.ts, project-detail.html, project-detail.scss: project title underline is revealed from left to right
