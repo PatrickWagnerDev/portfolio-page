@@ -1,7 +1,7 @@
 @if (project(); as project) {
 <main class="project-page">
     <section class="project-info">
-        <a class="back-link" routerLink="/" fragment="projects-section">
+        <a class="back-link" [routerLink]="['/project', previousProject().id]">
             <img class="back-arrow" src="/design-material/lines/breadcrumb-arrow.webp" alt="">
             Go Back
         </a>
@@ -30,10 +30,12 @@
     </section>
 
     <section class="project-preview">
-        <figure class="preview-figure">
+        <figure class="preview-figure" [class.preview-featured]="project.featured">
             <img class="preview-image" [src]="project.image" [alt]="project.title + ' preview'">
             @if (project.featured) {
             <img class="preview-sticker" src="/design-material/stickers/featured-sticker.webp" alt="Featured project">
+            } @else {
+            <app-round-sticker class="preview-sticker" color="green" />
             }
         </figure>
         <nav class="preview-links">
