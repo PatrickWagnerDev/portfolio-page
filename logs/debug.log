@@ -217,3 +217,6 @@
 - public/i18n/en.json: translation notice extended with "in case of discrepancies"
 - src/app/pages/privacy-policy/privacy-policy.html: section 2 (hosting) uses translation keys
 - public/i18n/en.json, public/i18n/de.json: privacy policy section 2 added, country added to the Strato address
+- src/app/pages/privacy-policy/privacy-policy.html: section 3 part 1 (data protection to revocation of consent) uses translation keys, country line added to the controller address
+- src/app/pages/legal-notice/legal-notice.html: country, phone and email labels use the common keys
+- public/i18n/en.json, public/i18n/de.json: country, phone and email moved to common, privacy policy section 3 part 1 added, german law reference kept in the english hosting text

@@ -1,13 +1,13 @@
 {
   "common": {
-    "source": "Source"
+    "source": "Source",
+    "country": "Germany",
+    "phone": "Phone",
+    "email": "Email"
   },
   "legalNotice": {
     "title": "Legal notice",
-    "country": "Germany",
     "contact": "Contact",
-    "phone": "Phone",
-    "email": "Email",
     "responsible": "Responsible for content"
   },
   "privacy": {
@@ -34,9 +34,27 @@
       "intro": "We host the content of our website with the following provider:",
       "providerText": "The provider is Strato AG, Otto-Ostrowski-Straße 7, 10249 Berlin, Germany (hereinafter “Strato”). When you visit our website, Strato collects various log files, including your IP addresses.",
       "policyText": "For more information, please refer to Strato’s privacy policy:",
-      "basisText": "Strato is used on the basis of Art. 6(1)(f) GDPR. We have a legitimate interest in presenting our website as reliably as possible. If the relevant consent has been requested, processing takes place exclusively on the basis of Art. 6(1)(a) GDPR and Section 25(1) TDDDG, insofar as the consent includes the storage of cookies or access to information in the user’s end device (e.g. device fingerprinting) within the meaning of the TDDDG. Consent can be revoked at any time.",
+      "basisText": "Strato is used on the basis of Art. 6(1)(f) GDPR. We have a legitimate interest in presenting our website as reliably as possible. If the relevant consent has been requested, processing takes place exclusively on the basis of Art. 6(1)(a) GDPR and § 25 Abs. 1 TDDDG, insofar as the consent includes the storage of cookies or access to information in the user’s end device (e.g. device fingerprinting) within the meaning of the TDDDG. Consent can be revoked at any time.",
       "processorTitle": "Data processing agreement",
       "processorText": "We have concluded a data processing agreement (DPA) for the use of the above-mentioned service. This is a contract required by data protection law, which ensures that the service processes the personal data of our website visitors only in accordance with our instructions and in compliance with the GDPR."
+    },
+    "general": {
+      "title": "3. General information and mandatory disclosures",
+      "protectionTitle": "Data protection",
+      "protectionText1": "The operators of this website take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.",
+      "protectionText2": "When you use this website, various personal data is collected. Personal data is data that can be used to identify you personally. This privacy policy explains what data we collect and what we use it for. It also explains how and for what purpose this is done.",
+      "protectionText3": "Please note that data transmission over the internet (e.g. when communicating by email) may have security vulnerabilities. Complete protection of data against access by third parties is not possible.",
+      "controllerTitle": "Information on the controller",
+      "controllerIntro": "The controller responsible for data processing on this website is:",
+      "controllerDefinition": "The controller is the natural or legal person who, alone or jointly with others, determines the purposes and means of the processing of personal data (e.g. names, email addresses or the like).",
+      "retentionTitle": "Storage period",
+      "retentionText": "Unless a more specific storage period has been stated within this privacy policy, your personal data will remain with us until the purpose for the data processing no longer applies. If you assert a justified request for deletion or revoke your consent to data processing, your data will be deleted, unless we have other legally permissible reasons for storing your personal data (e.g. retention periods under tax or commercial law); in the latter case, the data will be deleted once these reasons no longer apply.",
+      "legalBasisTitle": "General information on the legal basis for data processing on this website",
+      "legalBasisText": "If you have consented to data processing, we process your personal data on the basis of Art. 6(1)(a) GDPR or Art. 9(2)(a) GDPR, where special categories of data are processed in accordance with Art. 9(1) GDPR. In the case of explicit consent to the transfer of personal data to third countries, data processing is also based on Art. 49(1)(a) GDPR. If you have consented to the storage of cookies or to access to information on your end device (e.g. via device fingerprinting), data processing is additionally based on § 25 Abs. 1 TDDDG. Consent can be revoked at any time. If your data is required for the performance of a contract or for the implementation of pre-contractual measures, we process your data on the basis of Art. 6(1)(b) GDPR. Furthermore, we process your data where this is necessary to comply with a legal obligation, on the basis of Art. 6(1)(c) GDPR. Data processing may also take place on the basis of our legitimate interest pursuant to Art. 6(1)(f) GDPR. The legal bases that apply in each individual case are explained in the following paragraphs of this privacy policy.",
+      "recipientsTitle": "Recipients of personal data",
+      "recipientsText": "In the course of our business activities, we work with various external parties. In some cases, this also requires the transfer of personal data to these external parties. We only pass on personal data to external parties if this is necessary for the performance of a contract, if we are legally obliged to do so (e.g. passing data on to tax authorities), if we have a legitimate interest in the disclosure pursuant to Art. 6(1)(f) GDPR, or if another legal basis permits the disclosure. When using processors, we only pass on our customers’ personal data on the basis of a valid data processing agreement. In the case of joint processing, a joint processing agreement is concluded.",
+      "revocationTitle": "Revocation of your consent to data processing",
+      "revocationText": "Many data processing operations are only possible with your express consent. You can revoke consent you have already given at any time. The lawfulness of the data processing carried out until the revocation remains unaffected by the revocation."
     }
   }
 }
