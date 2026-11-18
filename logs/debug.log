@@ -144,3 +144,4 @@
 - src/app/shared/round-sticker/round-sticker.scss: added round sticker styles (ring animation, monogram, green variant)
 - src/app/pages/home/contact/contact.html, contact.scss, contact.ts: contact sticker now uses the shared round sticker component
 - src/app/pages/project-detail/project-detail.scss: columns stretch to equal height with buttons and next link at the bottom, shared style and hover for go back and next project, removed the extra space below the content
+- src/app/pages/project-detail/project-detail.scss: fixed broken syntax in the project name rule and removed leftover duplicate lines
