@@ -10,12 +10,12 @@
     <span class="title-line" aria-hidden="true">
       <span class="line-visible">
         @for (letter of line; track $index) {
-        <span class="title-letter">{{ letter }}</span>
+        <span class="title-letter" [style.--letter-delay]="letter.delay + 'ms'">{{ letter.char }}</span>
         }
       </span>
       <span class="line-hit">
         @for (letter of line; track $index) {
-        <span class="hit-letter">{{ letter }}</span>
+        <span class="hit-letter">{{ letter.char }}</span>
         }
       </span>
     </span>
