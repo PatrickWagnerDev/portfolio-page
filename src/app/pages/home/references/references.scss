@@ -25,7 +25,20 @@
       aspect-ratio: 300 / 108;
       background: url('/design-material/lines/testimonials.webp') center / 100% 100% no-repeat;
       transform: translateY(-35%);
+      clip-path: inset(0 0 0 100%);
+      transition: clip-path 0.6s ease var(--reveal-delay, 0ms);
     }
+
+    &.reveal-visible::before {
+      clip-path: inset(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .references-heading .section-label::before {
+    clip-path: none;
+    transition: none;
   }
 }
 

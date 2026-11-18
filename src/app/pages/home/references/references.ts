@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { Reveal } from '../../../shared/reveal/reveal';
 
 interface Reference {
   name: string;
@@ -8,7 +9,7 @@ interface Reference {
 }
 
 @Component({
-  imports: [],
+  imports: [Reveal],
   selector: 'app-references',
   styleUrl: './references.scss',
   templateUrl: './references.html',
