@@ -1,7 +1,8 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter, map } from 'rxjs';
+import { Intro } from '../../shared/intro/intro';
 
 const SCROLL_TOP_LIMIT = 10;
 const SCROLL_STEP_MIN = 5;
@@ -16,12 +17,16 @@ const PROJECT_PATH = '/project/';
     '(window:scroll)': 'handleScroll()',
     '[class.header-hidden]': 'isHeaderHidden()',
     '[class.header-solid]': 'hasHeaderBackground() || isProjectPage()',
+    '[class.header-intro-hidden]': 'isIntroPending()',
+    '[class.header-intro-skipped]': "introPhase() === 'skipped'",
   },
 })
 export class Header {
   readonly isHeaderHidden = signal(false);
   readonly hasHeaderBackground = signal(false);
   private readonly router = inject(Router);
+  readonly introPhase = inject(Intro).phase;
+  readonly isIntroPending = computed(() => this.introPhase() === 'letters' || this.introPhase() === 'photo');
   readonly isProjectPage = toSignal(
     this.router.events.pipe(
       filter((event): event is NavigationEnd => event instanceof NavigationEnd),
