@@ -195,3 +195,4 @@
 - src/app/pages/home/contact/contact.scss: moved the arrow closer to the text (margin-top 0.5rem)
 - src/app/layout/footer/footer.scss: removed the top padding of the footer section
 - src/app/pages/project-detail/project-data.ts: real implementation details, duration (2 weeks) and GitHub link for The Last Spellbound
+- src/app/pages/project-detail/project-data.ts: real implementation details, duration (1 week), GitHub and live links for the Pokedex; live link for The Last Spellbound
