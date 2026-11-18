@@ -180,3 +180,4 @@
 - src/app/pages/home/hero/hero.html: LinkedIn and GitHub links open in a new tab
 - src/app/pages/project-detail/project-data.ts: added the coming soon flag, set for Join
 - src/app/pages/project-detail/project-detail.html: coming soon class on the project page and the coming soon banner
+- src/app/pages/project-detail/project-detail.scss: coming soon banner with torn paper, blurred content except the buttons

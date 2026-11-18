@@ -5,9 +5,11 @@
 .project-page {
   --next-space: 4.75rem;
   display: grid;
+  position: relative;
   grid-template-columns: 30rem 35rem;
   justify-content: space-between;
   padding: 8rem calc(var(--content-padding-inline) + 3rem) 3rem;
+  overflow-x: clip;
   background: url('/design-material/backgrounds/notebook-paper-3x.webp') left top / 100% auto no-repeat, var(--color-base-dark);
 }
 
@@ -172,4 +174,27 @@
 
 .preview-links .outline-button {
   padding: 0.75rem 2.5rem;
+}
+
+.project-coming-soon :is(.project-name, .project-article, .project-duration, .technology-list, .preview-figure) {
+  filter: blur(0.25rem);
+  user-select: none;
+}
+
+.coming-soon-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: min(70rem, 92%);
+  aspect-ratio: 1959 / 432;
+  padding-bottom: 1rem;
+  background: url('/design-material/ripped-paper/skills-description-alt.webp') center / 100% 100% no-repeat;
+  font-family: var(--font-handwritten);
+  font-size: 5.5rem;
+  color: var(--color-base-dark);
+  transform: translate(-50%, -50%) rotate(-6deg);
+  pointer-events: none;
 }
