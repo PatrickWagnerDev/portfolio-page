@@ -14,7 +14,7 @@
         </figure>
     </article>
 
-    <form #contactForm="ngForm" class="contact-form" novalidate>
+    <form #contactForm="ngForm" class="contact-form" novalidate (ngSubmit)="submitForm(contactForm)">
         <app-round-sticker class="contact-sticker" />
         <label class="form-field" [class.field-invalid]="nameField.invalid && nameField.touched">
             <span class="field-label">What's your name?</span>
@@ -53,6 +53,16 @@
             <span class="privacy-error" role="alert">Please accept the privacy policy.</span>
             }
         </p>
-        <button class="outline-button form-button" type="submit" [disabled]="contactForm.invalid">Send</button>
+        <button class="outline-button form-button" type="submit"
+            [disabled]="contactForm.invalid || status() === 'sending'"> {{ status() === 'sending' ? 'Sending…' : 'Send'
+            }}</button>
+        @switch (status()) {
+        @case ('sent') {
+        <p class="form-status" role="status">Thank you! Your message is on its way.</p>
+        }
+        @case ('failed') {
+        <p class="form-status status-failed" role="alert">Something went wrong. Please try again.</p>
+        }
+        }
     </form>
 </section>

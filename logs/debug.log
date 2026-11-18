@@ -172,3 +172,5 @@
 - src/app/pages/home/contact/contact.ts, contact.html, contact.scss: contact arrow is revealed from left to right when scrolled into view, observer sits on a figure around the image
 - src/app/pages/project-detail/project-detail.ts, project-detail.html, project-detail.scss: project title underline is revealed from left to right
 - src/app/pages/project-detail/project-detail.ts, project-detail.html: project content is rebuilt when the project changes so the title underline plays again
+- src/app/app.config.ts: provided the http client
+- src/app/pages/home/contact/contact.ts, contact.html, contact.scss: contact form posts to the mail script with sending, success and error feedback
