@@ -152,3 +152,4 @@
 - src/app/pages/project-detail/project-detail.scss: project title underline uses about-me.webp stretched to the title width
 - src/app/shared/reveal: removed unused generated html, scss and spec files of the reveal directive
 - src/app/shared/intro/intro.ts: added intro service with phases for letters, photo, links and skip on scroll
+- src/app/pages/home/hero/hero.ts: title letters carry their intro delay, hero starts the intro and exposes the phase as host classes
