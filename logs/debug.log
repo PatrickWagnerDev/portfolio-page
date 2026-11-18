@@ -196,3 +196,6 @@
 - src/app/layout/footer/footer.scss: removed the top padding of the footer section
 - src/app/pages/project-detail/project-data.ts: real implementation details, duration (2 weeks) and GitHub link for The Last Spellbound
 - src/app/pages/project-detail/project-data.ts: real implementation details, duration (1 week), GitHub and live links for the Pokedex; live link for The Last Spellbound
+- package.json: installed @ngx-translate/core and @ngx-translate/http-loader (installed by the user)
+- src/app/app.config.ts: added provideTranslateService with the http loader (/i18n/, en as default and fallback)
+- public/i18n/en.json, public/i18n/de.json: created with a test key
