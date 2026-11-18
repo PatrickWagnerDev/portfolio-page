@@ -14,7 +14,8 @@
 
     <label class="language-switch">
         <span class="language-label">EN</span>
-        <input class="switch-input" type="checkbox" role="switch" aria-label="Switch language">
+        <input class="switch-input" type="checkbox" role="switch" aria-label="Switch language"
+            [checked]="language.isGerman()" (change)="language.toggleLanguage()">
         <span class="switch-track"></span>
         <span class="language-label">DE</span>
     </label>
