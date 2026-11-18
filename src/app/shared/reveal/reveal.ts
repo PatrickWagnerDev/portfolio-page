@@ -4,7 +4,6 @@ const REVEAL_THRESHOLD = 0.2;
 
 @Directive({
   selector: '[appReveal]',
-  host: { class: 'reveal' },
 })
 export class Reveal implements OnInit, OnDestroy {
   readonly revealDelay = input(0, { transform: numberAttribute });

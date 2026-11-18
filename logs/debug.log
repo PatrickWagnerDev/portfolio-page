@@ -161,3 +161,5 @@
 - src/app/shared/intro/intro.ts: letter phase waits for the last letter flash to finish
 - src/app/pages/home/hero/hero.ts, hero.scss: both title words start at the same time, adjusted letter flash duration
 - src/app/pages/home/hero/hero.ts, hero.scss: photo and social links appear with keyframe animations instead of transitions so they are hidden from the start of the intro
+- src/app/shared/reveal/reveal.ts: directive only marks elements as visible, the fade style is opt in via the reveal class
+- src/app/pages/home/about-me/about-me.ts, about-me.html, about-me.scss: about me title underline is revealed from left to right when scrolled into view
