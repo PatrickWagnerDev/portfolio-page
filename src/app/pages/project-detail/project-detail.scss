@@ -3,6 +3,7 @@
 }
 
 .project-page {
+  --next-space: 4.75rem;
   display: grid;
   grid-template-columns: 30rem 35rem;
   justify-content: space-between;
@@ -11,6 +12,7 @@
 }
 
 .project-info {
+  padding-bottom: var(--next-space);
   color: var(--color-base-dark);
 }
 
@@ -49,7 +51,7 @@
 .project-name {
   position: relative;
   width: fit-content;
-  margin-top: 3.75rem;
+  margin-top: 2.5rem;
   padding-bottom: 1.5rem;
   font-size: 5rem;
   font-weight: 700;
@@ -113,18 +115,19 @@
 }
 
 .project-preview {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-top: 5.75rem;
   color: var(--color-base-light);
 }
 
 .preview-figure {
-  position: relative;
+  position: absolute;
+  top: calc((100% - var(--next-space)) / 2);
   width: 100%;
-  margin-bottom: 3rem;
   aspect-ratio: 777 / 553;
+  transform: translateY(-50%);
 }
 
 .preview-image {

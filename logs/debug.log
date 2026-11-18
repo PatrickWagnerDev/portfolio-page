@@ -145,3 +145,4 @@
 - src/app/pages/home/contact/contact.html, contact.scss, contact.ts: contact sticker now uses the shared round sticker component
 - src/app/pages/project-detail/project-detail.scss: columns stretch to equal height with buttons and next link at the bottom, shared style and hover for go back and next project, removed the extra space below the content
 - src/app/pages/project-detail/project-detail.scss: fixed broken syntax in the project name rule and removed leftover duplicate lines
+- src/app/pages/project-detail/project-detail.scss: smaller gap below go back, next project below the content, preview image vertically centered to the left content
