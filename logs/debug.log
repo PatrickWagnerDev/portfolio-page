@@ -165,3 +165,4 @@
 - src/app/pages/home/about-me/about-me.ts, about-me.html, about-me.scss: about me title underline is revealed from left to right when scrolled into view
 - src/app/pages/home/skills/skills.ts, skills.html, skills.scss: skills title circle is drawn with a conic mask when scrolled into view
 - src/app/pages/home/skills/skills.scss: skills title circle starts drawing at the upper left (mask start angle -67deg)
+- src/app/pages/home/projects/projects.ts, projects.html, projects.scss: projects title underline is revealed from right to left when scrolled into view

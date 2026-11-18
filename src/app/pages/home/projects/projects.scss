@@ -21,6 +21,19 @@
   display: block;
   aspect-ratio: 1089 / 128;
   background: url('/design-material/lines/portfolio.webp') center / 100% 100% no-repeat;
+  clip-path: inset(0 0 0 100%);
+  transition: clip-path 0.6s ease var(--reveal-delay, 0ms);
+}
+
+.projects-title.reveal-visible::after {
+  clip-path: inset(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-title::after {
+    clip-path: none;
+    transition: none;
+  }
 }
 
 .projects-description {
