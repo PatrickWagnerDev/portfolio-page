@@ -185,3 +185,5 @@
 - src/app/pages/home/about-me/about-me.html: replaced the placeholder text with the real about me text
 - src/app/pages/home/skills/skills.html: replaced the placeholder text with the real skills text
 - src/app/pages/home/skills/skills.scss: made the description strip taller (aspect-ratio 2800 / 620)
+- src/app/pages/home/skills/skills.html: reworded the first sentence of the skills text
+- src/app/pages/home/skills/skills.scss: description strip aspect-ratio adjusted to 2800 / 630
