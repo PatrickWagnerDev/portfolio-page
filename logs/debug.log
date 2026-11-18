@@ -141,3 +141,4 @@
 - src/app/pages/project-detail/project-detail.scss: fixed aspect ratio for the preview frame, link colors inherit, zoomed contain fit for the featured project
 - src/app/shared/round-sticker/round-sticker.ts: added round sticker component with color input (teal or green)
 - src/app/shared/round-sticker/round-sticker.html: added sticker ring text and monogram markup
+- src/app/shared/round-sticker/round-sticker.scss: added round sticker styles (ring animation, monogram, green variant)
