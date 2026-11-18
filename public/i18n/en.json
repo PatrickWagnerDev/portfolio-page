@@ -1,3 +1,10 @@
 {
-  "test": "Hello"
+  "legalNotice": {
+    "title": "Legal notice",
+    "country": "Germany",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "responsible": "Responsible for content"
+  }
 }

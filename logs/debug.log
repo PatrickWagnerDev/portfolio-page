@@ -202,3 +202,8 @@
 - src/app/shared/language/language.ts: new service that detects the browser language (de or en, default en), switches the translation and sets the html lang attribute
 - src/app/layout/header/header.ts: injects the language service
 - src/app/layout/header/header.html: language switch is bound to the language service
+- src/index.html: html lang set back to en (the value de was committed by mistake in 19b81dd)
+- src/app/pages/legal-notice/legal-notice.ts: imports the translate pipe
+- src/app/pages/legal-notice/legal-notice.html: labels use translation keys, country line added under both addresses, e-recht24 source removed
+- src/app/pages/privacy-policy/privacy-policy.html: e-recht24 source removed
+- public/i18n/en.json, public/i18n/de.json: legal notice keys added, test key removed
