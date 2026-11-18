@@ -19,7 +19,7 @@ export const PROJECT_INFOS: ProjectInfo[] = [
     {
         id: 'join',
         title: 'Join',
-        description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+        description: 'A kanban board for managing tasks with drag and drop, subtasks, priorities and a contact list. Built in a team with Angular, TypeScript and Supabase.',
         details: PLACEHOLDER_DETAILS,
         duration: '5 weeks',
         technologies: ['HTML', 'CSS', 'TypeScript', 'Angular', 'Supabase'],
@@ -32,7 +32,7 @@ export const PROJECT_INFOS: ProjectInfo[] = [
     {
         id: 'the-last-spellbound',
         title: 'The Last Spellbound',
-        description: 'Jump, run and throw game based on object-oriented approach. Help the wizard to defeat the monsters and earn the trophy.',
+        description: 'A fantasy jump-and-run for keyboard and smartphone, played right in the browser. Fight through three levels, each ending with a boss and each harder than the last. Built with object-oriented JavaScript on a canvas.',
         details: PLACEHOLDER_DETAILS,
         duration: '5 weeks',
         technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -45,7 +45,7 @@ export const PROJECT_INFOS: ProjectInfo[] = [
     {
         id: 'pokedex',
         title: 'Pokédex',
-        description: 'An interactive Pokédex, showcasing the integration and use of external APIs. Powered by PokéAPI, it dynamically fetches and displays Pokémon data in a clean and user-friendly interface.',
+         description: 'Browse the first 1025 Pokémon with their name, type, size, weight and stats. Use the search bar to find your favourite quickly. Data comes from a REST API.',
         details: PLACEHOLDER_DETAILS,
         duration: '5 weeks',
         technologies: ['HTML', 'CSS', 'JavaScript', 'REST-API'],

@@ -187,3 +187,5 @@
 - src/app/pages/home/skills/skills.scss: made the description strip taller (aspect-ratio 2800 / 620)
 - src/app/pages/home/skills/skills.html: reworded the first sentence of the skills text
 - src/app/pages/home/skills/skills.scss: description strip aspect-ratio adjusted to 2800 / 630
+- src/app/pages/home/projects/projects.html: replaced the placeholder intro with the real projects intro in three paragraphs
+- src/app/pages/project-detail/project-data.ts: replaced the template descriptions with the real project descriptions
