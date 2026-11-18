@@ -142,3 +142,4 @@
 - src/app/shared/round-sticker/round-sticker.ts: added round sticker component with color input (teal or green)
 - src/app/shared/round-sticker/round-sticker.html: added sticker ring text and monogram markup
 - src/app/shared/round-sticker/round-sticker.scss: added round sticker styles (ring animation, monogram, green variant)
+- src/app/pages/home/contact/contact.html, contact.scss, contact.ts: contact sticker now uses the shared round sticker component

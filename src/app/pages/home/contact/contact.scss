@@ -184,36 +184,5 @@
   position: absolute;
   top: calc(2.8rem - 10.25rem);
   right: 0;
-  display: grid;
-  place-items: center;
   width: 10.25rem;
-  aspect-ratio: 1;
-  background: url('/design-material/stickers/round-sticker-teal.webp') center / contain no-repeat;
-}
-
-.sticker-ring {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  font-size: 14px;
-  font-weight: 700;
-  fill: var(--color-base-dark);
-  animation: ring-spin 20s linear infinite;
-}
-
-@keyframes ring-spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .sticker-ring {
-    animation: none;
-  }
-}
-
-.sticker-monogram {
-  width: 45%;
-  transform: rotate(10deg);
 }
