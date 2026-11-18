@@ -9,6 +9,7 @@ export interface ProjectInfo {
     githubUrl: string;
     liveUrl: string;
     featured: boolean;
+    comingSoon: boolean;
 }
 
 const PLACEHOLDER_DETAILS =
@@ -26,6 +27,7 @@ export const PROJECT_INFOS: ProjectInfo[] = [
         githubUrl: '',
         liveUrl: '',
         featured: true,
+        comingSoon: true,
     },
     {
         id: 'the-last-spellbound',
@@ -38,6 +40,7 @@ export const PROJECT_INFOS: ProjectInfo[] = [
         githubUrl: '',
         liveUrl: '',
         featured: false,
+        comingSoon: false,
     },
     {
         id: 'pokedex',
@@ -50,5 +53,6 @@ export const PROJECT_INFOS: ProjectInfo[] = [
         githubUrl: '',
         liveUrl: '',
         featured: false,
+        comingSoon: false,
     },
 ];

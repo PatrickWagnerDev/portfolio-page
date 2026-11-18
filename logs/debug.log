@@ -178,3 +178,4 @@
 - src/app/pages/home/contact/contact.html: added maxlength to name, email and message fields to match the mail script limits
 - src/app/pages/home/hero/hero.html, src/app/layout/footer/footer.html: added LinkedIn and mail links
 - src/app/pages/home/hero/hero.html: LinkedIn and GitHub links open in a new tab
+- src/app/pages/project-detail/project-data.ts: added the coming soon flag, set for Join
