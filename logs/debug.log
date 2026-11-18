@@ -156,3 +156,4 @@
 - src/app/pages/home/hero/hero.html: title letters read char and intro delay from the letter objects
 - src/app/pages/home/hero/hero.scss: intro animation for title letters, photo fade in and social links fade in, no transitions when skipped
 - src/app/layout/header/header.ts: header reads the intro phase and exposes host classes for the hidden and skipped states
+- src/app/layout/header/header.scss: header is hidden during the hero intro and fades in with the social links, no fade when the intro is skipped
