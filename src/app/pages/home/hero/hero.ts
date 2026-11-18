@@ -17,7 +17,7 @@ const LETTER_COUNT = Math.max(...TITLE_WORDS.map((word) => word.length));
   host: {
     '[class.intro-letters]': "phase() === 'letters'",
     '[class.intro-photo]': "phase() === 'photo'",
-    '[class.intro-skipped]': "phase() === 'skipped'",
+    '[class.intro-links]': "phase() === 'links'",
   },
 })
 export class Hero implements OnInit {
