@@ -293,3 +293,8 @@
 - src/app/pages/home/references/references.scss: reference card width follows the list width (28rem to 32rem), overlaps are proportional
 - src/app/pages/home/contact/contact.scss: minimum gap between the two columns
 - src/app/pages/home/skills/skills.scss: vertical padding for the description strip so that the text keeps its distance from the torn paper edges when the strip grows
+- src/app/layout/menu/: new Menu component (fullscreen on mobile, panel on tablet, opens downwards and closes upwards, closes by button, click outside, escape, link click and swipe up with a threshold), with tests
+- src/app/shared/language-switch/: language switch moved out of the header into its own component, with tests
+- src/app/data/nav-data.ts: navigation items shared by header navbar and menu
+- src/app/layout/header/: burger button below 1024 px instead of navbar and language switch, menu state and focus handling, tests for opening and closing
+- public/i18n/en.json, public/i18n/de.json: header.menuLabel, menuOpen, menuClose

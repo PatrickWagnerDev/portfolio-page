@@ -1,0 +1,159 @@
+:host {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  visibility: hidden;
+  background-color: transparent;
+  transition: background-color 0.4s ease, visibility 0s 0.4s;
+}
+
+:host(.menu-open) {
+  visibility: visible;
+  background-color: color-mix(in srgb, var(--color-base-dark) 60%, transparent);
+  transition: background-color 0.4s ease;
+}
+
+.menu-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  height: 100dvh;
+  overflow-y: auto;
+  padding: 6rem var(--content-padding-inline) 4rem;
+  background-color: var(--color-base-dark);
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+}
+
+:host(.menu-open) .menu-panel {
+  transform: translateY(0);
+}
+
+:host(.menu-dragging) .menu-panel {
+  transition: none;
+}
+
+.menu-close {
+  position: absolute;
+  top: 1.5rem;
+  right: var(--content-padding-inline);
+  width: 2.5rem;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-base-light);
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.75rem;
+    height: 3px;
+    background-color: currentColor;
+    border-radius: 2px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: background-color var(--transition-fast);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover,
+  &:active,
+  &:focus-visible {
+    color: var(--color-highlight-3);
+  }
+
+  &:hover::after,
+  &:active::after {
+    inset: -0.5rem;
+    width: auto;
+    height: auto;
+    background: url('/design-material/lines/menu-pressed-1.webp') center / contain no-repeat;
+    transform: none;
+  }
+}
+
+.menu-list {
+  display: grid;
+  gap: 1.5rem;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.menu-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-base-light);
+  transition: color var(--transition-fast);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-highlight-1);
+  }
+}
+
+.menu-socials {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-social {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--color-base-light);
+  border-radius: 50%;
+  transition: background-color var(--transition-fast);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-highlight-2);
+  }
+
+  img {
+    display: block;
+  }
+}
+
+@media (height < 30rem) {
+  .menu-panel {
+    gap: 1.25rem;
+    padding-top: 4.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .menu-list {
+    gap: 0.75rem;
+  }
+
+  .menu-link {
+    font-size: 1.25rem;
+  }
+}
+
+@media (width >= 768px) {
+  .menu-panel {
+    height: auto;
+    max-height: 100dvh;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :host,
+  .menu-panel {
+    transition: none;
+  }
+}

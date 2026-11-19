@@ -36,6 +36,27 @@ describe('Header', () => {
     expect(element.querySelector('.switch-input')?.getAttribute('role')).toBe('switch');
   });
 
+  it('should start with a closed menu', () => {
+    const TOGGLE = element.querySelector('.menu-toggle') as HTMLButtonElement;
+    expect(TOGGLE.getAttribute('aria-expanded')).toBe('false');
+    expect(element.querySelector('app-menu')?.classList.contains('menu-open')).toBe(false);
+  });
+
+  it('should open the menu with the burger button', async () => {
+    (element.querySelector('.menu-toggle') as HTMLButtonElement).click();
+    await fixture.whenStable();
+    expect(element.querySelector('.menu-toggle')?.getAttribute('aria-expanded')).toBe('true');
+    expect(element.querySelector('app-menu')?.classList.contains('menu-open')).toBe(true);
+  });
+
+  it('should close the menu again with the close button', async () => {
+    (element.querySelector('.menu-toggle') as HTMLButtonElement).click();
+    await fixture.whenStable();
+    (element.querySelector('.menu-close') as HTMLButtonElement).click();
+    await fixture.whenStable();
+    expect(element.querySelector('app-menu')?.classList.contains('menu-open')).toBe(false);
+  });
+
   it('should show the plain header at the top of the page', () => {
     expect(element.classList.contains('header-solid')).toBe(false);
     expect(element.classList.contains('header-hidden')).toBe(false);

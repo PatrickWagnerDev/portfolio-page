@@ -5,18 +5,16 @@
 
     <nav class="header-nav" [attr.aria-label]="'header.navLabel' | translate">
         <ul class="nav-list">
-            <li><a class="nav-link" routerLink="/" fragment="about-me-section">{{ 'header.aboutMe' | translate }}</a></li>
-            <li><a class="nav-link" routerLink="/" fragment="skills-section">{{ 'header.skills' | translate }}</a></li>
-            <li><a class="nav-link" routerLink="/" fragment="projects-section">{{ 'header.projects' | translate }}</a></li>
-            <li><a class="nav-link" routerLink="/" fragment="contact-section">{{ 'header.contact' | translate }}</a></li>
+            @for (item of navItems; track item.fragment) {
+            <li><a class="nav-link" routerLink="/" [fragment]="item.fragment">{{ item.labelKey | translate }}</a></li>
+            }
         </ul>
     </nav>
 
-    <label class="language-switch">
-        <span class="language-label">EN</span>
-        <input class="switch-input" type="checkbox" role="switch" [attr.aria-label]="'header.languageLabel' | translate"
-            [checked]="language.isGerman()" (change)="language.toggleLanguage()">
-        <span class="switch-track"></span>
-        <span class="language-label">DE</span>
-    </label>
+    <app-language-switch class="header-language" />
+
+    <button #menuToggle class="menu-toggle" type="button" [attr.aria-label]="'header.menuOpen' | translate"
+        [attr.aria-expanded]="isMenuOpen()" (click)="openMenu()"></button>
 </header>
+
+<app-menu [isOpen]="isMenuOpen()" (closed)="closeMenu()" />

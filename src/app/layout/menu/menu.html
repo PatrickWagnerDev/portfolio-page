@@ -1,0 +1,24 @@
+<section #panel class="menu-panel" role="dialog" aria-modal="true" [attr.aria-label]="'header.menuLabel' | translate"
+    [attr.inert]="isOpen() ? null : ''" [style.transform]="swipeOffset() ? 'translateY(' + -swipeOffset() + 'px)' : null"
+    (touchstart)="startSwipe($event)" (touchmove)="moveSwipe($event)" (touchend)="endSwipe()">
+    <button #closeButton class="menu-close" type="button" [attr.aria-label]="'header.menuClose' | translate"
+        (click)="closeMenu()"></button>
+    <nav [attr.aria-label]="'header.navLabel' | translate">
+        <ul class="menu-list">
+            @for (item of navItems; track item.fragment) {
+            <li><a class="menu-link" routerLink="/" [fragment]="item.fragment" (click)="closeMenu()">{{ item.labelKey | translate }}</a></li>
+            }
+        </ul>
+    </nav>
+    <app-language-switch />
+    <ul class="menu-socials">
+        @for (link of socialLinks; track link.id) {
+        <li>
+            <a class="menu-social" [href]="link.url" [attr.aria-label]="link.labelKey | translate"
+                [attr.target]="link.isExternal ? '_blank' : null" [attr.rel]="link.isExternal ? 'noopener' : null">
+                <img [src]="link.iconPath" alt="">
+            </a>
+        </li>
+        }
+    </ul>
+</section>

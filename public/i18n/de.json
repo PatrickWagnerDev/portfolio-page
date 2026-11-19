@@ -14,7 +14,10 @@
     "skills": "Skills",
     "projects": "Projekte",
     "contact": "Kontakt",
-    "languageLabel": "Sprache wechseln"
+    "languageLabel": "Sprache wechseln",
+    "menuLabel": "Hauptmenü",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen"
   },
   "footer": {
     "logoLabel": "Patrick Wagner, nach oben",
