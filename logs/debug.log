@@ -275,3 +275,10 @@
 - src/app/testing/test-setup.ts: new shared providers and browser stubs for the tests
 - src/app/**/*.spec.ts: repaired all generated tests, removed the angular template tests (should render title, should create), added real checks for each component
 - src/app/shared/language/language.spec.ts, shared/intro/intro.spec.ts: new tests for the language detection and the intro phases
+- src/app/i18n.spec.ts: new test for the translation files (same keys in both languages, no empty texts, all used keys exist, project texts and route titles exist)
+- src/app/pages/home/contact/contact.spec.ts: tests for the contact form logic (valid form, payload, honeypot, success, failure, double submit)
+- src/app/layout/header/header.spec.ts: tests for the scroll behavior of the header
+- src/app/shared/page-title/page-title.spec.ts: tests for the page titles and the language change
+- src/app/accessibility.spec.ts: alt texts, one h1, heading levels, safe external links and labels for the home, legal, privacy and project pages
+- src/app/testing/translation-files.ts, node-modules.d.ts: helpers for reading the translation files in the tests
+- tsconfig.app.json: src/app/testing is excluded from the app build
