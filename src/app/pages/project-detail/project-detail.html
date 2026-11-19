@@ -41,8 +41,12 @@
             }
         </figure>
         <nav class="preview-links">
-            <a class="outline-button" [attr.href]="project.githubUrl || null" target="_blank" rel="noopener">GitHub</a>
-            <a class="outline-button" [attr.href]="project.liveUrl || null" target="_blank" rel="noopener">{{ 'projectPage.liveTest' | translate }}</a>
+            <a class="outline-button" [attr.href]="project.githubUrl || null"
+                [attr.tabindex]="project.comingSoon ? -1 : null" [attr.aria-disabled]="project.comingSoon ? 'true' : null"
+                target="_blank" rel="noopener">GitHub</a>
+            <a class="outline-button" [attr.href]="project.liveUrl || null"
+                [attr.tabindex]="project.comingSoon ? -1 : null" [attr.aria-disabled]="project.comingSoon ? 'true' : null"
+                target="_blank" rel="noopener">{{ 'projectPage.liveTest' | translate }}</a>
         </nav>
         <a class="next-link" [routerLink]="['/project', nextProject().id]">
             {{ 'projectPage.next' | translate }}

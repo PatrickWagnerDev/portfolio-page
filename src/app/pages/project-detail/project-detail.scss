@@ -192,6 +192,7 @@
 .project-coming-soon :is(.project-name, .project-article, .project-duration, .technology-list, .preview-figure, .preview-links) {
   filter: blur(0.25rem);
   user-select: none;
+  pointer-events: none;
 }
 
 .coming-soon-banner {
@@ -210,4 +211,105 @@
   color: var(--color-base-dark);
   transform: translate(-50%, -50%) rotate(-6deg);
   pointer-events: none;
+}
+
+@media (width < 1280px) {
+  .project-page {
+    --paper-width: max(738px, 100vw);
+    --paper-band-height: calc(var(--paper-width) / 3);
+    --paper-tear-offset: calc(min(44rem, 100vw - 2 * var(--content-padding-inline)) * 0.356 + 11rem);
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem;
+    padding: 6.5rem max(var(--content-padding-inline), calc((100% - 44rem) / 2)) 3rem;
+
+    &::before {
+      inset: 0 0 calc(var(--paper-tear-offset) + var(--paper-band-height) / 2);
+      min-width: 0;
+      aspect-ratio: auto;
+      background: url('/design-material/backgrounds/notebook-paper-mobile-tile.webp') center bottom / var(--paper-width) auto repeat-y;
+      translate: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: calc(var(--paper-tear-offset) - var(--paper-band-height) / 2);
+      left: 50%;
+      z-index: -1;
+      width: var(--paper-width);
+      height: var(--paper-band-height);
+      background: url('/design-material/backgrounds/notebook-paper-mobile-tear.webp') center / 100% 100% no-repeat;
+      translate: -50% 0;
+      pointer-events: none;
+    }
+  }
+
+  .project-info,
+  .project-preview {
+    display: contents;
+  }
+
+  .project-name,
+  .project-article,
+  .project-duration,
+  .technology-list,
+  .preview-figure,
+  .preview-links {
+    grid-column: 1 / -1;
+  }
+
+  .project-info .back-link,
+  .next-link {
+    order: 1;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    font-size: clamp(0.875rem, 4.6vw, 1.25rem);
+    color: var(--color-base-light);
+  }
+
+  .back-arrow,
+  .next-arrow {
+    width: clamp(1.5rem, 6vw, 2.25rem);
+  }
+
+  .next-link {
+    justify-self: end;
+    white-space: nowrap;
+  }
+
+  .preview-figure {
+    position: relative;
+    top: auto;
+    margin-top: 2.5rem;
+    transform: none;
+  }
+
+  .preview-sticker {
+    top: -6%;
+    right: -3%;
+    width: 22%;
+  }
+
+  .preview-featured .preview-sticker {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 29%;
+  }
+
+  .preview-links {
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+
+  .preview-links .outline-button {
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+  }
+
+  .project-copy {
+    font-size: 1.125rem;
+  }
 }

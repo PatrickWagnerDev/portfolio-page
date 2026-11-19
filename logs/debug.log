@@ -319,3 +319,6 @@
 - src/styles/_variables.scss: new footer-height variable
 - public/design-material/lines/contact.webp: scaled down to 544x88 (was 1680x273), fixes the Angular warning NG0913
 - public/design-material/monogram/Monogram_black.png: scaled down to 300x300 (was 1254x1254), the sticker monogram is shown small on mobile
+- src/app/pages/project-detail/project-detail.scss: responsive project pages below 1280 px (single column, tiled notebook paper with a separate torn edge anchored behind the preview image, preview links centered, back and next link in one row, sticker in the corner of the preview image)
+- src/app/pages/project-detail/project-detail.html: coming soon pages get tabindex -1 and aria-disabled on the GitHub and live test buttons, they have no hover and are not clickable
+- public/design-material/backgrounds/notebook-paper-mobile-tile.webp, notebook-paper-mobile-tear.webp: new rotated paper assets cut from notebook-paper-3x.webp (the tile repeats seamlessly)
