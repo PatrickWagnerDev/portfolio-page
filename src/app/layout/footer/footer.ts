@@ -1,6 +1,7 @@
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { getSocialLinks } from '../../data/contact-data';
 
 @Component({
   imports: [RouterLink, TranslatePipe],
@@ -11,5 +12,6 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class Footer {
   readonly variant = input<'dark' | 'light'>('dark');
+  protected readonly socialLinks = getSocialLinks(['github', 'linkedin', 'mail']);
   protected readonly currentYear = new Date().getFullYear();
 }

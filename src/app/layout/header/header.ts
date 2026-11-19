@@ -24,13 +24,13 @@ const PROJECT_PATH = '/project/';
   },
 })
 export class Header {
-  readonly isHeaderHidden = signal(false);
-  readonly hasHeaderBackground = signal(false);
+  protected readonly isHeaderHidden = signal(false);
+  protected readonly hasHeaderBackground = signal(false);
   private readonly router = inject(Router);
-  readonly introPhase = inject(Intro).phase;
-  readonly language = inject(Language);
-  readonly isIntroPending = computed(() => this.introPhase() === 'letters' || this.introPhase() === 'photo');
-  readonly isProjectPage = toSignal(
+  protected readonly introPhase = inject(Intro).phase;
+  protected readonly language = inject(Language);
+  protected readonly isIntroPending = computed(() => this.introPhase() === 'letters' || this.introPhase() === 'photo');
+  protected readonly isProjectPage = toSignal(
     this.router.events.pipe(
       filter((event): event is NavigationEnd => event instanceof NavigationEnd),
       map((event) => event.urlAfterRedirects.startsWith(PROJECT_PATH)),
@@ -43,7 +43,7 @@ export class Header {
     this.handleScroll();
   }
 
-  handleScroll(): void {
+  protected handleScroll(): void {
     const CURRENT_SCROLL = window.scrollY;
     const IS_AT_TOP = CURRENT_SCROLL <= SCROLL_TOP_LIMIT;
     if (Math.abs(CURRENT_SCROLL - this.lastScrollY) >= SCROLL_STEP_MIN) {

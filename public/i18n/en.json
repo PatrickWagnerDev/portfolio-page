@@ -3,7 +3,9 @@
     "source": "Source",
     "country": "Germany",
     "phone": "Phone",
-    "email": "Email"
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
   },
   "header": {
     "logoLabel": "Patrick Wagner, Home",

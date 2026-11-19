@@ -22,7 +22,7 @@
         <ul class="technology-list">
             @for (technology of project.technologies; track technology) {
             <li class="technology-item">
-                <img class="technology-icon" [src]="getIconPath(technology)" alt="">
+                <img class="technology-icon" [src]="getSkillIconPath(technology)" alt="">
                 {{ technology }}
             </li>
             }

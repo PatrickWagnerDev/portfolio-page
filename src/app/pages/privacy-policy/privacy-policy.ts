@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
+import { CONTACT_INFO } from '../../data/contact-data';
 import { Footer } from '../../layout/footer/footer';
 import { Language } from '../../shared/language/language';
 
@@ -10,5 +11,6 @@ import { Language } from '../../shared/language/language';
   templateUrl: './privacy-policy.html',
 })
 export class PrivacyPolicy {
-  readonly language = inject(Language);
+  protected readonly contact = CONTACT_INFO;
+  protected readonly language = inject(Language);
 }

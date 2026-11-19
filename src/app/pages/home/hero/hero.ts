@@ -1,5 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
+import { getSocialLinks } from '../../../data/contact-data';
 import { Intro, LETTER_STEP_MS } from '../../../shared/intro/intro';
 
 interface TitleLetter {
@@ -23,8 +24,9 @@ const LETTER_COUNT = Math.max(...TITLE_WORDS.map((word) => word.length));
 })
 export class Hero implements OnInit {
   private readonly intro = inject(Intro);
-  readonly phase = this.intro.phase;
-  readonly titleLines = this.buildTitleLines();
+  protected readonly phase = this.intro.phase;
+  protected readonly titleLines = this.buildTitleLines();
+  protected readonly socialLinks = getSocialLinks(['linkedin', 'github', 'mail']);
 
   ngOnInit(): void {
     this.intro.startIntro(LETTER_COUNT);

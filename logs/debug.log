@@ -258,3 +258,13 @@
 - src/styles.scss, src/app/app.ts: removed the references to the deleted files, empty class bodies
 - src/app/shared/intro/intro.ts: two word method names (startIntro, skipIntro, schedulePhase), 2 space indentation, skipIntro is private
 - src/app/pages/home/hero/hero.ts, shared/page-title/page-title.ts, pages/project-detail/project-detail.ts: constants renamed to the naming rules
+- src/app/data/project-data.ts: moved from pages/project-detail, 2 space indentation
+- src/app/data/skill-data.ts, contact-data.ts: new data files for skills, contact info and social links
+- src/app/pages/home/skills/skills.ts, skills.html: skills and interests rendered with @for from the data file
+- src/app/pages/project-detail/project-detail.ts, project-detail.html, pages/home/projects/projects.ts: use the moved project data and the shared skill icon helper
+- src/app/pages/home/hero/hero.ts, hero.html, layout/footer/footer.ts, footer.html: social links rendered with @for from one source
+- src/app/pages/legal-notice/*, pages/privacy-policy/*: name, address, phone and email come from the contact data
+- src/app/pages/home/home.html: sections wrapped in a main element
+- src/app/layout/header/header.ts, hero.ts: template members are protected
+- public/i18n/en.json, public/i18n/de.json: common.linkedin and common.github added
+- src/app/data/contact-data.ts, layout/footer/footer.ts, pages/home/hero/hero.ts: getSocialLinks keeps the original order of the social links (footer github, linkedin, mail)

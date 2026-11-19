@@ -52,12 +52,12 @@
 
         <h3>{{ 'privacy.general.controllerTitle' | translate }}</h3>
         <p>{{ 'privacy.general.controllerIntro' | translate }}</p>
-        <p>Patrick Wagner<br>
-            Steinbrechstraße 8C<br>
-            86179 Augsburg<br>
+        <p>{{ contact.name }}<br>
+            {{ contact.street }}<br>
+            {{ contact.city }}<br>
             {{ 'common.country' | translate }}</p>
-        <p>{{ 'common.phone' | translate }}: +4915771796004<br>
-            {{ 'common.email' | translate }}: kontakt@patrickwagnerdev.de</p>
+        <p>{{ 'common.phone' | translate }}: {{ contact.phone }}<br>
+            {{ 'common.email' | translate }}: {{ contact.email }}</p>
         <p>{{ 'privacy.general.controllerDefinition' | translate }}</p>
 
         <h3>{{ 'privacy.general.retentionTitle' | translate }}</h3>

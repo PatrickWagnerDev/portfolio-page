@@ -3,7 +3,8 @@ import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { Reveal } from '../../shared/reveal/reveal';
 import { RoundSticker } from '../../shared/round-sticker/round-sticker';
-import { PROJECT_INFOS, ProjectInfo } from './project-data';
+import { PROJECT_INFOS, ProjectInfo } from '../../data/project-data';
+import { getSkillIconPath } from '../../data/skill-data';
 
 @Component({
   imports: [RouterLink, RoundSticker, Reveal, TranslatePipe],
@@ -17,9 +18,7 @@ export class ProjectDetail {
   protected previousProject = computed(() => this.getNeighbor(-1));
   protected nextProject = computed(() => this.getNeighbor(1));
 
-  protected getIconPath(technology: string): string {
-    return `/design-material/icons/skills/${technology.toLowerCase()}.png`;
-  }
+  protected readonly getSkillIconPath = getSkillIconPath;
 
   private getNeighbor(step: number): ProjectInfo {
     const PROJECT_INDEX = PROJECT_INFOS.findIndex((info) => info.id === this.id());

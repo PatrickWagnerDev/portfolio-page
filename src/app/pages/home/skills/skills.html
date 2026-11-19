@@ -7,46 +7,12 @@
     <p class="skills-description">{{ 'skills.description' | translate }}</p>
 
     <ul class="skills-list">
+        @for (skill of skillInfos; track skill.name) {
         <li class="skill-item">
-            <img class="skill-icon" src="design-material/icons/skills/html.png" alt="">
-            <span class="skill-name">HTML</span>
+            <img class="skill-icon" [src]="skill.iconPath" alt="">
+            <span class="skill-name">{{ skill.name }}</span>
         </li>
-        <li class="skill-item">
-            <img class="skill-icon" src="design-material/icons/skills/css.png" alt="">
-            <span class="skill-name">CSS</span>
-        </li>
-        <li class="skill-item">
-            <img class="skill-icon" src="design-material/icons/skills/javascript.png" alt="">
-            <span class="skill-name">JavaScript</span>
-        </li>
-        <li class="skill-item">
-            <img class="skill-icon" src="design-material/icons/skills/typescript.png" alt="">
-            <span class="skill-name">TypeScript</span>
-        </li>
-        <li class="skill-item">
-            <img class="skill-icon" src="design-material/icons/skills/angular.png" alt="">
-            <span class="skill-name">Angular</span>
-        </li>
-        <li class="skill-item">
-            <img class="skill-icon" src="design-material/icons/skills/firebase.png" alt="">
-            <span class="skill-name">Firebase</span>
-        </li>
-        <li class="skill-item">
-            <img class="skill-icon" src="design-material/icons/skills/supabase.png" alt="">
-            <span class="skill-name">Supabase</span>
-        </li>
-        <li class="skill-item">
-            <img class="skill-icon" src="design-material/icons/skills/git.png" alt="">
-            <span class="skill-name">Git</span>
-        </li>
-        <li class="skill-item">
-            <img class="skill-icon" src="design-material/icons/skills/rest-api.png" alt="">
-            <span class="skill-name">REST-API</span>
-        </li>
-        <li class="skill-item">
-            <img class="skill-icon" src="design-material/icons/skills/scrum.png" alt="">
-            <span class="skill-name">Scrum</span>
-        </li>
+        }
     </ul>
 
     <aside class="skills-sticker">
@@ -55,14 +21,12 @@
         <section class="sticker-back">
             <p class="sticker-back-text">{{ 'skills.stickerBack' | translate }}</p>
             <ul class="interested-list">
+                @for (interest of interestInfos; track interest.name) {
                 <li class="interested-item">
-                    <img class="skill-icon" src="design-material/icons/skills/interested-in/python.png" alt="">
-                    <span class="skill-name">Python</span>
+                    <img class="skill-icon" [src]="interest.iconPath" alt="">
+                    <span class="skill-name">{{ interest.name }}</span>
                 </li>
-                <li class="interested-item">
-                    <img class="skill-icon" src="design-material/icons/skills/interested-in/django.png" alt="">
-                    <span class="skill-name">Django</span>
-                </li>
+                }
             </ul>
         </section>
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
+import { CONTACT_INFO } from '../../data/contact-data';
 import { Footer } from '../../layout/footer/footer';
 
 @Component({
@@ -8,4 +9,6 @@ import { Footer } from '../../layout/footer/footer';
   styleUrl: './legal-notice.scss',
   templateUrl: './legal-notice.html',
 })
-export class LegalNotice {}
+export class LegalNotice {
+  protected readonly contact = CONTACT_INFO;
+}

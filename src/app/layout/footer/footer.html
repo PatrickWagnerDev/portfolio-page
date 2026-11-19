@@ -6,26 +6,15 @@
     <nav class="footer-nav" [attr.aria-label]="'footer.navLabel' | translate">
         <ul class="footer-links">
             <li><a class="footer-link footer-legal" routerLink="/legal-notice">{{ 'footer.legalNotice' | translate }}</a></li>
+            @for (link of socialLinks; track link.id) {
             <li>
-                <a class="footer-link footer-social" href="https://github.com/PatrickWagnerDev" target="_blank"
-                    rel="noopener">
-                    GitHub
-                    <img class="social-icon" src="design-material/icons/github.png" alt="">
+                <a class="footer-link footer-social" [href]="link.url" [attr.target]="link.isExternal ? '_blank' : null"
+                    [attr.rel]="link.isExternal ? 'noopener' : null">
+                    {{ link.labelKey | translate }}
+                    <img class="social-icon" [src]="link.iconPath" alt="">
                 </a>
             </li>
-            <li>
-                <a class="footer-link footer-social" href="https://www.linkedin.com/in/patrickwagnerdev/" target="_blank"
-                    rel="noopener">
-                    LinkedIn
-                    <img class="social-icon" src="design-material/icons/linkedin.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a class="footer-link footer-social" href="mailto:kontakt@patrickwagnerdev.de">
-                    {{ 'common.email' | translate }}
-                    <img class="social-icon" src="design-material/icons/mail.png" alt="">
-                </a>
-            </li>
+            }
         </ul>
     </nav>
 </footer>

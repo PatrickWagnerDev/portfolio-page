@@ -28,22 +28,13 @@
 
   <a class="hero-button outline-button" href="#contact-section">{{ 'hero.button' | translate }}</a>
   <ul class="social-list">
+    @for (link of socialLinks; track link.id) {
     <li>
-      <a class="social-link" href="https://www.linkedin.com/in/patrickwagnerdev/" target="_blank" rel="noopener"
-        aria-label="LinkedIn">
-        <img src="design-material/icons/linkedin.png" alt="">
+      <a class="social-link" [href]="link.url" [attr.target]="link.isExternal ? '_blank' : null"
+        [attr.rel]="link.isExternal ? 'noopener' : null" [attr.aria-label]="link.labelKey | translate">
+        <img [src]="link.iconPath" alt="">
       </a>
     </li>
-    <li>
-      <a class="social-link" href="https://github.com/PatrickWagnerDev" target="_blank" rel="noopener"
-        aria-label="GitHub">
-        <img src="design-material/icons/github.png" alt="">
-      </a>
-    </li>
-    <li>
-      <a class="social-link" href="mailto:kontakt@patrickwagnerdev.de" aria-label="E-mail">
-        <img src="design-material/icons/mail.png" alt="">
-      </a>
-    </li>
+    }
   </ul>
 </section>
