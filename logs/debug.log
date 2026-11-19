@@ -331,3 +331,5 @@
 - src/app/pages/home/references/references.scss: more top padding of the stacked cards
 - src/app/pages/project-detail/project-detail.scss: the stacked layout of the project pages now applies below 1340 px (text and preview image had a gap of only 1 px at 1280 px)
 - README.md: website link, hero photo, language detection, responsive description, Vitest and project status updated
+- src/app/pages/home/hero/hero.html, hero.scss: the hero photo sits in a clipped window and is zoomed to 135 percent so the person looks bigger
+- public/design-material/photo/patrick-wagner-alt.webp: alternative photo removed, the first photo stays

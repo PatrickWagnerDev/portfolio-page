@@ -174,11 +174,20 @@
   height: auto;
 }
 
-.photo-image {
+.photo-window {
   position: absolute;
   top: 6.1%;
   left: 7.3%;
   width: 85.3%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.photo-image {
+  position: absolute;
+  top: -4%;
+  left: -31%;
+  width: 135%;
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
