@@ -335,3 +335,4 @@
 - public/design-material/photo/patrick-wagner-alt.webp: alternative photo removed, the first photo stays
 - public/og-image.jpg: new share preview image (1200x630, 72 KB), made from the hero photo
 - src/index.html: og:image, og:image:width, og:image:height, og:image:alt, twitter:card and twitter:image added
+- public/.htaccess: new, HTTPS and www to non-www redirect in one 301 and a fallback to index.html for routes without a file extension (STRATO hosting)
