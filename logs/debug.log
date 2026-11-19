@@ -317,3 +317,5 @@
 - src/app/pages/home/contact/contact.scss: responsive contact (single column below 1024 px, sticker and arrow positions, background image scales with the section height, hyphenated heading)
 - src/app/layout/footer/footer.scss: responsive footer (logo and copyright in one row, legal notice right aligned, social links spread and shrinking without overlap, no own background, the contact background continues below it)
 - src/styles/_variables.scss: new footer-height variable
+- public/design-material/lines/contact.webp: scaled down to 544x88 (was 1680x273), fixes the Angular warning NG0913
+- public/design-material/monogram/Monogram_black.png: scaled down to 300x300 (was 1254x1254), the sticker monogram is shown small on mobile
