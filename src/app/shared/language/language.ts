@@ -14,6 +14,10 @@ export class Language {
     this.setLanguage(this.detectLanguage());
   }
 
+  currentLanguage(): string {
+    return this.isGerman() ? GERMAN_LANGUAGE : DEFAULT_LANGUAGE;
+  }
+
   toggleLanguage(): void {
     this.setLanguage(this.isGerman() ? DEFAULT_LANGUAGE : GERMAN_LANGUAGE);
   }

@@ -340,3 +340,7 @@
 - src/app/testing/translation-files.ts: constants renamed to UPPER_CASE
 - src/styles/_logo.scss, src/styles.scss: the monogram logo styles and hover are now one global rule, removed from header.scss, footer.scss and menu.scss
 - public/design-material: 14 unused files removed (footer.webp, notebook-paper.webp, testimonial-sticker-a.webp, round-sticker-blue.webp, round-sticker-yellow.webp, Monogram blue, green, white and yellow, skills-description-alt-mobile.webp, four alternative favicons)
+- public/.htaccess: compression (mod_deflate) and cache headers (js and css one year immutable, images and fonts 30 days, html and json no-cache), all inside IfModule blocks
+- src/app/shared/language/language-init.ts, language.ts, app.config.ts: the translations are loaded before the app is shown (provideAppInitializer), new currentLanguage method
+- src/app/shared/language/language-init.spec.ts: tests for the initializer
+- public/design-material/backgrounds/skills.webp: unused file removed (472 KB)
