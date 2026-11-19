@@ -23,6 +23,16 @@
     "greetingHover": "Ich bin Patrick Wagner",
     "button": "Sich kurzschließen"
   },
+  "aboutMe": {
+    "snippetLocation": "Wohnhaft in Augsburg",
+    "snippetTech": "Offen für neue Technologien",
+    "snippetRemote": "Offen für Remote-Arbeit",
+    "label": "Wer ist Patrick?",
+    "title": "Über mich",
+    "text1": "Hey, ich bin Patrick. Zehn Jahre in Support, Projektmanagement und Lagerverwaltung haben mir gezeigt, dass ich am glücklichsten bin, wenn ich Probleme löse und aus Ideen etwas baue, das funktioniert. Genau das hat mich zurück zu meinen IT-Wurzeln und in die Webentwicklung geführt. Mir sind sauberer, gut strukturierter Code wichtig, egal ob ich allein oder in einem kleinen Team arbeite, und mein Ziel ist Full Stack und langfristig KI-Engineering.",
+    "text2": "Lass uns zusammenarbeiten und gemeinsam etwas Außergewöhnliches aufbauen!",
+    "button": "Lass drüber reden"
+  },
   "legalNotice": {
     "title": "Impressum",
     "contact": "Kontakt",

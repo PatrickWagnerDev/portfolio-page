@@ -2,32 +2,28 @@
     <ul class="snippet-list">
         <li class="snippet-item">
             <img class="snippet-icon" src="design-material/icons/located.png" alt="">
-            <span>Based in Augsburg</span>
+            <span>{{ 'aboutMe.snippetLocation' | translate }}</span>
         </li>
         <li class="snippet-item">
             <img class="snippet-icon" src="design-material/icons/learning.png" alt="">
-            <span>Open-minded about new tech</span>
+            <span>{{ 'aboutMe.snippetTech' | translate }}</span>
         </li>
         <li class="snippet-item">
             <img class="snippet-icon" src="design-material/icons/remote.png" alt="">
-            <span>Open to work remote</span>
+            <span>{{ 'aboutMe.snippetRemote' | translate }}</span>
         </li>
     </ul>
 
     <article class="about-content">
         <hgroup class="about-heading">
-            <p class="about-label section-label">Who's Patrick?</p>
-            <h2 class="about-title section-title" appReveal>About me</h2>
+            <p class="about-label section-label">{{ 'aboutMe.label' | translate }}</p>
+            <h2 class="about-title section-title" appReveal>{{ 'aboutMe.title' | translate }}</h2>
         </hgroup>
 
-        <p class="about-text">Hey there, I'm Patrick. A decade in support, project management and warehouse management
-            taught me that I'm happiest when I'm solving problems and turning ideas into something that works. That's
-            what brought me back to my IT roots and into web development. I care about clean, well-structured code,
-            whether I'm working solo or in a small team, and I'm aiming for full stack and eventually AI engineering.
-        </p>
+        <p class="about-text">{{ 'aboutMe.text1' | translate }}</p>
 
-        <p class="about-text">Let’s collaborate and build something remarkable together!</p>
+        <p class="about-text">{{ 'aboutMe.text2' | translate }}</p>
 
-        <a class="about-button outline-button outline-button-dark" href="#contact-section">Let's talk</a>
+        <a class="about-button outline-button outline-button-dark" href="#contact-section">{{ 'aboutMe.button' | translate }}</a>
     </article>
 </section>
