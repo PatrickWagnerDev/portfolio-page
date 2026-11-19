@@ -3,6 +3,7 @@
 }
 
 .skills-section {
+  --skills-bg-height: calc(100vw * 0.5672);
   display: grid;
   grid-template-columns: max-content 1fr 13.5rem;
   column-gap: 2rem;
@@ -10,7 +11,7 @@
   align-items: center;
   padding: 8rem var(--content-padding-wide) 12.5rem;
   color: var(--color-base-light);
-  background: url('/design-material/backgrounds/skills-3x.webp') center bottom / 101.2% auto no-repeat;
+  background: url('/design-material/backgrounds/skills-3x.webp') center bottom / auto max(100%, var(--skills-bg-height)) no-repeat;
 }
 
 .skills-heading {
@@ -55,8 +56,10 @@
   max-width: 40.5rem;
   margin-left: 1.5rem;
   aspect-ratio: 2800 / 750;
-  padding: 1.25rem 2.2rem;
-  background: url('/design-material/ripped-paper/skills-description.webp') center / 100% 100% no-repeat;
+  padding: 0.75rem 2.2rem;
+  border-style: solid;
+  border-width: 1.75rem 0;
+  border-image: url('/design-material/ripped-paper/skills-description.webp') 95 0 90 0 fill / 1.75rem 0 / 0 stretch;
   font-size: 1rem;
   line-height: 1.4;
   color: var(--color-base-dark);
@@ -214,4 +217,58 @@
   position: absolute;
   inset: 0;
   cursor: pointer;
+}
+
+@media (width < 1200px) {
+  .skills-section {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 2.5rem;
+    --skills-tear-space: 13rem;
+    padding: 6rem var(--content-padding-inline) calc(var(--skills-tear-space) + 2rem);
+  }
+
+  .skills-heading,
+  .skills-description,
+  .skills-list,
+  .skills-sticker {
+    grid-column: 1;
+  }
+
+  .skills-description {
+    grid-row: 2;
+    max-width: none;
+    margin-left: 0;
+  }
+
+  .skills-list {
+    grid-row: 3;
+    justify-content: center;
+  }
+
+  .skills-sticker {
+    grid-row: 4;
+    justify-self: end;
+  }
+}
+
+@media (width < 768px) {
+  .skills-section {
+    --skills-tear-space: 15.5rem;
+  }
+
+  .skills-description {
+    aspect-ratio: auto;
+    padding: 0.75rem 1.5rem;
+    border-width: 2.5rem 0;
+    border-image: url('/design-material/ripped-paper/skills-description-mobile.webp') 45 0 50 0 fill / 2.5rem 0 / 0 stretch;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .skills-sticker {
+    width: min(14rem, calc(100vw - 9.4rem));
+    margin: -9rem 0.75rem 0 0;
+  }
 }

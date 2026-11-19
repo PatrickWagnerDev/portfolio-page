@@ -307,3 +307,6 @@
 - angular.json: anyComponentStyle warning budget raised to 7 kB
 - public/design-material/photo/patrick-wagner-alt.webp: second photo converted to webp
 - src/app/pages/home/about-me/about-me.scss: responsive about me (single column below 1024 px with text first, mobile paper snippets below 768 px with overlap, own stacking order, rotation of the first strip and two lines in the second, snippet font size follows the viewport)
+- src/app/pages/home/skills/skills.scss: responsive skills (stacked below 1200 px, three icon columns and mobile strip below 768 px, sticker overlaps the last row, sticker size follows the viewport)
+- src/app/pages/home/skills/skills.scss: the background image now scales with the section height so it always covers the section, no solid color, bottom padding follows the torn edge
+- src/app/pages/home/skills/skills.scss: description strip uses border-image so the torn edges keep a fixed size and the text keeps its distance to them
