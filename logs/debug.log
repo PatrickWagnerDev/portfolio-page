@@ -250,3 +250,4 @@
 - src/app/app.routes.ts: titles added to the routes
 - src/app/app.config.ts: page title strategy registered
 - public/i18n/en.json, public/i18n/de.json: titles keys added
+- src/app/pages/home/contact/contact.scss: autofill rule so that autofilled fields keep the transparent background and the light text color

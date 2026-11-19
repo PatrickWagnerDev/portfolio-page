@@ -110,6 +110,14 @@
     color: var(--color-base-light);
     opacity: 0.85;
   }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--color-base-light);
+    caret-color: var(--color-base-light);
+    transition: background-color 600000s 0s;
+  }
 }
 
 .honeypot-field {
