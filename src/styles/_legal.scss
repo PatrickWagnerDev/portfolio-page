@@ -8,6 +8,8 @@
 }
 
 .legal-title {
+  overflow-wrap: anywhere;
+  hyphens: auto;
   font-size: var(--font-size-title);
   font-weight: 700;
   line-height: 1.1;
@@ -60,6 +62,29 @@
     color: var(--color-highlight-3);
   }
 
+  a {
+    overflow-wrap: anywhere;
+  }
+
+  .legal-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 2.5rem 0 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-base-dark);
+
+    &:hover .legal-back-arrow {
+      transform: translateX(-0.5rem);
+    }
+  }
+
+  .legal-back-arrow {
+    width: 2rem;
+    transition: transform var(--transition-fast);
+  }
+
   .legal-section> :first-child {
     margin-top: 0;
   }
@@ -72,5 +97,22 @@
 @media (width > 1440px) {
   .legal-hero {
     background-image: url('/design-material/backgrounds/paper-rips.webp');
+  }
+}
+
+@media (width < 1024px) {
+  .legal-hero {
+    height: 20rem;
+    padding-inline: var(--content-padding-inline);
+  }
+
+  .legal-content {
+    padding-inline: var(--content-padding-inline);
+  }
+}
+
+@media (width < 768px) {
+  .legal-hero {
+    height: 15rem;
   }
 }
