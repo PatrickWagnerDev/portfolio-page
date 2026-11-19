@@ -88,6 +88,9 @@
     "legalNotice": "Impressum – Patrick Wagner",
     "privacyPolicy": "Datenschutzerklärung – Patrick Wagner"
   },
+  "meta": {
+    "description": "Portfolio von Patrick Wagner, Junior Frontend Developer aus Augsburg: Projekte, Skills und Kontakt mit Angular, TypeScript und JavaScript."
+  },
   "contact": {
     "label": "Kontakt",
     "title": "Bereit für die Zusammenarbeit?",

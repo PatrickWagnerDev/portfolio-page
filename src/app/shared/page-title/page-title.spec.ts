@@ -9,6 +9,10 @@ import { PageTitle } from './page-title';
 @Component({ template: '' })
 class DummyPage {}
 
+function readDescription(): string {
+  return document.querySelector('meta[name="description"]')?.getAttribute('content') ?? '';
+}
+
 describe('PageTitle', () => {
   let router: Router;
   let translate: TranslateService;
@@ -45,5 +49,22 @@ describe('PageTitle', () => {
   it('should fall back to the home title for a route without a title', async () => {
     await router.navigateByUrl('/without-title');
     expect(document.title).toBe('Patrick Wagner – Frontend Developer');
+  });
+
+  it('should set the english description of the page', async () => {
+    await router.navigateByUrl('/legal-notice');
+    expect(readDescription()).toContain('junior frontend developer from Augsburg');
+  });
+
+  it('should change the description when the language changes', async () => {
+    await router.navigateByUrl('/legal-notice');
+    await firstValueFrom(translate.use('de'));
+    expect(readDescription()).toContain('Junior Frontend Developer aus Augsburg');
+  });
+
+  it('should keep a single description tag', async () => {
+    await router.navigateByUrl('/legal-notice');
+    await firstValueFrom(translate.use('de'));
+    expect(document.querySelectorAll('meta[name="description"]').length).toBe(1);
   });
 });

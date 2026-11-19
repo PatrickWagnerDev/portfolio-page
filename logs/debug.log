@@ -282,3 +282,7 @@
 - src/app/accessibility.spec.ts: alt texts, one h1, heading levels, safe external links and labels for the home, legal, privacy and project pages
 - src/app/testing/translation-files.ts, node-modules.d.ts: helpers for reading the translation files in the tests
 - tsconfig.app.json: src/app/testing is excluded from the app build
+- src/index.html: description, theme color, canonical link and open graph tags added
+- src/app/shared/page-title/page-title.ts: the page description follows the language like the title
+- src/app/shared/page-title/page-title.spec.ts: tests for the description
+- public/i18n/en.json, public/i18n/de.json: meta.description added

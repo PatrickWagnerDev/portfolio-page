@@ -88,6 +88,9 @@
     "legalNotice": "Legal Notice – Patrick Wagner",
     "privacyPolicy": "Privacy Policy – Patrick Wagner"
   },
+  "meta": {
+    "description": "Portfolio of Patrick Wagner, junior frontend developer from Augsburg: Angular, TypeScript and JavaScript projects, skills and contact."
+  },
   "contact": {
     "label": "Contact me",
     "title": "Ready to work together?",
