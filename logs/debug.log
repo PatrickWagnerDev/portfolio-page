@@ -286,3 +286,5 @@
 - src/app/shared/page-title/page-title.ts: the page description follows the language like the title
 - src/app/shared/page-title/page-title.spec.ts: tests for the description
 - public/i18n/en.json, public/i18n/de.json: meta.description added
+- src/app/pages/project-detail/project-detail.scss: the paper background is at least wide enough that the torn edge stays right of the text column on widescreens
+- src/app/pages/project-detail/project-detail.scss: the maximum of the paper background now limits the position of the torn edge (right of the text column) instead of the paper width

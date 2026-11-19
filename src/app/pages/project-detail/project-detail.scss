@@ -6,7 +6,10 @@
 
 .project-page {
   --next-space: 4.75rem;
-  --paper-max-width: 120vw;
+  --paper-text-left: calc(max(clamp(1.25rem, 5vw, 4.5rem), (100vw - var(--content-max-width)) / 2) + 3rem);
+  --paper-tear-ratio: 0.425;
+  --paper-tear-min: calc(var(--paper-text-left) + 33rem);
+  --paper-tear-max: calc(var(--paper-text-left) + 39rem);
   display: grid;
   position: relative;
   isolation: isolate;
@@ -23,10 +26,10 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    min-width: 100%;
+    min-width: max(100%, calc(var(--paper-tear-min) / var(--paper-tear-ratio)));
     aspect-ratio: 2880 / 1800;
     background: url('/design-material/backgrounds/notebook-paper-3x.webp') left top / 100% 100% no-repeat;
-    translate: min(0px, calc(var(--paper-max-width) - 100%));
+    translate: min(0px, calc(var(--paper-tear-max) - var(--paper-tear-ratio) * 100%));
     pointer-events: none;
   }
 }
