@@ -329,3 +329,5 @@
 - src/app/pages/home/skills/skills.scss: smaller padding and gap on the back side of the sticker below 768 px so the sticker does not grow wider than itself
 - src/app/pages/home/projects/projects.scss: automatic hyphenation below 1200 px instead of below 768 px
 - src/app/pages/home/references/references.scss: more top padding of the stacked cards
+- src/app/pages/project-detail/project-detail.scss: the stacked layout of the project pages now applies below 1340 px (text and preview image had a gap of only 1 px at 1280 px)
+- README.md: website link, hero photo, language detection, responsive description, Vitest and project status updated

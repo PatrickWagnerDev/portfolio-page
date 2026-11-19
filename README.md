@@ -7,20 +7,18 @@
 
 This is my personal portfolio website. It introduces me, showcases my skills and presents my projects to visitors and potential employers. Built with Angular, it is fully responsive and available in German and English.
 
-**Website:** Coming soon
-
-<!-- Replace "Coming soon" with: [your-domain.tld](https://your-domain.tld) -->
+**Website:** [patrickwagnerdev.de](https://patrickwagnerdev.de)
 
 ## Features
 
-- **Hero Section** – Short introduction with a professional photo and a call to action.
+- **Hero Section** – Short introduction with a professional photo (grey-white, turns to color with a caption on hover) and a call to action.
 - **About Me** – Personal introduction and key facts about me.
 - **Skill Set** – Overview of the technologies I work with.
 - **Projects** – Preview of my projects with a dedicated detail page for each: The Last Spellbound, Join and Pokedex.
 - **Colleagues' Thoughts** – Feedback and references from people I worked with.
 - **Contact Form** – Form with validation on blur, a send button that is only active when the form is valid, including the privacy policy checkbox, and clear success or error feedback. Messages are sent via a PHP mailer.
-- **Language Switch** – All texts can be switched between German and English.
-- **Responsive Design** – Optimized layouts for mobile and desktop.
+- **Language Switch** – All texts can be switched between German and English. The language is detected from the browser and defaults to English.
+- **Responsive Design** – Layouts for phone, tablet and desktop from 320 px up to widescreens, in portrait and landscape, with a burger menu (swipe up or tap outside to close) below 1024 px.
 - **Legal Pages** – Legal Notice and Privacy Policy, reachable from the footer.
 
 ## Technologies
@@ -30,6 +28,7 @@ This is my personal portfolio website. It introduces me, showcases my skills and
 - SCSS
 - ngx-translate
 - PHP (mailer for the contact form)
+- Vitest (unit tests, run with `npm test`)
 
 ## Credits
 
@@ -39,7 +38,7 @@ The design template and individual design elements are free to use and were prov
 
 > **Current Status:** In Development
 
-The project is currently being developed.
+Responsive layout and German/English translation are done. Live hosting, real references and the Join project are still pending.
 
 ## Local Development
 
