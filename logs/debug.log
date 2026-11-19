@@ -231,3 +231,6 @@
 - public/i18n/en.json, public/i18n/de.json: hero keys added
 - src/app/pages/home/about-me/about-me.ts, about-me.html: all texts use translation keys
 - public/i18n/en.json, public/i18n/de.json: about me keys added
+- src/app/pages/home/skills/skills.ts, skills.html: label, title, description and sticker texts use translation keys
+- public/i18n/en.json, public/i18n/de.json: skills keys added
+- src/app/pages/home/skills/skills.scss: description strip size adjusted so that the german and english text both fit (changed by the user)

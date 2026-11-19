@@ -33,6 +33,16 @@
     "text2": "Lass uns zusammenarbeiten und gemeinsam etwas Außergewöhnliches aufbauen!",
     "button": "Lass drüber reden"
   },
+  "skills": {
+    "label": "Mein Stack",
+    "title": "Skill-Set",
+    "description": "Angular und TypeScript sind meine stärksten Werkzeuge, ergänzt durch solides HTML, CSS und JavaScript. Diese Fähigkeiten habe ich in meinem Intensivkurs aufgebaut, auch in den unten gezeigten Projekten. Am besten lerne ich, indem ich echte Projekte baue, deshalb macht mir das Einarbeiten in neue Technologien Spaß.",
+    "stickerBack": "Außerdem will ich mich einarbeiten in:",
+    "stickerPull": "Zieh",
+    "stickerWord": "zum",
+    "stickerPeel": "Ablösen",
+    "stickerLabel": "Sticker ablösen"
+  },
   "legalNotice": {
     "title": "Impressum",
     "contact": "Kontakt",

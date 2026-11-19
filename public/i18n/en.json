@@ -33,6 +33,16 @@
     "text2": "Let’s collaborate and build something remarkable together!",
     "button": "Let's talk"
   },
+  "skills": {
+    "label": "My stack",
+    "title": "Skill set",
+    "description": "Angular and TypeScript are my strongest tools, supported by solid HTML, CSS and JavaScript. I built up these skills during my intensive course, including in the projects shown below. I learn best by building real projects, so picking up new technologies is something I enjoy.",
+    "stickerBack": "Also, I'm interested in diving into:",
+    "stickerPull": "Pull",
+    "stickerWord": "to",
+    "stickerPeel": "peel",
+    "stickerLabel": "Peel the sticker"
+  },
   "legalNotice": {
     "title": "Legal notice",
     "contact": "Contact",
