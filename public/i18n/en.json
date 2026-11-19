@@ -19,6 +19,10 @@
     "navLabel": "Footer",
     "legalNotice": "Legal Notice"
   },
+  "hero": {
+    "greetingHover": "I'm Patrick Wagner",
+    "button": "Get in Touch"
+  },
   "legalNotice": {
     "title": "Legal notice",
     "contact": "Contact",

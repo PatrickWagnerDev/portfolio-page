@@ -19,6 +19,10 @@
     "navLabel": "Fußbereich",
     "legalNotice": "Impressum"
   },
+  "hero": {
+    "greetingHover": "Ich bin Patrick Wagner",
+    "button": "Sich kurzschließen"
+  },
   "legalNotice": {
     "title": "Impressum",
     "contact": "Kontakt",

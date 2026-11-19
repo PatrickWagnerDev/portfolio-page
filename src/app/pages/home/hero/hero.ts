@@ -1,4 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { Intro, LETTER_STEP_MS } from '../../../shared/intro/intro';
 
 interface TitleLetter {
@@ -10,7 +11,7 @@ const TITLE_WORDS = ['Frontend', 'Developer'];
 const LETTER_COUNT = Math.max(...TITLE_WORDS.map((word) => word.length));
 
 @Component({
-  imports: [],
+  imports: [TranslatePipe],
   selector: 'app-hero',
   styleUrl: './hero.scss',
   templateUrl: './hero.html',

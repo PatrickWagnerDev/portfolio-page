@@ -227,3 +227,5 @@
 - src/app/layout/header/header.ts, header.html: navigation and aria labels use translation keys
 - src/app/layout/footer/footer.ts, footer.html: labels use translation keys, email label uses common.email
 - public/i18n/en.json, public/i18n/de.json: header and footer keys added
+- src/app/pages/home/hero/hero.ts, hero.html: hover greeting and button use translation keys, Hello world stays english
+- public/i18n/en.json, public/i18n/de.json: hero keys added
