@@ -37,6 +37,8 @@
 }
 
 .reference-list {
+  --reference-width: clamp(28rem, calc(100cqw / 2.33), 32rem);
+  container-type: inline-size;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -51,12 +53,12 @@
   --paper-flip: 1;
   position: relative;
   flex-shrink: 0;
-  width: 32rem;
+  width: var(--reference-width);
   aspect-ratio: 1200 / 787;
   transform: rotate(var(--reference-angle));
 
   &+& {
-    margin-left: -11rem;
+    margin-left: calc(var(--reference-width) * -0.344);
   }
 
   &:nth-child(1) {
@@ -74,7 +76,7 @@
     --reference-angle: 5deg;
     --paper-turn: 180deg;
     z-index: 1;
-    margin-left: -10.3rem;
+    margin-left: calc(var(--reference-width) * -0.322);
   }
 
   &.reference-top {

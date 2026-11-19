@@ -289,3 +289,7 @@
 - src/app/pages/project-detail/project-detail.scss: the paper background is at least wide enough that the torn edge stays right of the text column on widescreens
 - src/app/pages/project-detail/project-detail.scss: the maximum of the paper background now limits the position of the torn edge (right of the text column) instead of the paper width
 - src/app/pages/home/hero/hero.scss: the social links stay above the torn paper edge, the position follows the height of the edge (variable hero-tear-height)
+- src/app/pages/home/skills/skills.scss: the skill icon columns can shrink so that the section no longer overflows between 1200 and 1440 px
+- src/app/pages/home/references/references.scss: reference card width follows the list width (28rem to 32rem), overlaps are proportional
+- src/app/pages/home/contact/contact.scss: minimum gap between the two columns
+- src/app/pages/home/skills/skills.scss: vertical padding for the description strip so that the text keeps its distance from the torn paper edges when the strip grows

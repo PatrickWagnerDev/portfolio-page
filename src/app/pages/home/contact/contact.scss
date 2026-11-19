@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: minmax(0, 35rem) minmax(0, 30rem);
   justify-content: space-between;
+  column-gap: 2rem;
   align-items: start;
   padding: 9rem var(--content-padding-wide) 0rem;
   background: url('/design-material/backgrounds/contact-3x.webp') center top / 100% auto no-repeat, linear-gradient(var(--color-base-dark), var(--color-base-dark)) 0 4vw / 100% 100% no-repeat;

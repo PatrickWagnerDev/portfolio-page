@@ -55,7 +55,7 @@
   max-width: 40.5rem;
   margin-left: 1.5rem;
   aspect-ratio: 2800 / 750;
-  padding: 0 2.2rem;
+  padding: 1.25rem 2.2rem;
   background: url('/design-material/ripped-paper/skills-description.webp') center / 100% 100% no-repeat;
   font-size: 1rem;
   line-height: 1.4;
@@ -66,7 +66,7 @@
   grid-row: 2;
   grid-column: 2;
   display: grid;
-  grid-template-columns: repeat(5, 8.5rem);
+  grid-template-columns: repeat(5, minmax(0, 8.5rem));
   row-gap: 1.5rem;
   padding: 0;
   list-style: none;
