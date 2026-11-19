@@ -314,3 +314,6 @@
 - src/app/pages/home/projects/projects.scss: responsive projects (single column below 768 px, two columns below 1200 px with smaller gap, button below the text on small screens and touch devices in the dark color, hover effect on the images only where the button lies on the image, automatic hyphenation on mobile)
 - src/app/pages/home/references/references.scss: responsive references (cards stacked below 1200 px with overlap and rotation, zigzag on tablet, full width on mobile, right aligned heading, shorter arrow on mobile)
 - src/app/pages/home/references/references.scss: the hover stripes on the reference cards are less intense (opacity 0.5)
+- src/app/pages/home/contact/contact.scss: responsive contact (single column below 1024 px, sticker and arrow positions, background image scales with the section height, hyphenated heading)
+- src/app/layout/footer/footer.scss: responsive footer (logo and copyright in one row, legal notice right aligned, social links spread and shrinking without overlap, no own background, the contact background continues below it)
+- src/styles/_variables.scss: new footer-height variable

@@ -5,13 +5,15 @@
 }
 
 .contact-section {
+  --contact-bg-height: calc(100vw * 0.6254);
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 35rem) minmax(0, 30rem);
   justify-content: space-between;
   column-gap: 2rem;
   align-items: start;
-  padding: 9rem var(--content-padding-wide) 0rem;
-  background: url('/design-material/backgrounds/contact-3x.webp') center top / 100% auto no-repeat, linear-gradient(var(--color-base-dark), var(--color-base-dark)) 0 4vw / 100% 100% no-repeat;
+  padding: 9rem var(--content-padding-wide) var(--footer-height);
+  background: url('/design-material/backgrounds/contact-3x.webp') center top / auto max(100%, var(--contact-bg-height)) no-repeat;
   color: var(--color-base-light);
 }
 
@@ -219,4 +221,42 @@
   top: calc(2.8rem - 10.25rem);
   right: 0;
   width: 10.25rem;
+}
+
+@media (width < 1024px) {
+  .contact-section {
+    --contact-tear-space: 6.5rem;
+    --contact-edge: max(var(--content-padding-inline), calc((100% - 40rem) / 2));
+    grid-template-columns: minmax(0, 40rem);
+    justify-content: center;
+    row-gap: 3rem;
+    padding: calc(var(--contact-tear-space) + 9rem) var(--content-padding-inline) calc(4rem + var(--footer-height));
+  }
+
+  .contact-heading {
+    margin-bottom: 2rem;
+
+    .section-title {
+      hyphens: auto;
+    }
+  }
+
+  .contact-form {
+    position: static;
+    margin-top: 0;
+  }
+
+  .contact-arrow {
+    position: absolute;
+    bottom: calc(4.25rem + var(--footer-height));
+    left: var(--contact-edge);
+    width: 9rem;
+    margin: 0;
+  }
+
+  .contact-sticker {
+    top: calc(var(--contact-tear-space) + 0.5rem);
+    right: var(--contact-edge);
+    width: 7.5rem;
+  }
 }

@@ -4,7 +4,6 @@
 
 .footer-section {
   padding: 0rem var(--content-padding-wide) 2rem;
-  background: url('/design-material/backgrounds/contact-3x.webp') center bottom / 100% auto no-repeat var(--color-base-dark);
   color: var(--color-base-light);
 }
 
@@ -48,6 +47,12 @@
   font-size: 1.25rem;
   font-weight: 700;
   color: inherit;
+}
+
+:host(:not(.footer-light)) .footer-section {
+  position: relative;
+  min-height: var(--footer-height);
+  margin-top: calc(-1 * var(--footer-height));
 }
 
 :host(.footer-light) .footer-section {
@@ -105,4 +110,43 @@
   opacity: 0;
   transform: rotate(-360deg);
   transition: left 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+@media (width < 1024px) {
+  .footer-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 1rem;
+    padding-inline: var(--content-padding-inline);
+  }
+
+  .footer-copyright {
+    margin-top: 0;
+    text-align: right;
+  }
+
+  .footer-nav {
+    grid-column: 1 / -1;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.375rem;
+    padding-inline: 0.75rem;
+  }
+
+  .footer-social {
+    margin-inline: -0.75rem;
+    padding-inline: 0.75rem;
+    font-size: clamp(0.875rem, 4.6vw, 1.25rem);
+  }
+
+  .footer-links li:has(.footer-legal) {
+    flex-basis: calc(100% + 1.5rem);
+    order: -1;
+    margin: 0 -0.75rem 1.875rem;
+    text-align: right;
+  }
 }
