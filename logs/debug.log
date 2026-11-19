@@ -272,3 +272,6 @@
 - src/styles/_variables.scss: new content-padding-wide, font-size-title and transition-fast variables, content-padding-inline shrinks with the viewport
 - src/**/*.scss: use the new variables, clamp() for hero title, section titles, project name and coming soon banner
 - about-me.scss, contact.scss, project-detail.scss: fixed grid columns use minmax(0, ...), snippet item width is 35rem with max-width 100%
+- src/app/testing/test-setup.ts: new shared providers and browser stubs for the tests
+- src/app/**/*.spec.ts: repaired all generated tests, removed the angular template tests (should render title, should create), added real checks for each component
+- src/app/shared/language/language.spec.ts, shared/intro/intro.spec.ts: new tests for the language detection and the intro phases
