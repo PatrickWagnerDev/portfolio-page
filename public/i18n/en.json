@@ -93,6 +93,25 @@
     "sent": "Thank you! Your message is on its way.",
     "failed": "Something went wrong. Please try again."
   },
+  "references": {
+    "label": "In their words:",
+    "title": "Colleagues' Thoughts",
+    "profile": "Profile"
+  },
+  "referenceData": {
+    "first": {
+      "role": "Frontend Developer",
+      "text": "Karl really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment."
+    },
+    "second": {
+      "role": "Frontend Developer",
+      "text": "It was a great pleasure to work with Karl. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well."
+    },
+    "third": {
+      "role": "Frontend Developer",
+      "text": "Karl was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals."
+    }
+  },
   "legalNotice": {
     "title": "Legal notice",
     "contact": "Contact",

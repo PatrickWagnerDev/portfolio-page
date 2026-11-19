@@ -240,3 +240,5 @@
 - public/i18n/en.json, public/i18n/de.json: projects and projectData keys added
 - src/app/pages/home/contact/contact.ts, contact.html: all texts, placeholders and messages use translation keys, hoppla replaced by oops in the english text
 - public/i18n/en.json, public/i18n/de.json: contact keys added
+- src/app/pages/home/references/references.ts, references.html: label, title, profile link, roles and quotes use translation keys, references have ids
+- public/i18n/en.json, public/i18n/de.json: references and referenceData keys added

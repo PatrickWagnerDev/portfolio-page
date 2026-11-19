@@ -1,21 +1,21 @@
 <section id="references-section" class="references-section">
     <header class="references-heading">
-        <p class="section-label" appReveal>In their words:</p>
-        <h2 class="section-title">Colleagues' Thoughts</h2>
+        <p class="section-label" appReveal>{{ 'references.label' | translate }}</p>
+        <h2 class="section-title">{{ 'references.title' | translate }}</h2>
     </header>
 
     <ul class="reference-list">
-        @for (reference of references; track reference.name; let index = $index) {
+        @for (reference of references; track reference.id; let index = $index) {
         <li class="reference-item" [class.reference-top]="topIndex() === index" (mouseenter)="topIndex.set(index)" (focusin)="topIndex.set(index)">
             <blockquote class="reference-card">
-                <p class="reference-text">{{ reference.text }}</p>
+                <p class="reference-text">{{ ('referenceData.' + reference.id + '.text') | translate }}</p>
                 <footer class="reference-footer">
                     <p class="reference-person">
                         <strong class="reference-name">{{ reference.name }}</strong>
-                        <span class="reference-role">{{ reference.role }}</span>
+                        <span class="reference-role">{{ ('referenceData.' + reference.id + '.role') | translate }}</span>
                     </p>
                     @if (reference.profileUrl) {
-                    <a class="reference-link" [href]="reference.profileUrl" target="_blank" rel="noopener">Profile</a>
+                    <a class="reference-link" [href]="reference.profileUrl" target="_blank" rel="noopener">{{ 'references.profile' | translate }}</a>
                     }
                 </footer>
             </blockquote>

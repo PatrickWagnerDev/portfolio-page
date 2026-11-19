@@ -93,6 +93,25 @@
     "sent": "Danke! Deine Nachricht ist unterwegs.",
     "failed": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal."
   },
+  "references": {
+    "label": "In ihren Worten:",
+    "title": "Gedanken von Kollegen",
+    "profile": "Profil"
+  },
+  "referenceData": {
+    "first": {
+      "role": "Frontend Developer",
+      "text": "Karl hat das Team mit seiner hervorragenden Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen."
+    },
+    "second": {
+      "role": "Frontend Developer",
+      "text": "Es war eine große Freude, mit Karl zu arbeiten. Er versteht es, Teammitglieder anzutreiben und zu ermutigen, die bestmögliche Arbeit zu präsentieren, und bringt immer etwas zum Brainstorming ein. Beim Wohlbefinden der Gruppe war er immer präsent und hatte ein offenes Ohr, um anderen zu helfen, ebenfalls mit viel Humor."
+    },
+    "third": {
+      "role": "Frontend Developer",
+      "text": "Karl war ein Top-Teamkollege an der DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben."
+    }
+  },
   "legalNotice": {
     "title": "Impressum",
     "contact": "Kontakt",
