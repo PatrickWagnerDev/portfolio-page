@@ -246,3 +246,7 @@
 - public/i18n/en.json, public/i18n/de.json: projectPage keys added
 - src/app/pages/project-detail/project-detail.scss: paper background moved to a pseudo-element that covers the full page height, with a maximum width (--paper-max-width) after which the left side is cut off
 - src/app/pages/project-detail/project-detail.scss: overflow clip in both directions so the paper background no longer sticks out below short project pages
+- src/app/shared/page-title/page-title.ts: new title strategy that translates the route titles and updates them when the language changes
+- src/app/app.routes.ts: titles added to the routes
+- src/app/app.config.ts: page title strategy registered
+- public/i18n/en.json, public/i18n/de.json: titles keys added

@@ -5,9 +5,9 @@ import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 import { ProjectDetail } from './pages/project-detail/project-detail';
 
 export const routes: Routes = [
-  { path: '', component: Home },
-  { path: 'project/:id', component: ProjectDetail },
-  { path: 'legal-notice', component: LegalNotice },
-  { path: 'privacy-policy', component: PrivacyPolicy },
+  { path: '', component: Home, title: 'titles.home' },
+  { path: 'project/:id', component: ProjectDetail, title: 'titles.project' },
+  { path: 'legal-notice', component: LegalNotice, title: 'titles.legalNotice' },
+  { path: 'privacy-policy', component: PrivacyPolicy, title: 'titles.privacyPolicy' },
   { path: '**', redirectTo: '' },
 ];

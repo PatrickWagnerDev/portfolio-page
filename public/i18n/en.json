@@ -80,6 +80,12 @@
     "next": "Next Project",
     "comingSoon": "Coming soon..."
   },
+  "titles": {
+    "home": "Patrick Wagner – Frontend Developer",
+    "project": "Project – Patrick Wagner",
+    "legalNotice": "Legal Notice – Patrick Wagner",
+    "privacyPolicy": "Privacy Policy – Patrick Wagner"
+  },
   "contact": {
     "label": "Contact me",
     "title": "Ready to work together?",
