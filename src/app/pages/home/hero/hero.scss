@@ -10,6 +10,7 @@
   justify-items: start;
   place-content: center;
   height: 100vh;
+  min-height: 47.5rem;
   padding-inline: var(--content-padding-inline);
   color: var(--color-base-light);
   background: url('/design-material/backgrounds/hero-3x.webp') center bottom / cover no-repeat;
@@ -23,7 +24,7 @@
   user-select: none;
   grid-row: 2;
   grid-column: 1;
-  min-width: 53.75rem;
+  min-width: 7.17em;
 }
 
 .title-line {
@@ -32,7 +33,7 @@
   --hover-case: uppercase;
 
   &:last-child {
-    padding-left: 9.5rem;
+    padding-left: 1.27em;
     text-transform: uppercase;
     --hover-case: lowercase;
   }
@@ -269,6 +270,76 @@
 
 .social-link img {
   display: block;
+}
+
+@media (width < 1024px) and (height >= 30rem) {
+  .hero-section {
+    padding-top: 6rem;
+    padding-bottom: calc(var(--hero-tear-height) + 2.5rem);
+  }
+
+  .hero-button {
+    margin-top: 1.5rem;
+  }
+
+  .hero-photo {
+    grid-row: 4;
+    align-self: center;
+    justify-self: center;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (width < 768px) {
+  .hero-title {
+    min-width: 0;
+    font-size: clamp(2.5rem, calc((100vw - 2.5rem) / 6), 7.5rem);
+  }
+
+  .title-line:last-child {
+    padding-left: 0;
+  }
+}
+
+@media (width < 1024px), (height < 30rem) {
+  .social-list {
+    display: none;
+  }
+}
+
+@media (height < 30rem) {
+  .hero-section {
+    grid-template-columns: max-content auto;
+    column-gap: 2rem;
+    height: auto;
+    min-height: 100vh;
+    padding-block: 6.5rem calc(var(--hero-tear-height) + 1.5rem);
+  }
+
+  .hero-title {
+    min-width: 7.17em;
+    font-size: clamp(2.5rem, 14vh, 4.5rem);
+  }
+
+  .title-line:last-child {
+    padding-left: 1.27em;
+  }
+
+  .hero-button {
+    margin-top: 1rem;
+  }
+
+  .hero-photo {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    align-self: center;
+    justify-self: start;
+    margin-top: 0;
+  }
+
+  .polaroid-frame {
+    width: 9rem;
+  }
 }
 
 @media (width > 1440px) {

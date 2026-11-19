@@ -1,6 +1,10 @@
 <section #panel class="menu-panel" role="dialog" aria-modal="true" [attr.aria-label]="'header.menuLabel' | translate"
     [attr.inert]="isOpen() ? null : ''" [style.transform]="swipeOffset() ? 'translateY(' + -swipeOffset() + 'px)' : null"
     (touchstart)="startSwipe($event)" (touchmove)="moveSwipe($event)" (touchend)="endSwipe()">
+    <a class="menu-logo" routerLink="/" fragment="hero-section" [attr.aria-label]="'header.logoLabel' | translate"
+        (click)="closeMenu()">
+        <span class="logo-mark"></span>
+    </a>
     <button #closeButton class="menu-close" type="button" [attr.aria-label]="'header.menuClose' | translate"
         (click)="closeMenu()"></button>
     <nav [attr.aria-label]="'header.navLabel' | translate">

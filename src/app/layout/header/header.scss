@@ -65,7 +65,7 @@
   padding: 0;
   border: 0;
   background: none;
-  color: var(--color-base-light);
+  color: var(--color-highlight-2);
   cursor: pointer;
 
   &::before {
@@ -76,7 +76,7 @@
       linear-gradient(currentColor, currentColor) top / 100% 3px no-repeat,
       linear-gradient(currentColor, currentColor) center / 100% 3px no-repeat,
       linear-gradient(currentColor, currentColor) bottom / 100% 3px no-repeat;
-    transition: color var(--transition-fast);
+    transition: opacity var(--transition-fast);
   }
 
   &::after {
@@ -88,15 +88,19 @@
     transition: opacity var(--transition-fast);
   }
 
-  &:hover,
-  &:active,
-  &:focus-visible {
-    color: var(--color-highlight-3);
+  &:hover::before,
+  &:active::before {
+    opacity: 0;
   }
 
   &:hover::after,
   &:active::after {
     opacity: 1;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-highlight-2);
+    outline-offset: 4px;
   }
 }
 

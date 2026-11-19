@@ -301,3 +301,8 @@
 - public/design-material/photo/patrick-wagner.webp: portfolio photo converted to webp (800x800, 65 KB)
 - src/app/pages/home/hero/hero.html, hero.scss: photo inside the polaroid frame, grey scale by default, color on hover and focus, caption "Patrick :)" changes to "Patrick :D", bold handwritten font
 - public/i18n/en.json, public/i18n/de.json: hero.photoAlt
+- src/app/pages/home/hero/hero.scss: responsive hero (stacked layout below 1024 px, side by side photo on flat landscape screens, title block always centered, min-width and indent of the title in em, button under the end of DEVELOPER, min-height 47.5rem, social links hidden below 1024 px)
+- src/app/layout/header/header.scss, menu/menu.scss: burger and close button in the monogram color, on hover only the pressed webp is shown
+- src/app/layout/menu/: dark paper background with torn edge, transparent below it, blurred page behind, logo in the menu, content centered vertically
+- angular.json: anyComponentStyle warning budget raised to 7 kB
+- public/design-material/photo/patrick-wagner-alt.webp: second photo converted to webp

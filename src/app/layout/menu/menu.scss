@@ -3,26 +3,27 @@
   inset: 0;
   z-index: 20;
   visibility: hidden;
-  background-color: transparent;
-  transition: background-color 0.4s ease, visibility 0s 0.4s;
+  transition: backdrop-filter 0.4s ease, visibility 0s 0.4s;
 }
 
 :host(.menu-open) {
   visibility: visible;
-  background-color: color-mix(in srgb, var(--color-base-dark) 60%, transparent);
-  transition: background-color 0.4s ease;
+  backdrop-filter: blur(0.3rem);
+  transition: backdrop-filter 0.4s ease;
 }
 
 .menu-panel {
+  --menu-tear-height: max(calc(100vw * 0.0542), calc(100dvh * 0.0867));
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
+  justify-content: safe center;
+  gap: clamp(1.5rem, 5dvh, 3.5rem);
   height: 100dvh;
   overflow-y: auto;
-  padding: 6rem var(--content-padding-inline) 4rem;
-  background-color: var(--color-base-dark);
+  padding: 5rem var(--content-padding-inline) calc(var(--menu-tear-height) + 1rem);
+  background: url('/design-material/backgrounds/hero-3x.webp') center bottom / cover no-repeat;
   transform: translateY(-100%);
   transition: transform 0.4s ease;
 }
@@ -44,7 +45,7 @@
   padding: 0;
   border: 0;
   background: none;
-  color: var(--color-base-light);
+  color: var(--color-highlight-2);
   cursor: pointer;
 
   &::before,
@@ -58,7 +59,7 @@
     background-color: currentColor;
     border-radius: 2px;
     transform: translate(-50%, -50%) rotate(45deg);
-    transition: background-color var(--transition-fast);
+    transition: opacity var(--transition-fast);
   }
 
   &::after {
@@ -66,24 +67,47 @@
   }
 
   &:hover,
-  &:active,
-  &:focus-visible {
-    color: var(--color-highlight-3);
+  &:active {
+    background: url('/design-material/lines/menu-pressed-1.webp') center / 140% no-repeat;
+
+    &::before,
+    &::after {
+      opacity: 0;
+    }
   }
 
-  &:hover::after,
-  &:active::after {
-    inset: -0.5rem;
-    width: auto;
-    height: auto;
-    background: url('/design-material/lines/menu-pressed-1.webp') center / contain no-repeat;
-    transform: none;
+  &:focus-visible {
+    outline: 2px solid var(--color-highlight-2);
+    outline-offset: 4px;
   }
+}
+
+.menu-logo {
+  position: absolute;
+  top: 1.5rem;
+  left: var(--content-padding-inline);
+  display: block;
+  height: 2.5rem;
+  aspect-ratio: 1;
+
+  &:hover .logo-mark,
+  &:focus-visible .logo-mark {
+    background-color: var(--color-highlight-1);
+  }
+}
+
+.logo-mark {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-highlight-2);
+  mask: url('/design-material/monogram/Monogram_teal.png') center / contain no-repeat;
+  transition: background-color var(--transition-fast);
 }
 
 .menu-list {
   display: grid;
-  gap: 1.5rem;
+  gap: clamp(1rem, 4dvh, 2.5rem);
   padding: 0;
   text-align: center;
   list-style: none;
@@ -131,7 +155,7 @@
   .menu-panel {
     gap: 1.25rem;
     padding-top: 4.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: calc(var(--menu-tear-height) + 1rem);
   }
 
   .menu-list {
@@ -147,7 +171,6 @@
   .menu-panel {
     height: auto;
     max-height: 100dvh;
-    padding-bottom: 3rem;
   }
 }
 
