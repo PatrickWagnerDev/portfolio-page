@@ -298,3 +298,6 @@
 - src/app/data/nav-data.ts: navigation items shared by header navbar and menu
 - src/app/layout/header/: burger button below 1024 px instead of navbar and language switch, menu state and focus handling, tests for opening and closing
 - public/i18n/en.json, public/i18n/de.json: header.menuLabel, menuOpen, menuClose
+- public/design-material/photo/patrick-wagner.webp: portfolio photo converted to webp (800x800, 65 KB)
+- src/app/pages/home/hero/hero.html, hero.scss: photo inside the polaroid frame, grey scale by default, color on hover and focus, caption "Patrick :)" changes to "Patrick :D", bold handwritten font
+- public/i18n/en.json, public/i18n/de.json: hero.photoAlt

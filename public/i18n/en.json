@@ -25,6 +25,7 @@
     "legalNotice": "Legal Notice"
   },
   "hero": {
+    "photoAlt": "Portrait of Patrick Wagner",
     "greetingHover": "I'm Patrick Wagner",
     "button": "Get in Touch"
   },
