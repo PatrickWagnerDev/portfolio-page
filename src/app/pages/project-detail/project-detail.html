@@ -9,15 +9,15 @@
 
         <article class="project-article">
             <h2 class="project-heading">Description</h2>
-            <p class="project-copy">{{ project.description }}</p>
+            <p class="project-copy">{{ ('projectData.' + project.id + '.description') | translate }}</p>
         </article>
 
         <article class="project-article">
             <h2 class="project-heading">Implementation Details</h2>
-            <p class="project-copy">{{ project.details }}</p>
+            <p class="project-copy">{{ ('projectData.' + project.id + '.details') | translate }}</p>
         </article>
 
-        <p class="project-duration"><strong>Duration:</strong> {{ project.duration }}</p>
+        <p class="project-duration"><strong>Duration:</strong> {{ ('projectData.' + project.id + '.duration') | translate }}</p>
 
         <ul class="technology-list">
             @for (technology of project.technologies; track technology) {

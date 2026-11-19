@@ -43,6 +43,33 @@
     "stickerPeel": "Ablösen",
     "stickerLabel": "Sticker ablösen"
   },
+  "projects": {
+    "label": "Mein Handwerk",
+    "title": "Projekte",
+    "intro1": "Drei Projekte, drei Wege zu sehen, wie ich fürs Web baue. Schau dich um, klick dich durch und probier sie selbst aus.",
+    "intro2": "Kämpf dich durch drei immer schwerere Level in einem Fantasy-Jump-and-Run, finde in einem Pokédex heraus, wer dein Lieblings-Pokémon ist, oder organisiere deine Aufgaben in einem Kanban-Board voller cleverer kleiner Features.",
+    "intro3": "Probier sie einfach aus!",
+    "button": "Projektdetails",
+    "previewAlt": "Vorschau von {{title}}",
+    "featuredAlt": "Hervorgehobenes Projekt, sieh dir alle Details an"
+  },
+  "projectData": {
+    "join": {
+      "description": "Ein Kanban-Board zur Aufgabenverwaltung mit Drag and Drop, Unteraufgaben, Prioritäten und einer Kontaktliste. Im Team mit Angular, TypeScript und Supabase gebaut.",
+      "details": "Kurzer Text, der deine Rolle oder den Ablauf in diesem Projekt beschreibt. Zeig Recruitern, wie du selbstständig oder im Team strukturiert arbeitest.",
+      "duration": "5 Wochen"
+    },
+    "the-last-spellbound": {
+      "description": "Ein Fantasy-Jump-and-Run für Tastatur und Smartphone, direkt im Browser spielbar. Kämpfe dich durch drei Level, die jeweils mit einem Endboss enden und immer schwerer werden. Gebaut mit objektorientiertem JavaScript auf einem Canvas.",
+      "details": "Das Spiel ist in reinem JavaScript geschrieben und auf einem Canvas gerendert, mit einer Klassenhierarchie für Figuren, Gegner, Bosse, Projektile und Sammelobjekte. Jedes der drei Level endet mit einem eigenen Boss: einem Magier, einem Dämon und einem Dunklen Ritter mit unterschiedlichen Angriffsmustern. Du wählst eine Spielfigur und ein Level, der Fortschritt wird im Local Storage gespeichert, und das Spiel läuft am Desktop mit der Tastatur und mobil mit Touch-Steuerung auf dem Bildschirm. Der Code ist mit JSDoc dokumentiert.",
+      "duration": "2 Wochen"
+    },
+    "pokedex": {
+      "description": "Stöbere durch die ersten 1025 Pokémon mit Name, Typ, Größe, Gewicht und Werten. Mit der Suchleiste findest du dein Lieblings-Pokémon schnell. Die Daten kommen von einer REST-API.",
+      "details": "Der Pokédex ist mit reinem JavaScript gebaut und holt seine Daten von der PokéAPI. Die Pokémon erscheinen als Karten mit Name, Typ und Bild, und eine Detailansicht zeigt weitere Informationen und Werte, samt Navigation zwischen benachbarten Pokémon. Weitere Pokémon lassen sich bei Bedarf nachladen, ein Ladeindikator gibt Rückmeldung, während Daten geladen werden, und Typ-Icons werden zwischengespeichert, um unnötige Anfragen zu vermeiden.",
+      "duration": "1 Woche"
+    }
+  },
   "legalNotice": {
     "title": "Impressum",
     "contact": "Kontakt",

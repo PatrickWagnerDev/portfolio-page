@@ -1,11 +1,12 @@
 import { Component, computed, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 import { Reveal } from '../../shared/reveal/reveal';
 import { RoundSticker } from '../../shared/round-sticker/round-sticker';
 import { PROJECT_INFOS, ProjectInfo } from './project-data';
 
 @Component({
-  imports: [RouterLink, RoundSticker, Reveal],
+  imports: [RouterLink, RoundSticker, Reveal, TranslatePipe],
   selector: 'app-project-detail',
   styleUrl: './project-detail.scss',
   templateUrl: './project-detail.html',

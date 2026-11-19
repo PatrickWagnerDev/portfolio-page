@@ -1,31 +1,26 @@
 <section id="projects-section" class="projects-section">
     <header class="projects-heading">
-        <p class="section-label">My craft</p>
-        <h2 class="section-title projects-title" appReveal>Projects</h2>
-        <p class="projects-description">
-            Three projects, three ways to see how I build for the web. Take a look, click around and try them out
-            yourself.
-        </p>
-        <p class="projects-description">
-            Fight through three increasingly hard levels in a fantasy jump-and-run, find out who your favourite Pokémon
-            is in a Pokédex, or organise your tasks in a kanban board full of clever little features.
-        </p>
-        <p class="projects-description">Go ahead and give them a try!</p>
+        <p class="section-label">{{ 'projects.label' | translate }}</p>
+        <h2 class="section-title projects-title" appReveal>{{ 'projects.title' | translate }}</h2>
+        <p class="projects-description">{{ 'projects.intro1' | translate }}</p>
+        <p class="projects-description">{{ 'projects.intro2' | translate }}</p>
+        <p class="projects-description">{{ 'projects.intro3' | translate }}</p>
     </header>
 
     <ul class="project-list">
         @for (project of projects; track project.id) {
         <li class="project-item" [class.project-featured]="project.featured">
             <figure class="project-figure">
-                <img class="project-image" [src]="project.image" [alt]="project.title + ' preview'">
-                <a class="outline-button project-button" [routerLink]="['/project', project.id]">Project details</a>
+                <img class="project-image" [src]="project.image"
+                    [alt]="'projects.previewAlt' | translate: { title: project.title }">
+                <a class="outline-button project-button" [routerLink]="['/project', project.id]">{{ 'projects.button' | translate }}</a>
                 @if (project.featured) {
                 <img class="project-sticker" src="/design-material/stickers/featured-sticker.webp"
-                    alt="Featured project, check all details">
+                    [alt]="'projects.featuredAlt' | translate">
                 }
             </figure>
             <h3 class="project-title">{{ project.title }}</h3>
-            <p class="project-text">{{ project.description }}</p>
+            <p class="project-text">{{ ('projectData.' + project.id + '.description') | translate }}</p>
         </li>
         }
     </ul>

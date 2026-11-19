@@ -43,6 +43,33 @@
     "stickerPeel": "peel",
     "stickerLabel": "Peel the sticker"
   },
+  "projects": {
+    "label": "My craft",
+    "title": "Projects",
+    "intro1": "Three projects, three ways to see how I build for the web. Take a look, click around and try them out yourself.",
+    "intro2": "Fight through three increasingly hard levels in a fantasy jump-and-run, find out who your favourite Pokémon is in a Pokédex, or organise your tasks in a kanban board full of clever little features.",
+    "intro3": "Go ahead and give them a try!",
+    "button": "Project details",
+    "previewAlt": "{{title}} preview",
+    "featuredAlt": "Featured project, check all details"
+  },
+  "projectData": {
+    "join": {
+      "description": "A kanban board for managing tasks with drag and drop, subtasks, priorities and a contact list. Built in a team with Angular, TypeScript and Supabase.",
+      "details": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+      "duration": "5 weeks"
+    },
+    "the-last-spellbound": {
+      "description": "A fantasy jump-and-run for keyboard and smartphone, played right in the browser. Fight through three levels, each ending with a boss and each harder than the last. Built with object-oriented JavaScript on a canvas.",
+      "details": "The game is written in vanilla JavaScript and rendered on a canvas, with a class hierarchy for characters, enemies, bosses, projectiles and collectibles. Each of the three levels ends with its own boss: a mage, a demon and a dark knight with different attack patterns. Players pick a character and a level, progress is saved in Local Storage, and the game runs on desktop with a keyboard and on mobile with on-screen touch controls. The code is documented with JSDoc.",
+      "duration": "2 weeks"
+    },
+    "pokedex": {
+      "description": "Browse the first 1025 Pokémon with their name, type, size, weight and stats. Use the search bar to find your favourite quickly. Data comes from a REST API.",
+      "details": "The Pokédex is built with vanilla JavaScript and fetches its data from the PokéAPI. Pokémon appear as cards with their name, type and image, and a detail view shows more information and stats, with navigation between neighbouring Pokémon. More Pokémon can be loaded on demand, a loading indicator gives feedback while data is fetched, and type icons are cached to avoid unnecessary requests.",
+      "duration": "1 week"
+    }
+  },
   "legalNotice": {
     "title": "Legal notice",
     "contact": "Contact",

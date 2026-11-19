@@ -234,3 +234,7 @@
 - src/app/pages/home/skills/skills.ts, skills.html: label, title, description and sticker texts use translation keys
 - public/i18n/en.json, public/i18n/de.json: skills keys added
 - src/app/pages/home/skills/skills.scss: description strip size adjusted so that the german and english text both fit (changed by the user)
+- src/app/pages/project-detail/project-data.ts: description, details and duration removed from the data, texts moved to the translation files
+- src/app/pages/home/projects/projects.ts, projects.html: all texts use translation keys
+- src/app/pages/project-detail/project-detail.ts, project-detail.html: description, details and duration use translation keys
+- public/i18n/en.json, public/i18n/de.json: projects and projectData keys added
