@@ -27,15 +27,15 @@ export class Hero implements OnInit {
   readonly titleLines = this.buildTitleLines();
 
   ngOnInit(): void {
-    this.intro.start(LETTER_COUNT);
+    this.intro.startIntro(LETTER_COUNT);
   }
 
   private buildTitleLines(): TitleLetter[][] {
     return TITLE_WORDS.map((word, wordIndex) => {
-      const LETTERS = word.split('');
-      return LETTERS.map((char, index) => {
-        const STEP = wordIndex === 0 ? index : LETTERS.length - 1 - index;
-        return { char, delay: STEP * LETTER_STEP_MS };
+      const WORD_LETTERS = word.split('');
+      return WORD_LETTERS.map((char, index) => {
+        const ORDER_INDEX = wordIndex === 0 ? index : WORD_LETTERS.length - 1 - index;
+        return { char, delay: ORDER_INDEX * LETTER_STEP_MS };
       });
     });
   }

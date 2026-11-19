@@ -22,7 +22,7 @@ export class PageTitle extends TitleStrategy {
   }
 
   private applyTitle(): void {
-    const TEXT = this.translate.instant(this.currentKey);
-    if (TEXT !== this.currentKey) this.title.setTitle(TEXT);
+    const TITLE_TEXT = this.translate.instant(this.currentKey);
+    if (TITLE_TEXT !== this.currentKey) this.title.setTitle(TITLE_TEXT);
   }
 }

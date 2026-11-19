@@ -31,7 +31,7 @@
     z-index: -1;
     background: url('/design-material/lines/skills.webp') center / 100% 100% no-repeat;
     mask-image: conic-gradient(from -67deg, #000 var(--line-angle), transparent 0);
-    transition: --line-angle 0.8s ease var(--reveal-delay, 0ms);
+    transition: --line-angle 0.8s ease;
     pointer-events: none;
   }
 

@@ -43,7 +43,7 @@
   display: block;
   width: 100%;
   clip-path: inset(0 100% 0 0);
-  transition: clip-path 0.8s ease var(--reveal-delay, 0ms);
+  transition: clip-path 0.8s ease;
 }
 
 .contact-arrow.reveal-visible .arrow-image {

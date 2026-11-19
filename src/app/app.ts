@@ -5,9 +5,6 @@ import { Header } from './layout/header/header';
 @Component({
   imports: [RouterOutlet, Header],
   selector: 'app-root',
-  styleUrl: './app.scss',
   templateUrl: './app.html',
 })
-export class App {
-
-}
+export class App {}

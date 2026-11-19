@@ -8,4 +8,4 @@ import { Reveal } from '../../../shared/reveal/reveal';
   styleUrl: './about-me.scss',
   templateUrl: './about-me.html',
 })
-export class AboutMe { }
+export class AboutMe {}

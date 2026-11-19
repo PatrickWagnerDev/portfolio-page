@@ -1,4 +1,4 @@
-import { Directive, ElementRef, inject, input, numberAttribute, OnDestroy, OnInit } from '@angular/core';
+import { Directive, ElementRef, inject, OnDestroy, OnInit } from '@angular/core';
 
 const REVEAL_THRESHOLD = 0.2;
 
@@ -6,12 +6,10 @@ const REVEAL_THRESHOLD = 0.2;
   selector: '[appReveal]',
 })
 export class Reveal implements OnInit, OnDestroy {
-  readonly revealDelay = input(0, { transform: numberAttribute });
   private readonly element = inject<ElementRef<HTMLElement>>(ElementRef);
   private observer?: IntersectionObserver;
 
   ngOnInit(): void {
-    this.element.nativeElement.style.setProperty('--reveal-delay', `${this.revealDelay()}ms`);
     this.observer = new IntersectionObserver((entries) => this.handleIntersect(entries), {
       threshold: REVEAL_THRESHOLD,
     });

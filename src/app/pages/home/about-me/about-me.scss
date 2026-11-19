@@ -77,7 +77,7 @@
     aspect-ratio: 909 / 60;
     background: url('/design-material/lines/about-me.webp') center / 100% 100% no-repeat;
     clip-path: inset(0 100% 0 0);
-    transition: clip-path 0.6s ease var(--reveal-delay, 0ms);
+    transition: clip-path 0.6s ease;
   }
 
   &.reveal-visible::after {

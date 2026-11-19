@@ -251,3 +251,10 @@
 - src/app/app.config.ts: page title strategy registered
 - public/i18n/en.json, public/i18n/de.json: titles keys added
 - src/app/pages/home/contact/contact.scss: autofill rule so that autofilled fields keep the transparent background and the light text color
+- src/styles/_reveal.scss, src/app/app.scss: deleted (unused)
+- src/app/shared/reveal/reveal.ts: removed the unused reveal delay input
+- src/app/**/*.scss: removed the never set --reveal-delay variable from the reveal transitions
+- src/styles/_buttons.scss: removed the duplicated outline-button-dark rule
+- src/styles.scss, src/app/app.ts: removed the references to the deleted files, empty class bodies
+- src/app/shared/intro/intro.ts: two word method names (startIntro, skipIntro, schedulePhase), 2 space indentation, skipIntro is private
+- src/app/pages/home/hero/hero.ts, shared/page-title/page-title.ts, pages/project-detail/project-detail.ts: constants renamed to the naming rules

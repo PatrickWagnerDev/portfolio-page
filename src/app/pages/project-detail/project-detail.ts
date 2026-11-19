@@ -22,7 +22,7 @@ export class ProjectDetail {
   }
 
   private getNeighbor(step: number): ProjectInfo {
-    const index = PROJECT_INFOS.findIndex((info) => info.id === this.id());
-    return PROJECT_INFOS[(index + step + PROJECT_INFOS.length) % PROJECT_INFOS.length];
+    const PROJECT_INDEX = PROJECT_INFOS.findIndex((info) => info.id === this.id());
+    return PROJECT_INFOS[(PROJECT_INDEX + step + PROJECT_INFOS.length) % PROJECT_INFOS.length];
   }
 }
