@@ -268,3 +268,7 @@
 - src/app/layout/header/header.ts, hero.ts: template members are protected
 - public/i18n/en.json, public/i18n/de.json: common.linkedin and common.github added
 - src/app/data/contact-data.ts, layout/footer/footer.ts, pages/home/hero/hero.ts: getSocialLinks keeps the original order of the social links (footer github, linkedin, mail)
+- src/styles/_mixins.scss: new reveal-wipe mixin replaces the repeated clip-path reveal and reduced motion blocks (about me, projects, references, contact, project page)
+- src/styles/_variables.scss: new content-padding-wide, font-size-title and transition-fast variables, content-padding-inline shrinks with the viewport
+- src/**/*.scss: use the new variables, clamp() for hero title, section titles, project name and coming soon banner
+- about-me.scss, contact.scss, project-detail.scss: fixed grid columns use minmax(0, ...), snippet item width is 35rem with max-width 100%

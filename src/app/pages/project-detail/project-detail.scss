@@ -1,3 +1,5 @@
+@use '../../../styles/mixins' as *;
+
 :host {
   display: block;
 }
@@ -8,9 +10,9 @@
   display: grid;
   position: relative;
   isolation: isolate;
-  grid-template-columns: 30rem 35rem;
+  grid-template-columns: minmax(0, 30rem) minmax(0, 35rem);
   justify-content: space-between;
-  padding: 8rem calc(var(--content-padding-inline) + 3rem) 3rem;
+  padding: 8rem var(--content-padding-wide) 3rem;
   overflow: clip;
   background: var(--color-base-dark);
 
@@ -63,7 +65,7 @@
 .back-arrow,
 .next-arrow {
   width: 2.25rem;
-  transition: transform 0.2s ease;
+  transition: transform var(--transition-fast);
 }
 
 .project-name {
@@ -71,7 +73,7 @@
   width: fit-content;
   margin-top: 2.5rem;
   padding-bottom: 1.5rem;
-  font-size: 5rem;
+  font-size: clamp(2.75rem, 6vw, 5rem);
   font-weight: 700;
   line-height: 1.1;
 
@@ -83,19 +85,11 @@
     left: 0;
     height: 0.75rem;
     background: url('/design-material/lines/about-me.webp') center / 100% 100% no-repeat;
-    clip-path: inset(0 100% 0 0);
-    transition: clip-path 0.6s ease;
+    @include reveal-wipe(ltr);
   }
 
   &.reveal-visible::after {
     clip-path: inset(0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .project-name::after {
-    clip-path: none;
-    transition: none;
   }
 }
 
@@ -209,7 +203,7 @@
   padding-bottom: 1rem;
   background: url('/design-material/ripped-paper/skills-description-alt.webp') center / 100% 100% no-repeat;
   font-family: var(--font-handwritten);
-  font-size: 5.5rem;
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
   color: var(--color-base-dark);
   transform: translate(-50%, -50%) rotate(-6deg);
   pointer-events: none;

@@ -8,13 +8,13 @@
 }
 
 .legal-title {
-  font-size: 4rem;
+  font-size: var(--font-size-title);
   font-weight: 700;
   line-height: 1.1;
 }
 
 .legal-content {
-  padding: 0rem calc(var(--content-padding-inline) + 3rem) 0rem;
+  padding: 0rem var(--content-padding-wide) 0rem;
   color: var(--color-base-dark);
 
   >* {

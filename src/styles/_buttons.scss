@@ -9,7 +9,7 @@
   font-weight: 500;
   color: var(--button-color);
   box-shadow: 0.25rem 0.25rem 0 var(--button-color);
-  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
 
   &:hover {
     background-color: var(--color-highlight-3);

@@ -1,10 +1,12 @@
+@use '../../../../styles/mixins' as *;
+
 :host {
   display: block;
 }
 
 .about-section {
   display: grid;
-  grid-template-columns: 1fr 35rem;
+  grid-template-columns: 1fr minmax(0, 35rem);
   column-gap: 4rem;
   align-items: center;
   padding: 6.5rem var(--content-padding-inline);
@@ -44,6 +46,7 @@
   justify-content: center;
   gap: 1rem;
   width: 35rem;
+  max-width: 100%;
   padding-bottom: 1.5rem;
   aspect-ratio: 1680 / 456;
   background: var(--snippet-paper) center / 100% 100% no-repeat;
@@ -76,19 +79,11 @@
     display: block;
     aspect-ratio: 909 / 60;
     background: url('/design-material/lines/about-me.webp') center / 100% 100% no-repeat;
-    clip-path: inset(0 100% 0 0);
-    transition: clip-path 0.6s ease;
+    @include reveal-wipe(ltr);
   }
 
   &.reveal-visible::after {
     clip-path: inset(0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .about-title::after {
-    clip-path: none;
-    transition: none;
   }
 }
 

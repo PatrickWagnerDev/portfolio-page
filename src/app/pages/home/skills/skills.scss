@@ -8,7 +8,7 @@
   column-gap: 2rem;
   row-gap: 3.5rem;
   align-items: center;
-  padding: 8rem calc(var(--content-padding-inline) + 3rem) 12.5rem;
+  padding: 8rem var(--content-padding-wide) 12.5rem;
   color: var(--color-base-light);
   background: url('/design-material/backgrounds/skills-3x.webp') center bottom / 101.2% auto no-repeat;
 }

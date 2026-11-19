@@ -1,0 +1,13 @@
+@mixin reveal-wipe($direction: ltr, $duration: 0.6s) {
+  @if $direction == ltr {
+    clip-path: inset(0 100% 0 0);
+  } @else {
+    clip-path: inset(0 0 0 100%);
+  }
+  transition: clip-path $duration ease;
+
+  @media (prefers-reduced-motion: reduce) {
+    clip-path: none;
+    transition: none;
+  }
+}

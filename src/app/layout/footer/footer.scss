@@ -3,7 +3,7 @@
 }
 
 .footer-section {
-  padding: 0rem calc(var(--content-padding-inline) + 3rem) 2rem;
+  padding: 0rem var(--content-padding-wide) 2rem;
   background: url('/design-material/backgrounds/contact-3x.webp') center bottom / 100% auto no-repeat var(--color-base-dark);
   color: var(--color-base-light);
 }
@@ -25,7 +25,7 @@
   height: 100%;
   background-color: var(--color-highlight-2);
   mask: url('/design-material/monogram/Monogram_teal.png') center / contain no-repeat;
-  transition: background-color 0.2s ease;
+  transition: background-color var(--transition-fast);
 }
 
 .footer-copyright {

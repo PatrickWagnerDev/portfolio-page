@@ -1,13 +1,15 @@
+@use '../../../../styles/mixins' as *;
+
 :host {
   display: block;
 }
 
 .contact-section {
   display: grid;
-  grid-template-columns: 35rem 30rem;
+  grid-template-columns: minmax(0, 35rem) minmax(0, 30rem);
   justify-content: space-between;
   align-items: start;
-  padding: 9rem calc(var(--content-padding-inline) + 3rem) 0rem;
+  padding: 9rem var(--content-padding-wide) 0rem;
   background: url('/design-material/backgrounds/contact-3x.webp') center top / 100% auto no-repeat, linear-gradient(var(--color-base-dark), var(--color-base-dark)) 0 4vw / 100% 100% no-repeat;
   color: var(--color-base-light);
 }
@@ -42,19 +44,11 @@
 .arrow-image {
   display: block;
   width: 100%;
-  clip-path: inset(0 100% 0 0);
-  transition: clip-path 0.8s ease;
+  @include reveal-wipe(ltr, 0.8s);
 }
 
 .contact-arrow.reveal-visible .arrow-image {
   clip-path: inset(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .arrow-image {
-    clip-path: none;
-    transition: none;
-  }
 }
 
 .contact-form {
@@ -71,7 +65,7 @@
   gap: 0.25rem;
   padding: 1rem 1.5rem;
   border-bottom: 1px solid var(--color-highlight-1);
-  transition: border-color 0.2s ease;
+  transition: border-color var(--transition-fast);
 
   &:hover,
   &:focus-within,
@@ -92,7 +86,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.2;
-  transition: color 0.2s ease;
+  transition: color var(--transition-fast);
 }
 
 .field-input {
@@ -139,7 +133,7 @@
 
   a {
     color: var(--color-highlight-3);
-    transition: color 0.2s ease;
+    transition: color var(--transition-fast);
 
     &:hover,
     &:focus-visible {

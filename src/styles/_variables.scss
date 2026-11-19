@@ -8,5 +8,8 @@
   --font-main: 'Bricolage Grotesque', sans-serif;
   --font-handwritten: 'Kalam', cursive;
   --content-max-width: 1440px;
-  --content-padding-inline: max(4.5rem, calc((100% - var(--content-max-width)) / 2));
+  --content-padding-inline: max(clamp(1.25rem, 5vw, 4.5rem), calc((100% - var(--content-max-width)) / 2));
+  --content-padding-wide: calc(var(--content-padding-inline) + 3rem);
+  --font-size-title: clamp(2.25rem, 5vw, 4rem);
+  --transition-fast: 0.2s ease;
 }
