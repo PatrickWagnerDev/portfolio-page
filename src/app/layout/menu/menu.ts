@@ -50,15 +50,15 @@ export class Menu {
   }
 
   protected moveSwipe(event: TouchEvent): void {
-    const PANEL = this.panel().nativeElement;
-    const IS_AT_END = PANEL.scrollTop + PANEL.clientHeight >= PANEL.scrollHeight - 1;
-    const DISTANCE = this.swipeStartY - event.touches[0].clientY;
-    this.swipeOffset.set(IS_AT_END ? Math.max(0, DISTANCE) : 0);
+    const PANEL_ELEMENT = this.panel().nativeElement;
+    const IS_AT_END = PANEL_ELEMENT.scrollTop + PANEL_ELEMENT.clientHeight >= PANEL_ELEMENT.scrollHeight - 1;
+    const SWIPE_DISTANCE = this.swipeStartY - event.touches[0].clientY;
+    this.swipeOffset.set(IS_AT_END ? Math.max(0, SWIPE_DISTANCE) : 0);
   }
 
   protected endSwipe(): void {
-    const LIMIT = Math.max(SWIPE_MIN_DISTANCE, this.panel().nativeElement.offsetHeight * SWIPE_HEIGHT_RATIO);
-    const SHOULD_CLOSE = this.swipeOffset() >= LIMIT;
+    const CLOSE_LIMIT = Math.max(SWIPE_MIN_DISTANCE, this.panel().nativeElement.offsetHeight * SWIPE_HEIGHT_RATIO);
+    const SHOULD_CLOSE = this.swipeOffset() >= CLOSE_LIMIT;
     this.swipeOffset.set(0);
     if (SHOULD_CLOSE) this.closeMenu();
   }

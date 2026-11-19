@@ -11,20 +11,6 @@
   display: block;
   width: 4rem;
   aspect-ratio: 1;
-
-  &:hover .logo-mark,
-  &:focus-visible .logo-mark {
-    background-color: var(--color-highlight-1);
-  }
-}
-
-.logo-mark {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-highlight-2);
-  mask: url('/design-material/monogram/Monogram_teal.png') center / contain no-repeat;
-  transition: background-color var(--transition-fast);
 }
 
 .footer-copyright {

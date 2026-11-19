@@ -336,3 +336,6 @@
 - public/og-image.jpg: new share preview image (1200x630, 72 KB), made from the hero photo
 - src/index.html: og:image, og:image:width, og:image:height, og:image:alt, twitter:card and twitter:image added
 - public/.htaccess: new, HTTPS and www to non-www redirect in one 301 and a fallback to index.html for routes without a file extension (STRATO hosting)
+- src/app/layout/menu/menu.ts: single word constants renamed (PANEL_ELEMENT, SWIPE_DISTANCE, CLOSE_LIMIT)
+- src/app/testing/translation-files.ts: constants renamed to UPPER_CASE
+- src/styles/_logo.scss, src/styles.scss: the monogram logo styles and hover are now one global rule, removed from header.scss, footer.scss and menu.scss
