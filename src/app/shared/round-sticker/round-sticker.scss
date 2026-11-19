@@ -3,6 +3,7 @@
     display: grid;
     place-items: center;
     aspect-ratio: 1;
+    overflow: clip;
     background: url('/design-material/stickers/round-sticker-teal.webp') center / contain no-repeat;
 }
 

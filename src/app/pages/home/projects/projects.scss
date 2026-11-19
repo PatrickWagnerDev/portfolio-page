@@ -158,6 +158,11 @@
   .projects-description {
     margin-right: 0;
   }
+
+  .projects-description,
+  .project-text {
+    hyphens: auto;
+  }
 }
 
 @media (width < 768px) {
@@ -182,10 +187,5 @@
 
   .project-text {
     margin-top: 1rem;
-  }
-
-  .projects-description,
-  .project-text {
-    hyphens: auto;
   }
 }

@@ -325,3 +325,7 @@
 - src/styles/_legal.scss: responsive legal pages (hero 20 rem below 1024 px and 15 rem below 768 px, normal side padding below 1024 px, hyphenated title and wrapping links), new back link below the hero
 - src/app/pages/legal-notice, privacy-policy: back link in the template, RouterLink imported
 - public/i18n/en.json, public/i18n/de.json: common.back
+- src/app/shared/round-sticker/round-sticker.scss: the sticker clips its rotating ring, no more horizontal overflow of 2 to 3 px on mobile
+- src/app/pages/home/skills/skills.scss: smaller padding and gap on the back side of the sticker below 768 px so the sticker does not grow wider than itself
+- src/app/pages/home/projects/projects.scss: automatic hyphenation below 1200 px instead of below 768 px
+- src/app/pages/home/references/references.scss: more top padding of the stacked cards

@@ -267,6 +267,14 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .sticker-back {
+    padding: 0.75rem;
+  }
+
+  .interested-list {
+    gap: 0.5rem;
+  }
+
   .skills-sticker {
     width: min(14rem, calc(100vw - 9.4rem));
     margin: -9rem 0.75rem 0 0;
