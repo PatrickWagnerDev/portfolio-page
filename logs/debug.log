@@ -333,3 +333,5 @@
 - README.md: website link, hero photo, language detection, responsive description, Vitest and project status updated
 - src/app/pages/home/hero/hero.html, hero.scss: the hero photo sits in a clipped window and is zoomed to 135 percent so the person looks bigger
 - public/design-material/photo/patrick-wagner-alt.webp: alternative photo removed, the first photo stays
+- public/og-image.jpg: new share preview image (1200x630, 72 KB), made from the hero photo
+- src/index.html: og:image, og:image:width, og:image:height, og:image:alt, twitter:card and twitter:image added
