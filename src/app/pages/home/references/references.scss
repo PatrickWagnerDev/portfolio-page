@@ -115,7 +115,7 @@
   }
 
   &:hover::after {
-    opacity: 1;
+    opacity: 0.5;
   }
 
   &:hover .reference-name {
@@ -166,5 +166,67 @@
   &:focus-visible {
     outline: 2px solid var(--color-highlight-1);
     outline-offset: 4px;
+  }
+}
+@media (width < 1200px) {
+  .references-section {
+    padding-block: 5rem 7rem;
+  }
+
+  .references-heading {
+    margin-bottom: 2.5rem;
+    text-align: right;
+  }
+
+  .reference-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .reference-item {
+    width: min(34rem, 100%);
+    aspect-ratio: auto;
+
+    &+& {
+      margin: -1.5rem 0 0;
+    }
+
+    &:nth-child(1) {
+      --reference-angle: -3deg;
+      align-self: flex-start;
+    }
+
+    &:nth-child(2) {
+      --reference-angle: 0deg;
+      align-self: flex-end;
+      margin-top: -1.5rem;
+    }
+
+    &:nth-child(3) {
+      --reference-angle: 2deg;
+      align-self: flex-start;
+      margin-left: 0;
+    }
+  }
+
+  .reference-card {
+    gap: 2rem;
+    padding: 2.5rem 2rem 2rem;
+  }
+}
+
+@media (width < 768px) {
+  .references-section {
+    padding-block: 4rem 6rem;
+  }
+
+  .references-heading .section-label::before {
+    width: 4rem;
+  }
+
+  .reference-item {
+    align-self: stretch;
+    width: auto;
   }
 }

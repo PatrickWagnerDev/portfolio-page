@@ -312,3 +312,5 @@
 - src/app/pages/home/skills/skills.scss: description strip uses border-image so the torn edges keep a fixed size and the text keeps its distance to them
 - src/app/pages/home/projects/projects.html: the details button moved behind the text of each card
 - src/app/pages/home/projects/projects.scss: responsive projects (single column below 768 px, two columns below 1200 px with smaller gap, button below the text on small screens and touch devices in the dark color, hover effect on the images only where the button lies on the image, automatic hyphenation on mobile)
+- src/app/pages/home/references/references.scss: responsive references (cards stacked below 1200 px with overlap and rotation, zigzag on tablet, full width on mobile, right aligned heading, shorter arrow on mobile)
+- src/app/pages/home/references/references.scss: the hover stripes on the reference cards are less intense (opacity 0.5)
