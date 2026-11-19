@@ -2,6 +2,7 @@ import { Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter, map } from 'rxjs';
+import { TranslatePipe } from '@ngx-translate/core';
 import { Intro } from '../../shared/intro/intro';
 import { Language } from '../../shared/language/language';
 
@@ -10,7 +11,7 @@ const SCROLL_STEP_MIN = 5;
 const PROJECT_PATH = '/project/';
 
 @Component({
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   selector: 'app-header',
   styleUrl: './header.scss',
   templateUrl: './header.html',

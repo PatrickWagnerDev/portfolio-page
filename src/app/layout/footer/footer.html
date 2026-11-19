@@ -1,11 +1,11 @@
 <footer class="footer-section">
-    <a class="footer-logo" routerLink="/" fragment="hero-section" aria-label="Patrick Wagner, back to top">
+    <a class="footer-logo" routerLink="/" fragment="hero-section" [attr.aria-label]="'footer.logoLabel' | translate">
         <span class="logo-mark"></span>
     </a>
     <p class="footer-copyright">© Patrick Wagner {{ currentYear }}</p>
-    <nav class="footer-nav" aria-label="Footer">
+    <nav class="footer-nav" [attr.aria-label]="'footer.navLabel' | translate">
         <ul class="footer-links">
-            <li><a class="footer-link footer-legal" routerLink="/legal-notice">Legal Notice</a></li>
+            <li><a class="footer-link footer-legal" routerLink="/legal-notice">{{ 'footer.legalNotice' | translate }}</a></li>
             <li>
                 <a class="footer-link footer-social" href="https://github.com/PatrickWagnerDev" target="_blank"
                     rel="noopener">
@@ -22,7 +22,7 @@
             </li>
             <li>
                 <a class="footer-link footer-social" href="mailto:kontakt@patrickwagnerdev.de">
-                    Email
+                    {{ 'common.email' | translate }}
                     <img class="social-icon" src="design-material/icons/mail.png" alt="">
                 </a>
             </li>

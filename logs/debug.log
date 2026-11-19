@@ -224,3 +224,6 @@
 - public/i18n/en.json, public/i18n/de.json: privacy policy section 3 part 2 added
 - src/app/pages/privacy-policy/privacy-policy.html: section 4 (data collection) and the source line use translation keys, privacy policy is fully translated
 - public/i18n/en.json, public/i18n/de.json: privacy policy section 4 added
+- src/app/layout/header/header.ts, header.html: navigation and aria labels use translation keys
+- src/app/layout/footer/footer.ts, footer.html: labels use translation keys, email label uses common.email
+- public/i18n/en.json, public/i18n/de.json: header and footer keys added

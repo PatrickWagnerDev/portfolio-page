@@ -1,20 +1,20 @@
 <header class="header-bar">
-    <a class="header-logo" routerLink="/" fragment="hero-section" aria-label="Patrick Wagner, Home">
+    <a class="header-logo" routerLink="/" fragment="hero-section" [attr.aria-label]="'header.logoLabel' | translate">
         <span class="logo-mark"></span>
     </a>
 
-    <nav class="header-nav" aria-label="Main navigation">
+    <nav class="header-nav" [attr.aria-label]="'header.navLabel' | translate">
         <ul class="nav-list">
-            <li><a class="nav-link" routerLink="/" fragment="about-me-section">About me</a></li>
-            <li><a class="nav-link" routerLink="/" fragment="skills-section">Skills</a></li>
-            <li><a class="nav-link" routerLink="/" fragment="projects-section">Projects</a></li>
-            <li><a class="nav-link" routerLink="/" fragment="contact-section">Contact</a></li>
+            <li><a class="nav-link" routerLink="/" fragment="about-me-section">{{ 'header.aboutMe' | translate }}</a></li>
+            <li><a class="nav-link" routerLink="/" fragment="skills-section">{{ 'header.skills' | translate }}</a></li>
+            <li><a class="nav-link" routerLink="/" fragment="projects-section">{{ 'header.projects' | translate }}</a></li>
+            <li><a class="nav-link" routerLink="/" fragment="contact-section">{{ 'header.contact' | translate }}</a></li>
         </ul>
     </nav>
 
     <label class="language-switch">
         <span class="language-label">EN</span>
-        <input class="switch-input" type="checkbox" role="switch" aria-label="Switch language"
+        <input class="switch-input" type="checkbox" role="switch" [attr.aria-label]="'header.languageLabel' | translate"
             [checked]="language.isGerman()" (change)="language.toggleLanguage()">
         <span class="switch-track"></span>
         <span class="language-label">DE</span>

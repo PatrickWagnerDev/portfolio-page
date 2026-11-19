@@ -5,6 +5,20 @@
     "phone": "Phone",
     "email": "Email"
   },
+  "header": {
+    "logoLabel": "Patrick Wagner, Home",
+    "navLabel": "Main navigation",
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "languageLabel": "Switch language"
+  },
+  "footer": {
+    "logoLabel": "Patrick Wagner, back to top",
+    "navLabel": "Footer",
+    "legalNotice": "Legal Notice"
+  },
   "legalNotice": {
     "title": "Legal notice",
     "contact": "Contact",
