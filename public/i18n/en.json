@@ -70,6 +70,16 @@
       "duration": "1 week"
     }
   },
+  "projectPage": {
+    "back": "Go Back",
+    "description": "Description",
+    "details": "Implementation Details",
+    "duration": "Duration:",
+    "featuredAlt": "Featured project",
+    "liveTest": "Live Test",
+    "next": "Next Project",
+    "comingSoon": "Coming soon..."
+  },
   "contact": {
     "label": "Contact me",
     "title": "Ready to work together?",

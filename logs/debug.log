@@ -242,3 +242,6 @@
 - public/i18n/en.json, public/i18n/de.json: contact keys added
 - src/app/pages/home/references/references.ts, references.html: label, title, profile link, roles and quotes use translation keys, references have ids
 - public/i18n/en.json, public/i18n/de.json: references and referenceData keys added
+- src/app/pages/project-detail/project-detail.html: back link, headings, duration, live test, next link, alt texts and the coming soon banner use translation keys
+- public/i18n/en.json, public/i18n/de.json: projectPage keys added
+- src/app/pages/project-detail/project-detail.scss: paper background moved to a pseudo-element that covers the full page height, with a maximum width (--paper-max-width) after which the left side is cut off

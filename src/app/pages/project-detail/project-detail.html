@@ -3,21 +3,21 @@
     <section class="project-info">
         <a class="back-link" [routerLink]="['/project', previousProject().id]">
             <img class="back-arrow" src="/design-material/lines/breadcrumb-arrow.webp" alt="">
-            Go Back
+            {{ 'projectPage.back' | translate }}
         </a>
         <h1 class="project-name" appReveal>{{ project.title }}</h1>
 
         <article class="project-article">
-            <h2 class="project-heading">Description</h2>
+            <h2 class="project-heading">{{ 'projectPage.description' | translate }}</h2>
             <p class="project-copy">{{ ('projectData.' + project.id + '.description') | translate }}</p>
         </article>
 
         <article class="project-article">
-            <h2 class="project-heading">Implementation Details</h2>
+            <h2 class="project-heading">{{ 'projectPage.details' | translate }}</h2>
             <p class="project-copy">{{ ('projectData.' + project.id + '.details') | translate }}</p>
         </article>
 
-        <p class="project-duration"><strong>Duration:</strong> {{ ('projectData.' + project.id + '.duration') | translate }}</p>
+        <p class="project-duration"><strong>{{ 'projectPage.duration' | translate }}</strong> {{ ('projectData.' + project.id + '.duration') | translate }}</p>
 
         <ul class="technology-list">
             @for (technology of project.technologies; track technology) {
@@ -31,26 +31,27 @@
 
     <section class="project-preview">
         <figure class="preview-figure" [class.preview-featured]="project.featured">
-            <img class="preview-image" [src]="project.image" [alt]="project.title + ' preview'">
+            <img class="preview-image" [src]="project.image"
+                [alt]="'projects.previewAlt' | translate: { title: project.title }">
             @if (project.featured) {
-            <img class="preview-sticker" src="/design-material/stickers/featured-sticker.webp" alt="Featured project">
+            <img class="preview-sticker" src="/design-material/stickers/featured-sticker.webp"
+                [alt]="'projectPage.featuredAlt' | translate">
             } @else {
             <app-round-sticker class="preview-sticker" color="green" />
             }
         </figure>
         <nav class="preview-links">
             <a class="outline-button" [attr.href]="project.githubUrl || null" target="_blank" rel="noopener">GitHub</a>
-            <a class="outline-button" [attr.href]="project.liveUrl || null" target="_blank" rel="noopener">Live
-                Test</a>
+            <a class="outline-button" [attr.href]="project.liveUrl || null" target="_blank" rel="noopener">{{ 'projectPage.liveTest' | translate }}</a>
         </nav>
         <a class="next-link" [routerLink]="['/project', nextProject().id]">
-            Next Project
+            {{ 'projectPage.next' | translate }}
             <img class="next-arrow" src="/design-material/lines/next-project-arrow.webp" alt="">
         </a>
     </section>
 
     @if (project.comingSoon) {
-    <p class="coming-soon-banner" role="status">Coming soon...</p>
+    <p class="coming-soon-banner" role="status">{{ 'projectPage.comingSoon' | translate }}</p>
     }
 </main>
 }

@@ -4,13 +4,29 @@
 
 .project-page {
   --next-space: 4.75rem;
+  --paper-max-width: 120vw;
   display: grid;
   position: relative;
+  isolation: isolate;
   grid-template-columns: 30rem 35rem;
   justify-content: space-between;
   padding: 8rem calc(var(--content-padding-inline) + 3rem) 3rem;
   overflow-x: clip;
-  background: url('/design-material/backgrounds/notebook-paper-3x.webp') left top / 100% auto no-repeat, var(--color-base-dark);
+  background: var(--color-base-dark);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 100%;
+    aspect-ratio: 2880 / 1800;
+    background: url('/design-material/backgrounds/notebook-paper-3x.webp') left top / 100% 100% no-repeat;
+    translate: min(0px, calc(var(--paper-max-width) - 100%));
+    pointer-events: none;
+  }
 }
 
 .project-info {

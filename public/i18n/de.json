@@ -70,6 +70,16 @@
       "duration": "1 Woche"
     }
   },
+  "projectPage": {
+    "back": "Zurück",
+    "description": "Beschreibung",
+    "details": "Umsetzungsdetails",
+    "duration": "Dauer:",
+    "featuredAlt": "Hervorgehobenes Projekt",
+    "liveTest": "Live-Test",
+    "next": "Nächstes Projekt",
+    "comingSoon": "Demnächst..."
+  },
   "contact": {
     "label": "Kontakt",
     "title": "Bereit für die Zusammenarbeit?",
