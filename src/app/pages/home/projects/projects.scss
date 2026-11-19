@@ -48,7 +48,14 @@
   list-style: none;
 }
 
+.project-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+}
+
 .project-figure {
+  grid-area: 1 / 1;
   position: relative;
   overflow: hidden;
   border-radius: 1.5rem;
@@ -64,20 +71,6 @@
     pointer-events: none;
   }
 
-  &:hover::after,
-  &:focus-within::after {
-    opacity: 1;
-  }
-
-  &:hover .project-image,
-  &:focus-within .project-image {
-    transform: scale(calc(var(--image-zoom, 1) * 1.08));
-  }
-
-  &:hover .project-button,
-  &:focus-within .project-button {
-    opacity: 1;
-  }
 }
 
 .project-image {
@@ -98,9 +91,10 @@
 }
 
 .project-button {
-  position: absolute;
-  right: 1.5rem;
-  bottom: 1.5rem;
+  grid-area: 1 / 1;
+  align-self: end;
+  justify-self: end;
+  margin: 0 1.5rem 1.5rem 0;
   z-index: 1;
   opacity: 0;
   transition: opacity 0.3s ease, background-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
@@ -117,14 +111,81 @@
 }
 
 .project-title {
+  grid-row: 2;
   margin-top: 2rem;
   font-size: 2rem;
   font-weight: 700;
 }
 
 .project-text {
+  grid-row: 3;
   margin-top: 1.5rem;
   font-size: 1.125rem;
   line-height: 1.35;
   text-align: justify;
+}
+
+@media (hover: hover) and (width >= 768px) {
+  .project-item:has(.project-figure:hover, .project-button:hover, .project-button:focus-visible) {
+    .project-figure::after {
+      opacity: 1;
+    }
+
+    .project-image {
+      transform: scale(calc(var(--image-zoom, 1) * 1.08));
+    }
+
+    .project-button {
+      opacity: 1;
+    }
+  }
+}
+
+@media (hover: none), (width < 768px) {
+  .project-button {
+    --button-color: var(--color-base-dark);
+    grid-area: 4 / 1;
+    margin: 2rem 0 0;
+    opacity: 1;
+  }
+}
+
+@media (width < 1200px) {
+  .projects-section {
+    column-gap: 2.5rem;
+  }
+
+  .projects-description {
+    margin-right: 0;
+  }
+}
+
+@media (width < 768px) {
+  .projects-section {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 5rem;
+    padding-top: 4rem;
+  }
+
+  .projects-heading {
+    padding-top: 0;
+  }
+
+  .projects-description {
+    margin-top: 2rem;
+  }
+
+  .project-title {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .project-text {
+    margin-top: 1rem;
+  }
+
+  .projects-description,
+  .project-text {
+    hyphens: auto;
+  }
 }
