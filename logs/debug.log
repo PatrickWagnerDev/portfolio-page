@@ -238,3 +238,5 @@
 - src/app/pages/home/projects/projects.ts, projects.html: all texts use translation keys
 - src/app/pages/project-detail/project-detail.ts, project-detail.html: description, details and duration use translation keys
 - public/i18n/en.json, public/i18n/de.json: projects and projectData keys added
+- src/app/pages/home/contact/contact.ts, contact.html: all texts, placeholders and messages use translation keys, hoppla replaced by oops in the english text
+- public/i18n/en.json, public/i18n/de.json: contact keys added

@@ -70,6 +70,29 @@
       "duration": "1 Woche"
     }
   },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Bereit für die Zusammenarbeit?",
+    "text1": "Ich suche eine Stelle in einem Team als Junior Frontend oder Full Stack Developer, remote von überall oder hybrid im Raum Augsburg. Nach zehn Jahren in Support, Projektmanagement und Lagerverwaltung bringe ich eine lösungsorientierte Denkweise und Leidenschaft für sauberen, gut strukturierten Code mit, und ich will mit jedem Projekt weiter wachsen.",
+    "text2": "Hast du eine Stelle oder ein Projekt im Kopf? Erzähl mir davon und lass uns reden.",
+    "nameLabel": "Wie heißt du?",
+    "namePlaceholder": "Hier steht dein Name",
+    "nameError": "Ups! Dein Name scheint zu fehlen",
+    "emailLabel": "Wie lautet deine E-Mail?",
+    "emailPlaceholder": "deinemail@email.com",
+    "emailError": "Hoppla! Deine E-Mail wird benötigt",
+    "messageLabel": "Wie kann ich dir helfen?",
+    "messagePlaceholder": "Hallo Patrick, ich interessiere mich für...",
+    "messageError": "Was soll entwickelt werden?",
+    "privacyBefore": "Ich habe die",
+    "privacyLink": "Datenschutzerklärung",
+    "privacyAfter": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "privacyError": "Bitte akzeptiere die Datenschutzerklärung.",
+    "send": "Senden",
+    "sending": "Wird gesendet…",
+    "sent": "Danke! Deine Nachricht ist unterwegs.",
+    "failed": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal."
+  },
   "legalNotice": {
     "title": "Impressum",
     "contact": "Kontakt",

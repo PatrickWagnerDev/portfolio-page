@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject, signal } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 import { Reveal } from '../../../shared/reveal/reveal';
 import { RoundSticker } from '../../../shared/round-sticker/round-sticker';
 
@@ -10,7 +11,7 @@ type SendStatus = 'idle' | 'sending' | 'sent' | 'failed';
 const MAIL_ENDPOINT = '/contact-form-mail.php';
 
 @Component({
-  imports: [FormsModule, RouterLink, RoundSticker, Reveal],
+  imports: [FormsModule, RouterLink, RoundSticker, Reveal, TranslatePipe],
   selector: 'app-contact',
   styleUrl: './contact.scss',
   templateUrl: './contact.html',

@@ -70,6 +70,29 @@
       "duration": "1 week"
     }
   },
+  "contact": {
+    "label": "Contact me",
+    "title": "Ready to work together?",
+    "text1": "I'm looking to join a team as a junior frontend or full stack developer, remote from anywhere or hybrid around Augsburg. After a decade in support, project management and warehouse management, I bring a problem-solving mindset and a passion for clean, well-structured code, and I'm eager to keep growing with every project.",
+    "text2": "Have a role or a project in mind? Tell me about it and let's talk.",
+    "nameLabel": "What's your name?",
+    "namePlaceholder": "Your name goes here",
+    "nameError": "Oops! it seems your name is missing",
+    "emailLabel": "What's your email?",
+    "emailPlaceholder": "youremail@email.com",
+    "emailError": "Oops! your email is required",
+    "messageLabel": "How can I help you?",
+    "messagePlaceholder": "Hello Patrick, I am interested in...",
+    "messageError": "What do you need to develop?",
+    "privacyBefore": "I've read the",
+    "privacyLink": "privacy policy",
+    "privacyAfter": "and agree to the processing of my data as outlined.",
+    "privacyError": "Please accept the privacy policy.",
+    "send": "Send",
+    "sending": "Sending…",
+    "sent": "Thank you! Your message is on its way.",
+    "failed": "Something went wrong. Please try again."
+  },
   "legalNotice": {
     "title": "Legal notice",
     "contact": "Contact",

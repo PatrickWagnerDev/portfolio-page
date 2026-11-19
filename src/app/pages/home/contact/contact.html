@@ -1,14 +1,11 @@
 <section id="contact-section" class="contact-section">
     <article class="contact-intro">
         <header class="contact-heading">
-            <p class="section-label">Contact me</p>
-            <h2 class="section-title">Ready to work together?</h2>
+            <p class="section-label">{{ 'contact.label' | translate }}</p>
+            <h2 class="section-title">{{ 'contact.title' | translate }}</h2>
         </header>
-        <p class="contact-text">I'm looking to join a team as a junior frontend or full stack developer, remote from
-            anywhere or hybrid around Augsburg. After a decade in support, project management and warehouse management,
-            I bring a problem-solving mindset and a passion for clean, well-structured code, and I'm eager to keep
-            growing with every project.</p>
-        <p class="contact-text">Have a role or a project in mind? Tell me about it and let's talk.</p>
+        <p class="contact-text">{{ 'contact.text1' | translate }}</p>
+        <p class="contact-text">{{ 'contact.text2' | translate }}</p>
         <figure class="contact-arrow" appReveal>
             <img class="arrow-image" src="/design-material/lines/contact.webp" alt="">
         </figure>
@@ -17,27 +14,27 @@
     <form #contactForm="ngForm" class="contact-form" novalidate (ngSubmit)="submitForm(contactForm)">
         <app-round-sticker class="contact-sticker" />
         <label class="form-field" [class.field-invalid]="nameField.invalid && nameField.touched">
-            <span class="field-label">What's your name?</span>
+            <span class="field-label">{{ 'contact.nameLabel' | translate }}</span>
             <input class="field-input" type="text" name="name" #nameField="ngModel" [(ngModel)]="formData.name"
-                placeholder="Your name goes here" autocomplete="name" maxlength="100" required>
+                [placeholder]="'contact.namePlaceholder' | translate" autocomplete="name" maxlength="100" required>
             @if (nameField.invalid && nameField.touched) {
-            <span class="field-error" role="alert">Oops! it seems your name is missing</span>
+            <span class="field-error" role="alert">{{ 'contact.nameError' | translate }}</span>
             }
         </label>
         <label class="form-field" [class.field-invalid]="emailField.invalid && emailField.touched">
-            <span class="field-label">What's your email?</span>
+            <span class="field-label">{{ 'contact.emailLabel' | translate }}</span>
             <input class="field-input" type="email" name="email" #emailField="ngModel" [(ngModel)]="formData.email"
-                placeholder="youremail@email.com" autocomplete="email" maxlength="100" required email>
+                [placeholder]="'contact.emailPlaceholder' | translate" autocomplete="email" maxlength="100" required email>
             @if (emailField.invalid && emailField.touched) {
-            <span class="field-error" role="alert">Hoppla! your email is required</span>
+            <span class="field-error" role="alert">{{ 'contact.emailError' | translate }}</span>
             }
         </label>
         <label class="form-field" [class.field-invalid]="messageField.invalid && messageField.touched">
-            <span class="field-label">How can I help you?</span>
+            <span class="field-label">{{ 'contact.messageLabel' | translate }}</span>
             <textarea class="field-input" name="message" #messageField="ngModel" [(ngModel)]="formData.message" rows="1"
-                placeholder="Hello Patrick, I am interested in..." maxlength="5000" required></textarea>
+                [placeholder]="'contact.messagePlaceholder' | translate" maxlength="5000" required></textarea>
             @if (messageField.invalid && messageField.touched) {
-            <span class="field-error" role="alert">What do you need to develop?</span>
+            <span class="field-error" role="alert">{{ 'contact.messageError' | translate }}</span>
             }
         </label>
         <label class="honeypot-field" aria-hidden="true">
@@ -47,21 +44,21 @@
         <p class="privacy-check">
             <input id="privacy-input" type="checkbox" name="privacy" #privacyField="ngModel"
                 [(ngModel)]="formData.privacy" required>
-            <label for="privacy-input">I've read the <a routerLink="/privacy-policy">privacy policy</a> and agree to the
-                processing of my data as outlined.</label>
+            <label for="privacy-input">{{ 'contact.privacyBefore' | translate }} <a routerLink="/privacy-policy">{{
+                    'contact.privacyLink' | translate }}</a> {{ 'contact.privacyAfter' | translate }}</label>
             @if (privacyField.invalid && privacyField.touched) {
-            <span class="privacy-error" role="alert">Please accept the privacy policy.</span>
+            <span class="privacy-error" role="alert">{{ 'contact.privacyError' | translate }}</span>
             }
         </p>
         <button class="outline-button form-button" type="submit"
-            [disabled]="contactForm.invalid || status() === 'sending'">{{ status() === 'sending' ? 'Sending…' : 'Send'
-            }}</button>
+            [disabled]="contactForm.invalid || status() === 'sending'">{{ (status() === 'sending' ? 'contact.sending' :
+            'contact.send') | translate }}</button>
         @switch (status()) {
         @case ('sent') {
-        <p class="form-status" role="status">Thank you! Your message is on its way.</p>
+        <p class="form-status" role="status">{{ 'contact.sent' | translate }}</p>
         }
         @case ('failed') {
-        <p class="form-status status-failed" role="alert">Something went wrong. Please try again.</p>
+        <p class="form-status status-failed" role="alert">{{ 'contact.failed' | translate }}</p>
         }
         }
     </form>
