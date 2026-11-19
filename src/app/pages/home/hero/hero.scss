@@ -3,6 +3,7 @@
 }
 
 .hero-section {
+  --hero-tear-height: max(calc(100vw * 0.0542), calc(100vh * 0.0867));
   display: grid;
   position: relative;
   grid-template-columns: max-content;
@@ -178,7 +179,7 @@
 
 .social-list {
   position: absolute;
-  bottom: 11rem;
+  bottom: max(11rem, calc(var(--hero-tear-height) + 4.5rem));
   left: var(--content-padding-inline);
   display: grid;
   gap: 0.75rem;

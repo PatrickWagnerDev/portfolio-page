@@ -288,3 +288,4 @@
 - public/i18n/en.json, public/i18n/de.json: meta.description added
 - src/app/pages/project-detail/project-detail.scss: the paper background is at least wide enough that the torn edge stays right of the text column on widescreens
 - src/app/pages/project-detail/project-detail.scss: the maximum of the paper background now limits the position of the torn edge (right of the text column) instead of the paper width
+- src/app/pages/home/hero/hero.scss: the social links stay above the torn paper edge, the position follows the height of the edge (variable hero-tear-height)
