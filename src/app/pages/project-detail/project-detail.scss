@@ -11,7 +11,7 @@
   grid-template-columns: 30rem 35rem;
   justify-content: space-between;
   padding: 8rem calc(var(--content-padding-inline) + 3rem) 3rem;
-  overflow-x: clip;
+  overflow: clip;
   background: var(--color-base-dark);
 
   &::before {

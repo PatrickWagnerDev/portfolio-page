@@ -245,3 +245,4 @@
 - src/app/pages/project-detail/project-detail.html: back link, headings, duration, live test, next link, alt texts and the coming soon banner use translation keys
 - public/i18n/en.json, public/i18n/de.json: projectPage keys added
 - src/app/pages/project-detail/project-detail.scss: paper background moved to a pseudo-element that covers the full page height, with a maximum width (--paper-max-width) after which the left side is cut off
+- src/app/pages/project-detail/project-detail.scss: overflow clip in both directions so the paper background no longer sticks out below short project pages
