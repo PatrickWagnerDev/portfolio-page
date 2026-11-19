@@ -306,3 +306,4 @@
 - src/app/layout/menu/: dark paper background with torn edge, transparent below it, blurred page behind, logo in the menu, content centered vertically
 - angular.json: anyComponentStyle warning budget raised to 7 kB
 - public/design-material/photo/patrick-wagner-alt.webp: second photo converted to webp
+- src/app/pages/home/about-me/about-me.scss: responsive about me (single column below 1024 px with text first, mobile paper snippets below 768 px with overlap, own stacking order, rotation of the first strip and two lines in the second, snippet font size follows the viewport)
