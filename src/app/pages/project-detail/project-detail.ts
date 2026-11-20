@@ -20,8 +20,6 @@ export class ProjectDetail {
   id = input.required<string>();
   /** The project of the route as a list with one entry, so the template can use a loop to assign it. */
   protected visibleProjects = computed(() => PROJECT_INFOS.filter((info) => info.id === this.id()));
-  /** The project before the current one, wraps around to the last project. */
-  protected previousProject = computed(() => this.getNeighbor(-1));
   /** The project after the current one, wraps around to the first project. */
   protected nextProject = computed(() => this.getNeighbor(1));
 

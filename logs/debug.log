@@ -347,3 +347,5 @@
 - JSDoc comments added in layout (header, menu, footer) and shared (intro, language, language-init, language-switch, page-title, reveal, round-sticker), no code changed
 - JSDoc comments added in pages (hero, contact, references, about me, skills, projects, home, legal notice, privacy policy, project detail), no code changed
 - JSDoc comments added in data (skill, contact, navigation, project data) and in app config, routes and root component, all 64 classes, methods, functions and types are documented, no code changed
+- src/app/pages/project-detail/project-detail.scss: the project page is at least as high as the viewport so the background (paper and dark area) fills tall screens, stacked layout keeps the content at the bottom so the torn edge stays behind the preview
+- src/app/pages/project-detail/project-detail.html, .ts, .spec.ts: the back link leads to the project section of the home page, previousProject removed

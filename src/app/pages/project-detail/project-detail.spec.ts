@@ -19,8 +19,8 @@ describe('ProjectDetail', () => {
     expect(element.querySelector('.project-name')?.textContent).toContain('Join');
   });
 
-  it('should link to the previous and the next project', () => {
-    expect(element.querySelector('.back-link')?.getAttribute('href')).toBe('/project/pokedex');
+  it('should link back to the project section and on to the next project', () => {
+    expect(element.querySelector('.back-link')?.getAttribute('href')).toBe('/#projects-section');
     expect(element.querySelector('.next-link')?.getAttribute('href')).toBe('/project/the-last-spellbound');
   });
 

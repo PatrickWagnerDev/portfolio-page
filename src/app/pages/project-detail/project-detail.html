@@ -1,7 +1,7 @@
 @for (project of visibleProjects(); track project.id) {
 <main class="project-page" [class.project-coming-soon]="project.comingSoon">
     <section class="project-info">
-        <a class="back-link" [routerLink]="['/project', previousProject().id]">
+        <a class="back-link" routerLink="/" fragment="projects-section">
             <img class="back-arrow" src="/design-material/lines/breadcrumb-arrow.webp" alt="">
             {{ 'projectPage.back' | translate }}
         </a>
