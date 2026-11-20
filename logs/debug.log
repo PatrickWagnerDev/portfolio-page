@@ -344,3 +344,4 @@
 - src/app/shared/language/language-init.ts, language.ts, app.config.ts: the translations are loaded before the app is shown (provideAppInitializer), new currentLanguage method
 - src/app/shared/language/language-init.spec.ts: tests for the initializer
 - public/design-material/backgrounds/skills.webp: unused file removed (472 KB)
+- JSDoc comments added in layout (header, menu, footer) and shared (intro, language, language-init, language-switch, page-title, reveal, round-sticker), no code changed
