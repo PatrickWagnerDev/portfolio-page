@@ -4,6 +4,7 @@ import { LegalNotice } from './pages/legal-notice/legal-notice';
 import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 import { ProjectDetail } from './pages/project-detail/project-detail';
 
+/** Routes of the site. Every unknown address leads back to the home page. */
 export const routes: Routes = [
   { path: '', component: Home, title: 'titles.home' },
   { path: 'project/:id', component: ProjectDetail, title: 'titles.project' },

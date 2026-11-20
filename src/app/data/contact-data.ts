@@ -1,11 +1,18 @@
+/** A social or contact link shown as icon. */
 export interface SocialLink {
+  /** Unique id, used to pick and order the links. */
   id: string;
+  /** Translation key of the accessible label. */
   labelKey: string;
+  /** Target of the link. */
   url: string;
+  /** Path of the icon image. */
   iconPath: string;
+  /** True when the link leaves the site and opens in a new tab. */
   isExternal: boolean;
 }
 
+/** Contact data of the site owner, used in the legal pages, the privacy policy and the mail link. */
 export const CONTACT_INFO = {
   name: 'Patrick Wagner',
   street: 'Steinbrechstraße 8C',
@@ -14,6 +21,7 @@ export const CONTACT_INFO = {
   email: 'kontakt@patrickwagnerdev.de',
 };
 
+/** All social and contact links. */
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     id: 'linkedin',
@@ -38,6 +46,11 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 ];
 
+/**
+ * Selects social links in a given order, so each place on the site can show its own order.
+ * @param order - Ids of the wanted links, for example github, linkedin and mail.
+ * @returns The matching links, unknown ids are skipped.
+ */
 export function getSocialLinks(order: string[]): SocialLink[] {
   return order
     .map((id) => SOCIAL_LINKS.find((link) => link.id === id))

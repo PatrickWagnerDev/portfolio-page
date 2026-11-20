@@ -7,6 +7,9 @@ import { routes } from './app.routes';
 import { waitForTranslations } from './shared/language/language-init';
 import { PageTitle } from './shared/page-title/page-title';
 
+/**
+ * Application setup: translations (loaded before the first render), HTTP client, page titles and router options such as anchor scrolling and input binding.
+ */
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
