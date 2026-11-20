@@ -105,4 +105,37 @@ describe('Contact', () => {
     submitForm();
     expect(http.match(MAIL_URL).length).toBe(1);
   });
+
+  describe('email validation', () => {
+    async function typeEmail(value: string): Promise<HTMLInputElement> {
+      fillField('input[name=email]', value);
+      const field = element.querySelector('input[name=email]') as HTMLInputElement;
+      field.dispatchEvent(new Event('blur'));
+      await fixture.whenStable();
+      return field;
+    }
+
+    it.each(['a', 'a@', 'a@b', 'a@b.c', 'a@.de', '@b.de', 'a b@c.de', 'a@b@c.de'])('should reject %s', async (value) => {
+      const field = await typeEmail(value);
+      expect(field.classList.contains('ng-invalid')).toBe(true);
+    });
+
+    it.each(['a@b.co', 'name.surname@mail.example.org', 'a_b-c@sub.domain.de'])('should accept %s', async (value) => {
+      const field = await typeEmail(value);
+      expect(field.classList.contains('ng-invalid')).toBe(false);
+    });
+
+    it('should show the format hint under an incomplete email until it is complete', async () => {
+      await typeEmail('test@example');
+      expect(element.querySelector('.field-error-format')).not.toBeNull();
+      await typeEmail('test@example.de');
+      expect(element.querySelector('.field-error-format')).toBeNull();
+    });
+
+    it('should show the required hint instead of the format hint for an empty email', async () => {
+      await typeEmail('');
+      expect(element.querySelector('.field-error')).not.toBeNull();
+      expect(element.querySelector('.field-error-format')).toBeNull();
+    });
+  });
 });

@@ -24,9 +24,11 @@
         <label class="form-field" [class.field-invalid]="emailField.invalid && emailField.touched">
             <span class="field-label">{{ 'contact.emailLabel' | translate }}</span>
             <input class="field-input" type="email" name="email" #emailField="ngModel" [(ngModel)]="formData.email"
-                [placeholder]="'contact.emailPlaceholder' | translate" autocomplete="email" maxlength="100" required email>
+                [placeholder]="'contact.emailPlaceholder' | translate" autocomplete="email" maxlength="100" required
+                pattern="[^\s@]+@[^\s@]+\.[^\s@.]{2,}">
             @if (emailField.invalid && emailField.touched) {
-            <span class="field-error" role="alert">{{ 'contact.emailError' | translate }}</span>
+            <span class="field-error" [class.field-error-format]="emailField.hasError('pattern')" role="alert">{{
+                (emailField.hasError('required') ? 'contact.emailError' : 'contact.emailFormatError') | translate }}</span>
             }
         </label>
         <label class="form-field" [class.field-invalid]="messageField.invalid && messageField.touched">

@@ -107,6 +107,7 @@
     "emailLabel": "Wie lautet deine E-Mail?",
     "emailPlaceholder": "deinemail@email.com",
     "emailError": "Hoppla! Deine E-Mail wird benötigt",
+    "emailFormatError": "Bitte gib eine gültige E-Mail wie name@domain.de ein",
     "messageLabel": "Wie kann ich dir helfen?",
     "messagePlaceholder": "Hallo Patrick, ich interessiere mich für...",
     "messageError": "Was soll entwickelt werden?",

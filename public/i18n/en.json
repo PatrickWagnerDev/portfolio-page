@@ -107,6 +107,7 @@
     "emailLabel": "What's your email?",
     "emailPlaceholder": "youremail@email.com",
     "emailError": "Oops! your email is required",
+    "emailFormatError": "Please enter a valid email like name@domain.com",
     "messageLabel": "How can I help you?",
     "messagePlaceholder": "Hello Patrick, I am interested in...",
     "messageError": "What do you need to develop?",
