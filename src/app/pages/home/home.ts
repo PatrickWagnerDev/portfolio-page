@@ -7,6 +7,7 @@ import { Projects } from './projects/projects';
 import { References } from './references/references';
 import { Skills } from './skills/skills';
 
+/** Home page that puts the sections and the footer together. */
 @Component({
   imports: [Hero, AboutMe, Skills, Projects, References, Contact, Footer],
   selector: 'app-home',

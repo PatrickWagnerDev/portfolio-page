@@ -345,3 +345,4 @@
 - src/app/shared/language/language-init.spec.ts: tests for the initializer
 - public/design-material/backgrounds/skills.webp: unused file removed (472 KB)
 - JSDoc comments added in layout (header, menu, footer) and shared (intro, language, language-init, language-switch, page-title, reveal, round-sticker), no code changed
+- JSDoc comments added in pages (hero, contact, references, about me, skills, projects, home, legal notice, privacy policy, project detail), no code changed
