@@ -125,7 +125,7 @@
   &::after {
     content: '';
     display: block;
-    aspect-ratio: 909 / 60;
+    height: 0.65em;
     background: url('/design-material/lines/about-me.webp') center / 100% 100% no-repeat;
     clip-path: inset(0 100% 0 0);
     transition: clip-path 0.4s ease;

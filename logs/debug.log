@@ -354,3 +354,4 @@
 - src/app/pages/home/contact/contact.html, .spec.ts, public/i18n/de.json, en.json: message field needs at least 10 characters (minlength), hint under the typed text until long enough, tests added and test message lengthened
 - src/app/pages/project-detail/project-detail.scss: from 1340 px the preview image, the buttons and the next project link have fixed positions (taken from the Pokedex page), independent of the left text height
 - src/app/pages/home/projects/projects.html, .scss, .spec.ts: project titles in the project section link to the detail page and draw the underline from About me from left to right on hover and keyboard focus, test added
+- src/app/pages/home/projects/projects.scss: the underline of the project titles has a fixed height (0.65em) instead of an aspect ratio, so it is only squeezed in width for short titles
