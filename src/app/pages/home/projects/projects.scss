@@ -117,6 +117,32 @@
   font-weight: 700;
 }
 
+.title-link {
+  display: block;
+  width: fit-content;
+  color: inherit;
+
+  &::after {
+    content: '';
+    display: block;
+    aspect-ratio: 909 / 60;
+    background: url('/design-material/lines/about-me.webp') center / 100% 100% no-repeat;
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 0.4s ease;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    clip-path: inset(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &::after {
+      transition: none;
+    }
+  }
+}
+
 .project-text {
   grid-row: 3;
   margin-top: 1.5rem;

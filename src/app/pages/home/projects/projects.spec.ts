@@ -27,4 +27,9 @@ describe('Projects', () => {
   it('should mark only the featured project', () => {
     expect(element.querySelectorAll('.project-featured').length).toBe(PROJECT_INFOS.filter((project) => project.featured).length);
   });
+
+  it('should link every project title to its detail page', () => {
+    const hrefs = Array.from(element.querySelectorAll('.title-link')).map((link) => link.getAttribute('href'));
+    expect(hrefs).toEqual(PROJECT_INFOS.map((project) => '/project/' + project.id));
+  });
 });
