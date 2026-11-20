@@ -349,3 +349,4 @@
 - JSDoc comments added in data (skill, contact, navigation, project data) and in app config, routes and root component, all 64 classes, methods, functions and types are documented, no code changed
 - src/app/pages/project-detail/project-detail.scss: the project page is at least as high as the viewport so the background (paper and dark area) fills tall screens, stacked layout keeps the content at the bottom so the torn edge stays behind the preview
 - src/app/pages/project-detail/project-detail.html, .ts, .spec.ts: the back link leads to the project section of the home page, previousProject removed
+- src/app/pages/project-detail/project-detail.scss: the background (paper, dark area, min height of the viewport) moved from .project-page to :host, so the content keeps its natural height and GitHub, live test and next project sit next to the technologies instead of at the bottom of tall screens
