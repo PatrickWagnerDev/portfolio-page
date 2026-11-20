@@ -19,7 +19,7 @@ describe('Contact', () => {
   async function fillValidForm(): Promise<void> {
     fillField('input[name=name]', 'Test Person');
     fillField('input[name=email]', 'test@example.com');
-    fillField('textarea[name=message]', 'Hello');
+    fillField('textarea[name=message]', 'Hello, this is a test');
     (element.querySelector('input[name=privacy]') as HTMLInputElement).click();
     await fixture.whenStable();
   }
@@ -68,7 +68,7 @@ describe('Contact', () => {
     submitForm();
     const request = http.expectOne(MAIL_URL);
     expect(request.request.method).toBe('POST');
-    expect(request.request.body).toEqual({ name: 'Test Person', email: 'test@example.com', message: 'Hello', website: '' });
+    expect(request.request.body).toEqual({ name: 'Test Person', email: 'test@example.com', message: 'Hello, this is a test', website: '' });
     request.flush({ success: true });
   });
 
@@ -135,6 +135,33 @@ describe('Contact', () => {
     it('should show the required hint instead of the format hint for an empty email', async () => {
       await typeEmail('');
       expect(element.querySelector('.field-error')).not.toBeNull();
+      expect(element.querySelector('.field-error-format')).toBeNull();
+    });
+  });
+
+  describe('message validation', () => {
+    async function typeMessage(value: string): Promise<HTMLTextAreaElement> {
+      fillField('textarea[name=message]', value);
+      const field = element.querySelector('textarea[name=message]') as HTMLTextAreaElement;
+      field.dispatchEvent(new Event('blur'));
+      await fixture.whenStable();
+      return field;
+    }
+
+    it('should reject a message with fewer than 10 characters', async () => {
+      const field = await typeMessage('123456789');
+      expect(field.classList.contains('ng-invalid')).toBe(true);
+    });
+
+    it('should accept a message with 10 characters', async () => {
+      const field = await typeMessage('1234567890');
+      expect(field.classList.contains('ng-invalid')).toBe(false);
+    });
+
+    it('should show the length hint until the message is long enough', async () => {
+      await typeMessage('Hi');
+      expect(element.querySelector('.field-error-format')).not.toBeNull();
+      await typeMessage('Hello there, friend');
       expect(element.querySelector('.field-error-format')).toBeNull();
     });
   });

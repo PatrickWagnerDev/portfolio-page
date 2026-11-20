@@ -111,6 +111,7 @@
     "messageLabel": "Wie kann ich dir helfen?",
     "messagePlaceholder": "Hallo Patrick, ich interessiere mich für...",
     "messageError": "Was soll entwickelt werden?",
+    "messageLengthError": "Bitte schreibe mindestens 10 Zeichen",
     "privacyBefore": "Ich habe die",
     "privacyLink": "Datenschutzerklärung",
     "privacyAfter": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",

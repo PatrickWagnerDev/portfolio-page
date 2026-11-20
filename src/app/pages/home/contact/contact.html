@@ -34,9 +34,10 @@
         <label class="form-field" [class.field-invalid]="messageField.invalid && messageField.touched">
             <span class="field-label">{{ 'contact.messageLabel' | translate }}</span>
             <textarea class="field-input" name="message" #messageField="ngModel" [(ngModel)]="formData.message" rows="1"
-                [placeholder]="'contact.messagePlaceholder' | translate" maxlength="5000" required></textarea>
+                [placeholder]="'contact.messagePlaceholder' | translate" maxlength="5000" minlength="10" required></textarea>
             @if (messageField.invalid && messageField.touched) {
-            <span class="field-error" role="alert">{{ 'contact.messageError' | translate }}</span>
+            <span class="field-error" [class.field-error-format]="messageField.hasError('minlength')" role="alert">{{
+                (messageField.hasError('required') ? 'contact.messageError' : 'contact.messageLengthError') | translate }}</span>
             }
         </label>
         <label class="honeypot-field" aria-hidden="true">
