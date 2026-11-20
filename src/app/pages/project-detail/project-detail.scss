@@ -216,6 +216,31 @@
   pointer-events: none;
 }
 
+@media (width >= 1340px) {
+  .project-preview {
+    min-height: 61.125rem;
+  }
+
+  .preview-figure {
+    top: 28.2rem;
+  }
+
+  .preview-links,
+  .next-link {
+    position: absolute;
+    right: 0;
+  }
+
+  .preview-links {
+    top: 53.4rem;
+  }
+
+  .next-link {
+    top: 58.9rem;
+    margin-top: 0;
+  }
+}
+
 @media (width < 1340px) {
   :host {
     --paper-width: max(738px, 100vw);
