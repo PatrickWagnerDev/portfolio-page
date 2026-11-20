@@ -154,6 +154,13 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 1.125rem;
+  color: inherit;
+  transition: transform var(--transition-fast);
+
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.1);
+  }
 
   &::before {
     content: '';

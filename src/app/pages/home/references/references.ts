@@ -24,7 +24,7 @@ export class References {
   protected readonly topIndex = signal<number | null>(null);
   /** The references shown as cards. */
   protected readonly references: Reference[] = [
-    { id: 'first', name: 'Tobias Lange', profileUrl: '' },
+    { id: 'first', name: 'Jinsoo Jang', profileUrl: 'https://www.linkedin.com/in/jinsoo-jang/' },
     { id: 'second', name: 'Maria Schäfer', profileUrl: '' },
     { id: 'third', name: 'David Braun', profileUrl: '' },
   ];
