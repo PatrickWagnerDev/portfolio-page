@@ -358,3 +358,4 @@
 - src/app/pages/home/references/references.ts, public/i18n/de.json, en.json: first real reference with LinkedIn link (entered by the user)
 - src/app/pages/home/references/references.scss: the profile link uses the text color of the card and grows to scale 1.1 on hover and keyboard focus
 - src/app/pages/home/references/references.spec.ts: the profile link test no longer expects zero links, it checks that links exist only for references with a url and open in a new tab
+- src/app/pages/home/references/references.ts, public/i18n/de.json, en.json: references two and three replaced with placeholder names, links to linkedin.com and placeholder quotes, roles set to Fullstack Developer (entered by the user)

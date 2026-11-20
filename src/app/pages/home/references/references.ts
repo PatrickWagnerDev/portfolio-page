@@ -25,7 +25,7 @@ export class References {
   /** The references shown as cards. */
   protected readonly references: Reference[] = [
     { id: 'first', name: 'Jinsoo Jang', profileUrl: 'https://www.linkedin.com/in/jinsoo-jang/' },
-    { id: 'second', name: 'Maria Schäfer', profileUrl: '' },
-    { id: 'third', name: 'David Braun', profileUrl: '' },
+    { id: 'second', name: 'Musta Mistaman', profileUrl: 'https://www.linkedin.com/' },
+    { id: 'third', name: 'Dema Demonia', profileUrl: 'https://www.linkedin.com/' },
   ];
 }
